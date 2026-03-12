@@ -1,4 +1,4 @@
-"""Generate a formatted PDF from the CV markdown text."""
+"""Generate a PDF matching the original CV layout exactly."""
 from __future__ import annotations
 
 import io
@@ -10,7 +10,6 @@ from reportlab.lib.pagesizes import A4
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.lib.units import cm
 from reportlab.platypus import (
-    HRFlowable,
     Paragraph,
     SimpleDocTemplate,
     Spacer,
@@ -18,57 +17,64 @@ from reportlab.platypus import (
     TableStyle,
 )
 
-# ── colour palette ────────────────────────────────────────────────────────────
-TEXT   = colors.HexColor("#1a1a2e")
-MUTED  = colors.HexColor("#555566")
-RULE   = colors.HexColor("#2d3561")
+BLACK = colors.black
+GREY  = colors.HexColor("#444444")
 
-# ── paragraph styles ──────────────────────────────────────────────────────────
-_NAME = ParagraphStyle("cvName",   fontName="Helvetica-Bold", fontSize=22,
-                        leading=26, alignment=TA_CENTER, textColor=TEXT, spaceAfter=2)
-_CONTACT = ParagraphStyle("cvContact", fontName="Helvetica", fontSize=9,
-                            leading=12, alignment=TA_CENTER, textColor=MUTED, spaceAfter=6)
-_SECTION = ParagraphStyle("cvSection", fontName="Helvetica-Bold", fontSize=10,
-                            leading=14, alignment=TA_LEFT, textColor=TEXT,
-                            spaceBefore=10, spaceAfter=2, textTransform="uppercase")
-_ENTRY   = ParagraphStyle("cvEntry",   fontName="Helvetica", fontSize=9.5,
-                            leading=13, alignment=TA_LEFT, textColor=TEXT,
-                            spaceBefore=5, spaceAfter=1)
-_DATE    = ParagraphStyle("cvDate",    fontName="Helvetica", fontSize=9.5,
-                            leading=13, alignment=TA_RIGHT, textColor=MUTED)
-_BULLET  = ParagraphStyle("cvBullet",  fontName="Helvetica", fontSize=9,
-                            leading=12, alignment=TA_JUSTIFY, textColor=TEXT,
-                            leftIndent=12, spaceAfter=1)
-_SUB     = ParagraphStyle("cvSub",     fontName="Helvetica", fontSize=9,
-                            leading=12, alignment=TA_JUSTIFY, textColor=TEXT,
-                            leftIndent=26, spaceAfter=1)
+# ── styles (Helvetica = Arial equivalent) ─────────────────────────────────────
+_NAME_FIRST = ParagraphStyle("nameFirst", fontName="Helvetica",     fontSize=26,
+                              leading=30, textColor=BLACK)
+_NAME_LAST  = ParagraphStyle("nameLast",  fontName="Helvetica-Bold", fontSize=26,
+                              leading=30, textColor=BLACK)
+_CONTACT    = ParagraphStyle("contact",   fontName="Helvetica", fontSize=9,
+                              leading=12, alignment=TA_CENTER, textColor=BLACK,
+                              spaceAfter=8)
+_SECTION    = ParagraphStyle("section",   fontName="Helvetica-Bold", fontSize=10,
+                              leading=13, alignment=TA_LEFT, textColor=BLACK,
+                              spaceBefore=10, spaceAfter=2)
+_ENTRY_L    = ParagraphStyle("entryL",    fontName="Helvetica-Bold", fontSize=9.5,
+                              leading=12, alignment=TA_LEFT,   textColor=BLACK)
+_ENTRY_C    = ParagraphStyle("entryC",    fontName="Helvetica-Bold", fontSize=9.5,
+                              leading=12, alignment=TA_CENTER, textColor=BLACK)
+_ENTRY_R    = ParagraphStyle("entryR",    fontName="Helvetica-Bold", fontSize=9.5,
+                              leading=12, alignment=TA_RIGHT,  textColor=BLACK)
+_BULLET     = ParagraphStyle("bullet",    fontName="Helvetica", fontSize=9,
+                              leading=12, alignment=TA_JUSTIFY, textColor=BLACK,
+                              leftIndent=14, spaceAfter=1)
+_SUB        = ParagraphStyle("sub",       fontName="Helvetica", fontSize=9,
+                              leading=12, alignment=TA_JUSTIFY, textColor=BLACK,
+                              leftIndent=28, spaceAfter=1)
 
 
-def _entry_row(left_html: str, right_text: str, col_widths: tuple) -> Table:
-    """Two-column table: bold entry left, date right-aligned."""
+def _entry_row(left: str, center: str, right: str, col_w: tuple) -> Table:
+    """Three-column bold row with full-width bottom underline."""
     t = Table(
-        [[Paragraph(left_html, _ENTRY), Paragraph(right_text, _DATE)]],
-        colWidths=list(col_widths),
+        [[Paragraph(left, _ENTRY_L),
+          Paragraph(center, _ENTRY_C),
+          Paragraph(right, _ENTRY_R)]],
+        colWidths=list(col_w),
     )
     t.setStyle(TableStyle([
-        ("VALIGN",        (0, 0), (-1, -1), "TOP"),
-        ("LEFTPADDING",   (0, 0), (-1, -1), 0),
-        ("RIGHTPADDING",  (0, 0), (-1, -1), 0),
-        ("TOPPADDING",    (0, 0), (-1, -1), 4),
-        ("BOTTOMPADDING", (0, 0), (-1, -1), 0),
+        ("VALIGN",         (0, 0), (-1, -1), "BOTTOM"),
+        ("LEFTPADDING",    (0, 0), (-1, -1), 0),
+        ("RIGHTPADDING",   (0, 0), (-1, -1), 0),
+        ("TOPPADDING",     (0, 0), (-1, -1), 3),
+        ("BOTTOMPADDING",  (0, 0), (-1, -1), 1),
+        ("LINEBELOW",      (0, 0), (-1, -1), 0.75, BLACK),
     ]))
     return t
 
 
 def generate_pdf(cv_text: str) -> bytes:
-    """Parse cv_text and return PDF bytes."""
     buf = io.BytesIO()
 
     PAGE_W, _ = A4
-    ML = MR = 2 * cm
+    ML = MR = 2.0 * cm
     content_w = PAGE_W - ML - MR
-    date_col   = 3.2 * cm
-    left_col   = content_w - date_col
+
+    # Three entry columns: role 40%, company 35%, date 25%
+    col_l = content_w * 0.40
+    col_c = content_w * 0.35
+    col_r = content_w * 0.25
 
     doc = SimpleDocTemplate(
         buf, pagesize=A4,
@@ -78,63 +84,78 @@ def generate_pdf(cv_text: str) -> bytes:
 
     story: list = []
 
-    for raw_line in cv_text.splitlines():
-        line = raw_line.rstrip()
+    for raw in cv_text.splitlines():
+        line = raw.rstrip()
 
-        # ── name: # NAME ──────────────────────────────────────────────────────
+        # ── Name: # FIRSTNAME LASTNAME ────────────────────────────────────────
         if re.match(r'^# [^#]', line):
-            story.append(Paragraph(line[2:].strip(), _NAME))
+            name  = line[2:].strip()
+            parts = name.split(" ", 1)
+            first = parts[0]
+            last  = parts[1] if len(parts) > 1 else ""
 
-        # ── contact: ## ... ───────────────────────────────────────────────────
+            # Right-aligned box: "FIRSTNAME " + "LASTNAME" bold
+            name_para = Paragraph(
+                f'<font name="Helvetica">{first} </font>'
+                f'<font name="Helvetica-Bold">{last}</font>',
+                ParagraphStyle("nameBox", fontName="Helvetica", fontSize=26,
+                               leading=30, alignment=TA_RIGHT, textColor=BLACK),
+            )
+            name_tbl = Table([[name_para]], colWidths=[content_w])
+            name_tbl.setStyle(TableStyle([
+                ("ALIGN",          (0, 0), (0, 0), "RIGHT"),
+                ("BOX",            (0, 0), (-1, -1), 1.5, BLACK),
+                ("LEFTPADDING",    (0, 0), (-1, -1), 10),
+                ("RIGHTPADDING",   (0, 0), (-1, -1), 10),
+                ("TOPPADDING",     (0, 0), (-1, -1), 6),
+                ("BOTTOMPADDING",  (0, 0), (-1, -1), 6),
+            ]))
+            story.append(name_tbl)
+
+        # ── Contact: ## ... ───────────────────────────────────────────────────
         elif line.startswith("## "):
-            text = line[3:].strip().replace("|", " • ")
-            story.append(Paragraph(text, _CONTACT))
-            story.append(HRFlowable(width="100%", thickness=1,
-                                     color=RULE, spaceAfter=4))
+            contact = line[3:].strip()
+            story.append(Paragraph(contact, _CONTACT))
 
-        # ── section: ### TITLE ────────────────────────────────────────────────
+        # ── Section header: ### TITLE ─────────────────────────────────────────
         elif line.startswith("### "):
-            story.append(Spacer(1, 4))
-            story.append(Paragraph(line[4:].strip(), _SECTION))
-            story.append(HRFlowable(width="100%", thickness=0.5,
-                                     color=RULE, spaceAfter=2))
+            title = line[4:].strip().upper()
+            story.append(Spacer(1, 2))
+            story.append(Paragraph(title, _SECTION))
 
-        # ── entry: **role** | company | date (or **skill** | level) ──────────
+        # ── Entry header: **Role** | Company | Date ───────────────────────────
         elif line.startswith("**") and "|" in line:
             parts = [p.strip() for p in line.split(" | ")]
             role_m = re.match(r'\*\*(.+?)\*\*', parts[0])
             role   = role_m.group(1) if role_m else parts[0]
 
             if len(parts) >= 3:
-                left  = f"<b>{role}</b> &nbsp;·&nbsp; {parts[1]}"
-                right = parts[2]
+                left, center, right = role, parts[1], parts[2]
             elif len(parts) == 2:
-                left  = f"<b>{role}</b>"
-                right = parts[1]
+                left, center, right = role, "", parts[1]
             else:
-                story.append(Paragraph(f"<b>{role}</b>", _ENTRY))
-                continue
+                left, center, right = role, "", ""
 
-            story.append(_entry_row(left, right, (left_col, date_col)))
+            story.append(_entry_row(left, center, right, (col_l, col_c, col_r)))
 
-        # ── sub-bullet (2+ leading spaces then "- ") ─────────────────────────
+        # ── Sub-bullet ────────────────────────────────────────────────────────
         elif re.match(r'^  +- ', line):
             text = line.strip()[2:].strip()
-            story.append(Paragraph(f"◦ &nbsp;{text}", _SUB))
+            story.append(Paragraph(f"o  {text}", _SUB))
 
-        # ── bullet: "- " or "• " ─────────────────────────────────────────────
+        # ── Bullet ────────────────────────────────────────────────────────────
         elif line.startswith("- ") or line.startswith("• "):
             text = line[2:].strip()
-            story.append(Paragraph(f"• &nbsp;{text}", _BULLET))
+            story.append(Paragraph(f"\u2022  {text}", _BULLET))
 
-        # ── blank line ────────────────────────────────────────────────────────
+        # ── Blank line ────────────────────────────────────────────────────────
         elif line.strip() == "":
-            pass  # spacing handled by style spaceBefore/spaceAfter
+            pass
 
-        # ── plain text fallback ───────────────────────────────────────────────
+        # ── Plain text fallback ───────────────────────────────────────────────
         else:
             if line.strip():
-                story.append(Paragraph(line.strip(), _ENTRY))
+                story.append(Paragraph(line.strip(), _BULLET))
 
     doc.build(story)
     buf.seek(0)
