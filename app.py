@@ -1,9 +1,12 @@
 """CV Viewer — visualise and download CV as PDF."""
 import re
+from pathlib import Path
 import streamlit as st
 
 from cv_data import DEFAULT_CV, TAILORED_CVS
 from pdf_gen import generate_pdf
+
+_ORIGINAL_PDF = Path(__file__).parent / "2025_Nov_CV_Silvia Adinda copy.pdf"
 
 st.set_page_config(page_title="Silvia Adinda – CV", layout="centered", page_icon="📄")
 
@@ -120,7 +123,17 @@ with st.sidebar:
 
     st.divider()
 
-    if st.button("📄 Generate & Download PDF", type="primary", use_container_width=True):
+    if selected == "📄 Original":
+        # Serve the original PDF file directly — exact match guaranteed
+        st.download_button(
+            "⬇️ Download Original PDF",
+            data=_ORIGINAL_PDF.read_bytes(),
+            file_name=active_name,
+            mime="application/pdf",
+            type="primary",
+            use_container_width=True,
+        )
+    elif st.button("📄 Generate & Download PDF", type="primary", use_container_width=True):
         with st.spinner("Building PDF…"):
             try:
                 pdf_bytes = generate_pdf(active_cv)
