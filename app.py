@@ -1,9 +1,7 @@
 """CV Viewer — visualise and download CV as PDF via browser print."""
-import json
 import re
 from pathlib import Path
 import streamlit as st
-import streamlit.components.v1 as components
 
 from cv_data import DEFAULT_CV, TAILORED_CVS
 
@@ -216,23 +214,16 @@ def cv_to_print_page(cv_text: str) -> str:
 </html>"""
 
 
-def _print_button(cv_text: str, label: str = "🖨️ Open Print View → Save as PDF") -> None:
-    """Inject a button that opens the print page in a new tab."""
-    html_page = cv_to_print_page(cv_text)
-    html_json  = json.dumps(html_page)   # safely escape for JS string literal
-    components.html(
-        f"""
-        <button onclick="
-          var blob = new Blob([{html_json}], {{type:'text/html;charset=utf-8'}});
-          var url  = URL.createObjectURL(blob);
-          window.open(url, '_blank');
-        " style="width:100%;padding:8px 0;background:#FF4B4B;color:#fff;
-                 border:none;border-radius:6px;cursor:pointer;
-                 font-size:14px;font-weight:600;font-family:sans-serif;">
-          {label}
-        </button>
-        """,
-        height=48,
+def _html_download_button(cv_text: str, filename: str, label: str) -> None:
+    """Download the print-ready HTML file; user opens it and prints to PDF."""
+    html_bytes = cv_to_print_page(cv_text).encode("utf-8")
+    st.download_button(
+        label,
+        data=html_bytes,
+        file_name=filename,
+        mime="text/html",
+        type="primary",
+        use_container_width=True,
     )
 
 
@@ -254,7 +245,6 @@ with st.sidebar:
     st.divider()
 
     if selected == "📄 Original":
-        # Original: direct file download (exact match) + print view
         st.download_button(
             "⬇️ Download Original PDF",
             data=_ORIGINAL_PDF.read_bytes(),
@@ -263,11 +253,10 @@ with st.sidebar:
             type="primary",
             use_container_width=True,
         )
-        _print_button(active_cv, "🖨️ Open Print View")
     else:
-        # Tailored: browser print-to-PDF
-        _print_button(active_cv)
-        st.caption("In the new tab: Cmd+P (Mac) / Ctrl+P (Win) → Save as PDF. Set margins to None.")
+        html_name = active_name.replace(".pdf", ".html")
+        _html_download_button(active_cv, html_name, "⬇️ Download Print-Ready HTML")
+        st.caption("Open the downloaded file in your browser → click 'Save as PDF' button inside.")
 
     if TAILORED_CVS:
         st.divider()
