@@ -100,6 +100,82 @@ DEFAULT_CV = """\
 # ── saved tailored versions ────────────────────────────────────────────────────
 TAILORED_CVS = [
     {
+        "label": "X – Program Manager, Early Stage Project",
+        "company": "X (the moonshot factory)",
+        "role": "Program Manager, Early Stage Project",
+        "cv": """\
+# SILVIA ADINDA
+## https://id.linkedin.com/in/silviatariganadinda // 650 305 6683 // silviadindatarigan@gmail.com
+
+### EDUCATION & HONORS
+
+**Master in Medical Informatics** | Stanford University School of Medicine | School of Medicine
+- Class of 2026 with Full Ride Scholarship by Indonesia Endowment Fund 2025-2026 GPA 4.018/4.00
+
+**Bachelor's in Management** | Universitas Indonesia | July 2018
+- Full Ride Scholarship by Ministry of Education, Culture, and Technology
+- The Most Outstanding/Potential Student: awarded for outstanding achievements of the Year 2015
+
+### EMPLOYMENT
+
+**Senior Technical Project Manager** | General Electric Healthcare | Sept 2023 – May 2025
+- Served as the organizational backbone for a global AI/technology program spanning 20 countries across Asia, Africa, Latin America, Australia, Europe, the UK, and the Middle East — coordinating workstreams, managing dependencies, and unblocking decisions on behalf of senior leadership.
+- Built systems and frameworks for 0-to-1 program execution: global business process alignment, solution ideation, technical development, user adoption, and launch — driving full deployment lifecycle across Service and Commercial Business Groups.
+- Defined program milestones, performance metrics, and accountability structures for concurrent complex initiatives including CRM, AI/ML Service Renewal Automation, Data Migration and Governance, and System Migration.
+- Managed strategic partnerships with internal technology teams and external regional partners to drive alignment and deliver outcomes across diverse markets.
+- Awards: The Five Heartbeats Award in the category of "Deliver the Future of Healthcare" 2025
+
+**Sabbatical Leave** | Caregiving | May 2023 – Aug 2023
+- Caregiving sabbatical to attend to my father's well-being following a significant cardiac event.
+
+**Digital Transformation Manager (AI/ML)** | Philip Morris International | Jan 2023 – April 2023
+- Built and launched 2 AI automation products from 0-to-1: managed full program lifecycle from partner engagement, solution development, user adoption, to iteration — achieving 10k merchants onboarded and 250bio revenue in 3 months (Chatbot) and 2k merchants and 20bio revenue in 3 months (Call-bot).
+- Designed and implemented systems for Datalake, Data Governance, and User Governance: establishing policies, standards, and automation frameworks that enabled reliable data integrity for finance and reporting.
+
+**AI/ML and Analytics - Senior Product Manager** | Alodokter | Jan 2022 – 2023
+- Operated as program lead for an early-stage AI team: defined roadmap, coordinated workstreams, and organized 6 engineers and 2 data scientists across concurrent 0-to-1 initiatives and new business opportunities.
+- Built systems for experimentation and iterative delivery across 6 AI/ML products from ideation through development, testing, and launch — including AI Chatbot scaling to 1 million users/month, Recommender Systems, and Feeds Recommender (Collaborative + Hybrid LightFM).
+- Translated complex technical concepts (ML classification, clustering, collaborative filtering) into actionable plans for cross-functional stakeholders and leadership.
+- Led A/B Testing, ETL Migration, Data Governance, and DevOps migration using Kubernetes.
+
+**Project Manager – Log Stream** | LinkAja – Tech Group | 2020 – 2021
+- Led cross-functional Agile program for Data Pipeline/Log Stream deployment from 0-to-1: defined work plans, managed resources, and tracked requirements and results across multiple business groups (Fraud, Marketing, Operations, Finance).
+- Reported directly to CTO, acting as leadership proxy: monitoring data governance, data quality, and system accuracy; unblocking decisions and managing cross-team dependencies.
+- Delivered key milestones: Fraud Alert Monitoring, DevOps Log Monitoring, Marketing Automation, eKYC Process, and Finance Reporting.
+
+**Senior Data Analyst** | LinkAja – Big Data, AI and Anti-Fraud Eng. | 2020 – 2022
+- Defined and tracked performance metrics across growth, retention, and revenue — delivering scalable ongoing analysis and reports for leadership decision-making.
+- Built and deployed Data Governance systems: SDK trackers for User Journey metrics using MixPanel and Braze; led AI-driven automation initiatives (eKYC Automation, User Segmentation RFM) with Product, Marketing, and Sales Operations.
+
+**Business Intelligence Analyst** | GOJEK – Data Science | 2019
+- Formulated Fraud Detection automation system for the Fraud Operations Team: analytically modeled behavior patterns and defined metrics — preventing losses of approximately $5 million USD.
+- Prepared actionable insights and reports using statistical tools and data visualization for cross-functional stakeholders.
+
+**Research Assistant** | United Nation – ILO Jakarta Office | Aug 2014 – December 2015
+- Conducted research and assessment in the Garment Industry; prepared annual reports for key development partners including governments and international sponsors.
+
+### COURSES (ONLINE) & CERTIFICATION
+
+**Computational Thinking** | University of Pennsylvania | November 2019
+**Computer Science 101** | Stanford University | April 2016 – July 2018
+**Data Science Foundations** | IBM | July 2018
+**Big Data Foundation** | IBM | July 2018
+**Data Science Math Skills** | Duke University | September 2019
+
+### SKILLS
+
+**Program Management & 0-to-1 Execution** | | Advanced
+**Strategic Partnership & Stakeholder Management** | | Advanced
+**AI/ML Product & Program Management** | | Advanced
+**Systems Design & Process Automation** | | Advanced
+**Metrics Definition & Performance Tracking** | | Advanced
+**Agile Methodology & Roadmap Planning** | | Advanced
+**SQL – BigQuery** | | Advanced
+**Python** | | Intermediate
+**Jira / Asana / Project Management Tools** | | Advanced
+""",
+    },
+    {
         "label": "EY – Digital Grid Manager (Power & Utilities)",
         "company": "EY (Ernst & Young)",
         "role": "Sector Tech: Power & Utilities – Digital Grid Manager",
