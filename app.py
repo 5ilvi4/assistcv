@@ -4,7 +4,7 @@ import string
 
 import streamlit as st
 
-from cv_data import DEFAULT_CV
+from cv_data import DEFAULT_CV, TAILORED_CVS
 from pdf_gen import generate_pdf
 
 # ── page config ───────────────────────────────────────────────────────────────
@@ -12,7 +12,7 @@ st.set_page_config(page_title="CV Tailor", layout="wide", page_icon="📄")
 
 st.title("📄 CV Tailor")
 st.caption(
-    "Paste a job description on the left. Edit your CV on the right to match. "
+    "Paste a job description on the left. Load or edit your CV on the right. "
     "Download the tailored version as a formatted PDF."
 )
 
@@ -34,7 +34,6 @@ STOPWORDS = {
 
 
 def extract_keywords(text: str, top_n: int = 30) -> list[str]:
-    """Return the most frequent meaningful words from text."""
     words = re.findall(r'\b[a-zA-Z][a-zA-Z+#.\-]{2,}\b', text)
     freq: dict[str, int] = {}
     for w in words:
@@ -46,7 +45,6 @@ def extract_keywords(text: str, top_n: int = 30) -> list[str]:
 
 
 def keyword_overlap(jd_keywords: list[str], cv_text: str) -> tuple[list[str], list[str]]:
-    """Return (found_in_cv, missing_from_cv) lists."""
     cv_lower = cv_text.lower()
     found   = [kw for kw in jd_keywords if kw in cv_lower]
     missing = [kw for kw in jd_keywords if kw not in cv_lower]
@@ -56,6 +54,27 @@ def keyword_overlap(jd_keywords: list[str], cv_text: str) -> tuple[list[str], li
 # ── session state ─────────────────────────────────────────────────────────────
 if "cv_text" not in st.session_state:
     st.session_state.cv_text = DEFAULT_CV
+
+# ── version selector (sidebar) ────────────────────────────────────────────────
+with st.sidebar:
+    st.header("CV Versions")
+
+    version_labels = ["📄 Original CV"] + [f"🎯 {t['label']}" for t in TAILORED_CVS]
+    selected = st.selectbox("Load a version", version_labels, key="version_select")
+
+    if st.button("Load selected version", use_container_width=True):
+        if selected == "📄 Original CV":
+            st.session_state.cv_text = DEFAULT_CV
+        else:
+            idx = version_labels.index(selected) - 1
+            st.session_state.cv_text = TAILORED_CVS[idx]["cv"]
+        st.rerun()
+
+    if TAILORED_CVS:
+        st.divider()
+        st.markdown("**Saved tailored versions**")
+        for t in TAILORED_CVS:
+            st.markdown(f"- **{t['company']}**  \n  {t['role']}")
 
 # ── layout ────────────────────────────────────────────────────────────────────
 col_jd, col_cv = st.columns([1, 1], gap="large")
@@ -81,26 +100,16 @@ with col_jd:
         with c1:
             st.markdown(f"**✅ Already in your CV** ({len(found)})")
             if found:
-                st.markdown(" &nbsp; ".join(
-                    f"`{kw}`" for kw in found
-                ))
+                st.markdown(" &nbsp; ".join(f"`{kw}`" for kw in found))
             else:
                 st.caption("None detected yet.")
 
         with c2:
             st.markdown(f"**⚠️ Missing from your CV** ({len(missing)})")
             if missing:
-                st.markdown(" &nbsp; ".join(
-                    f"`{kw}`" for kw in missing
-                ))
+                st.markdown(" &nbsp; ".join(f"`{kw}`" for kw in missing))
             else:
                 st.success("All key terms covered!")
-
-        if missing:
-            st.info(
-                "💡 Share this page with the missing keywords highlighted and ask "
-                "Claude Code (in chat) to tailor your CV bullet points to include them."
-            )
 
 # ── right: CV editor ──────────────────────────────────────────────────────────
 with col_cv:
@@ -140,17 +149,16 @@ with col_cv:
 # ── instructions ──────────────────────────────────────────────────────────────
 with st.expander("How to use this app", expanded=False):
     st.markdown("""
-1. **Paste the job description** in the left panel.
-2. **Review the keyword analysis** — it shows which JD terms are already in your CV and which are missing.
-3. **Share the missing keywords** with Claude Code in chat — ask to tailor specific bullet points.
-4. **Paste the updated text** back into the CV editor on the right.
-5. Click **Generate PDF** and download your tailored CV.
+1. **Paste the job description** on the left — keyword analysis runs automatically.
+2. **Load a saved version** from the sidebar, or edit the CV text directly.
+3. Click **Generate PDF** to download the formatted CV.
+4. To tailor for a new job: share the JD + missing keywords with Claude Code in chat — the updated CV will be saved here as a new version.
 
-The CV text uses a simple format:
-- `# NAME` — your name (large heading)
+**CV text format:**
+- `# NAME` — your name
 - `## contact` — contact line
-- `### SECTION` — section header (e.g. EMPLOYMENT)
+- `### SECTION` — section header
 - `**Role** | Company | Date` — job entry
-- `- bullet text` — bullet point
-- `  - sub-bullet` — indented sub-point (2 leading spaces)
+- `- bullet` — bullet point
+- `  - sub-bullet` — indented sub-point
 """)

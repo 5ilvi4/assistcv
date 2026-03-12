@@ -96,3 +96,90 @@ DEFAULT_CV = """\
 **Braze – Application Tracking** | Advanced
 **Firebase – Application Tracking** | Advanced
 """
+
+# ── saved tailored versions ────────────────────────────────────────────────────
+# Each entry: { "label": display name, "company": company, "role": role, "cv": cv text }
+
+TAILORED_CVS = [
+    {
+        "label": "EY – Digital Grid Manager (Power & Utilities)",
+        "company": "EY (Ernst & Young)",
+        "role": "Sector Tech: Power & Utilities – Digital Grid Manager",
+        "cv": """\
+# SILVIA ADINDA
+## https://id.linkedin.com/in/silviatariganadinda | 650 305 6683 | silviadindatarigan@gmail.com
+
+### EDUCATION & HONORS
+
+**Master in Medical Informatics** | Stanford University School of Medicine
+- Class of 2026 with Full Ride Scholarship by Indonesia Endowment Fund 2025-2026 GPA 4.018/4.00
+
+**Bachelor's in Management** | Universitas Indonesia | July 2018
+- Full Ride Scholarship by Ministry of Education, Culture, and Technology
+- The Most Outstanding/Potential Student: awarded for outstanding achievements of the Year 2015
+
+### EMPLOYMENT
+
+**Senior Technical Project Manager** | General Electric Healthcare | Sept 2023 – May 2025
+- Led technology transformation and IT innovation roadmap for international regions: Asia, Africa, Latin America, New Zealand, Australia, Europe, the UK, and the Middle East — directly within GE's global technology ecosystem.
+- Managed end-to-end system development lifecycle (SDLC): global business process alignment, solution ideation, technical development, user adoption strategy, and technology launch across Service and Commercial Business Groups — 20 Countries Deployed, users onboarded.
+- Applied iterative delivery and project governance frameworks to manage cross-functional technical teams, ensuring quality, risk management, and milestone accountability across concurrent complex initiatives.
+- Delivered technology solutions across CRM, ServiceMax – Salesforce, iCenter, Service Board, System Migration, AI/ML Service Renewal Automation, and Data Migration and Governance.
+- Awards: The Five Heartbeats Award in the category of "Deliver the Future of Healthcare" 2025
+
+**Sabbatical Leave** | Caregiving | May 2023 – Aug 2023
+- Caregiving sabbatical to attend to my father's well-being following a significant cardiac event.
+
+**Digital Transformation Manager (AI/ML)** | Philip Morris International | Jan 2023 – April 2023
+- Led digital transformation initiative by deploying and scaling 2 AI-driven automation products, managing full project lifecycle from client engagement, solution development, user adoption, and continuous iteration:
+  - Chatbot-Order Taking Automation: 10k onboarded merchants and 250bio revenue in 3 months.
+  - Call-bot Order Taking Automation: 2k onboarded merchants and 20bio revenue in 3 months.
+- Established framework and governance roadmap for Datalake, Data Governance, and User Governance: defining policies, standards, security protocols, and data integrity practices for finance and reporting.
+
+**AI/ML and Analytics - Senior Product Manager** | Alodokter | Jan 2022 – 2023
+- Managed resource planning and delivery governance for AI/ML product roadmap — organizing 6 engineers and 2 data scientists across concurrent technology initiatives and new business opportunities.
+- Drove iterative delivery of 6 AI/ML products from ideation through development, testing, and launch, applying structured project governance and continuous process improvement across the full SDLC.
+- Led A/B Testing, ETL Migration, Data Governance, and DevOps migration using Kubernetes.
+
+**Adjunct Lecturer - Data Analytics** | Binus (Bina Nusantara) University | June 2021 – June 2022
+- Prepared and delivered course materials covering Technical Project Management, Data Analytics, ETL, Design Thinking, Data Modeling, and Data Visualization with Storytelling.
+- Coached undergraduate students in analytical problem-solving and project delivery methodologies.
+
+**Project Manager – Log Stream** | LinkAja – Tech Group | 2020 – 2021
+- Managed cross-functional technology project using Agile methodology for Data Pipeline/Log Stream deployment: work plans, resource management, requirements definition, and result evaluation.
+- Reported to CTO on data governance, data quality, and system accuracy; led acceptance criteria and key milestone delivery across multiple business groups.
+
+**Senior Data Analyst** | LinkAja – Big Data, AI and Anti-Fraud Eng. | 2020 – 2022
+- Conducted end-to-end analysis supporting business decision-making: growth, retention, and revenue reporting with scalable, ongoing deliverables.
+- Deployed Data Governance process: Implementing Trackers (SDK) for User Journey metrics using MixPanel and Braze; led AI-driven automation projects to implement growth initiatives.
+
+**Business Intelligence Analyst** | GOJEK – Data Science | 2019
+- Formulated and delivered Fraud Detection automation system for the Fraud Operations Team: successfully preventing losses of approximately $5 million USD.
+- Prepared insights and reports using statistical tools and data visualization for cross-functional business stakeholders.
+
+**Research Assistant** | United Nation – ILO Jakarta Office | Aug 2014 – December 2015
+- Conducted labor research and assessment in the Garment Industry; prepared annual reports for key development partners including governments and international sponsors.
+
+### COURSES & CERTIFICATIONS
+
+**Computational Thinking** | University of Pennsylvania | November 2019
+**Computer Science 101** | Stanford University | April 2016 – July 2018
+**Data Science Foundations** | IBM | July 2018
+**Big Data Foundation** | IBM | July 2018
+**Data Science Math Skills** | Duke University | September 2019
+
+### SKILLS
+
+**Project Governance & Delivery** | Advanced
+**Agile & Waterfall Methodology** | Advanced
+**Technology Transformation & SDLC** | Advanced
+**Resource & Risk Management** | Advanced
+**Tableau** | Advanced
+**PowerBI** | Advanced
+**SQL – BigQuery** | Advanced
+**Python** | Intermediate
+**Mixpanel – Application Tracking** | Advanced
+**Braze – Application Tracking** | Advanced
+""",
+    },
+]
