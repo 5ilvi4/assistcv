@@ -18,24 +18,19 @@ from reportlab.platypus import (
 )
 
 BLACK = colors.black
-GREY  = colors.HexColor("#444444")
 
-# ── styles (Helvetica = Arial equivalent) ─────────────────────────────────────
-_NAME_FIRST = ParagraphStyle("nameFirst", fontName="Helvetica",     fontSize=26,
-                              leading=30, textColor=BLACK)
-_NAME_LAST  = ParagraphStyle("nameLast",  fontName="Helvetica-Bold", fontSize=26,
-                              leading=30, textColor=BLACK)
+# ── styles (Helvetica = Arial equivalent, all body text 9pt) ──────────────────
 _CONTACT    = ParagraphStyle("contact",   fontName="Helvetica", fontSize=9,
                               leading=12, alignment=TA_CENTER, textColor=BLACK,
-                              spaceAfter=8)
-_SECTION    = ParagraphStyle("section",   fontName="Helvetica-Bold", fontSize=10,
-                              leading=13, alignment=TA_LEFT, textColor=BLACK,
-                              spaceBefore=10, spaceAfter=2)
-_ENTRY_L    = ParagraphStyle("entryL",    fontName="Helvetica-Bold", fontSize=9.5,
+                              spaceAfter=4)
+_SECTION    = ParagraphStyle("section",   fontName="Helvetica-Bold", fontSize=9,
+                              leading=12, alignment=TA_LEFT, textColor=BLACK,
+                              spaceBefore=8, spaceAfter=1)
+_ENTRY_L    = ParagraphStyle("entryL",    fontName="Helvetica-Bold", fontSize=9,
                               leading=12, alignment=TA_LEFT,   textColor=BLACK)
-_ENTRY_C    = ParagraphStyle("entryC",    fontName="Helvetica-Bold", fontSize=9.5,
+_ENTRY_C    = ParagraphStyle("entryC",    fontName="Helvetica-Bold", fontSize=9,
                               leading=12, alignment=TA_CENTER, textColor=BLACK)
-_ENTRY_R    = ParagraphStyle("entryR",    fontName="Helvetica-Bold", fontSize=9.5,
+_ENTRY_R    = ParagraphStyle("entryR",    fontName="Helvetica-Bold", fontSize=9,
                               leading=12, alignment=TA_RIGHT,  textColor=BLACK)
 _BULLET     = ParagraphStyle("bullet",    fontName="Helvetica", fontSize=9,
                               leading=12, alignment=TA_JUSTIFY, textColor=BLACK,
@@ -57,7 +52,7 @@ def _entry_row(left: str, center: str, right: str, col_w: tuple) -> Table:
         ("VALIGN",         (0, 0), (-1, -1), "BOTTOM"),
         ("LEFTPADDING",    (0, 0), (-1, -1), 0),
         ("RIGHTPADDING",   (0, 0), (-1, -1), 0),
-        ("TOPPADDING",     (0, 0), (-1, -1), 3),
+        ("TOPPADDING",     (0, 0), (-1, -1), 2),
         ("BOTTOMPADDING",  (0, 0), (-1, -1), 1),
         ("LINEBELOW",      (0, 0), (-1, -1), 0.75, BLACK),
     ]))
@@ -68,7 +63,7 @@ def generate_pdf(cv_text: str) -> bytes:
     buf = io.BytesIO()
 
     PAGE_W, _ = A4
-    ML = MR = 2.0 * cm
+    ML = MR = 2.03 * cm          # matches original 57.6pt margins
     content_w = PAGE_W - ML - MR
 
     # Three entry columns: role 40%, company 35%, date 25%
@@ -79,7 +74,8 @@ def generate_pdf(cv_text: str) -> bytes:
     doc = SimpleDocTemplate(
         buf, pagesize=A4,
         leftMargin=ML, rightMargin=MR,
-        topMargin=1.5 * cm, bottomMargin=1.5 * cm,
+        topMargin=0.88 * cm,      # matches original (name box starts ~25pt from top)
+        bottomMargin=1.5 * cm,
     )
 
     story: list = []
@@ -94,21 +90,29 @@ def generate_pdf(cv_text: str) -> bytes:
             first = parts[0]
             last  = parts[1] if len(parts) > 1 else ""
 
-            # Right-aligned box: "FIRSTNAME " + "LASTNAME" bold
+            # Name box: right-aligned, ~37% of content width (matches original)
+            name_box_w  = content_w * 0.37
+            name_gap_w  = content_w - name_box_w
+
             name_para = Paragraph(
                 f'<font name="Helvetica">{first} </font>'
                 f'<font name="Helvetica-Bold">{last}</font>',
-                ParagraphStyle("nameBox", fontName="Helvetica", fontSize=26,
-                               leading=30, alignment=TA_RIGHT, textColor=BLACK),
+                ParagraphStyle("nameBox", fontName="Helvetica", fontSize=22,
+                               leading=26, alignment=TA_RIGHT, textColor=BLACK),
             )
-            name_tbl = Table([[name_para]], colWidths=[content_w])
+            # Two-cell row: empty gap | name box with border
+            name_tbl = Table(
+                [[Paragraph("", _BULLET), name_para]],
+                colWidths=[name_gap_w, name_box_w],
+            )
             name_tbl.setStyle(TableStyle([
-                ("ALIGN",          (0, 0), (0, 0), "RIGHT"),
-                ("BOX",            (0, 0), (-1, -1), 1.5, BLACK),
-                ("LEFTPADDING",    (0, 0), (-1, -1), 10),
-                ("RIGHTPADDING",   (0, 0), (-1, -1), 10),
-                ("TOPPADDING",     (0, 0), (-1, -1), 6),
-                ("BOTTOMPADDING",  (0, 0), (-1, -1), 6),
+                ("BOX",           (1, 0), (1, 0), 1.5, BLACK),
+                ("LEFTPADDING",   (0, 0), (-1, -1), 0),
+                ("RIGHTPADDING",  (0, 0), (-1, -1), 0),
+                ("LEFTPADDING",   (1, 0), (1, 0), 8),
+                ("RIGHTPADDING",  (1, 0), (1, 0), 8),
+                ("TOPPADDING",    (0, 0), (-1, -1), 4),
+                ("BOTTOMPADDING", (0, 0), (-1, -1), 4),
             ]))
             story.append(name_tbl)
 

@@ -24,11 +24,12 @@ def cv_to_html(cv_text: str) -> str:
             parts  = name.split(" ", 1)
             first  = parts[0]
             last   = parts[1] if len(parts) > 1 else ""
+            # Name box: right-aligned, ~37% width (matches original PDF)
             html.append(
-                f'<div style="display:flex;justify-content:flex-end;margin-bottom:4px;">'
-                f'<div style="border:2px solid #000;padding:5px 20px 5px 20px;'
-                f'font-family:{F};font-size:2.3em;line-height:1.2;letter-spacing:0.02em;">'
-                f'{first} <strong>{last}</strong>'
+                f'<div style="display:flex;justify-content:flex-end;margin-bottom:3px;">'
+                f'<div style="border:1.5px solid #000;padding:4px 10px;'
+                f'font-family:{F};font-size:22px;line-height:1.2;width:37%;">'
+                f'<div style="text-align:right;">{first} <strong>{last}</strong></div>'
                 f'</div></div>'
             )
 
@@ -36,16 +37,16 @@ def cv_to_html(cv_text: str) -> str:
         elif line.startswith("## "):
             contact = line[3:].strip()
             html.append(
-                f'<p style="text-align:center;font-family:{F};font-size:0.82em;'
-                f'color:#000;margin:0 0 10px 0;">{contact}</p>'
+                f'<p style="text-align:center;font-family:{F};font-size:12px;'
+                f'color:#000;margin:0 0 6px 0;">{contact}</p>'
             )
 
         # ── Section header: ### TITLE ─────────────────────────────────────────
         elif line.startswith("### "):
             title = line[4:].strip().upper()
             html.append(
-                f'<p style="font-family:{F};font-weight:bold;font-size:0.92em;'
-                f'margin:12px 0 2px 0;letter-spacing:0.01em;">{title}</p>'
+                f'<p style="font-family:{F};font-weight:bold;font-size:12px;'
+                f'margin:10px 0 1px 0;">{title}</p>'
             )
 
         # ── Entry header: **Role** | Company | Date ───────────────────────────
@@ -61,14 +62,13 @@ def cv_to_html(cv_text: str) -> str:
             else:
                 left, center, right = role, "", ""
 
-            # Skills row: left=skill, center empty, right=level
             html.append(
                 f'<div style="display:flex;justify-content:space-between;align-items:baseline;'
-                f'font-family:{F};font-size:0.88em;font-weight:bold;'
-                f'border-bottom:1px solid #000;padding:2px 0 1px 0;margin-top:3px;">'
-                f'<span style="text-align:left;">{left}</span>'
-                f'<span style="text-align:center;">{center}</span>'
-                f'<span style="text-align:right;">{right}</span>'
+                f'font-family:{F};font-size:12px;font-weight:bold;'
+                f'border-bottom:0.75px solid #000;padding:2px 0 1px 0;margin-top:2px;">'
+                f'<span style="width:40%;text-align:left;">{left}</span>'
+                f'<span style="width:35%;text-align:center;">{center}</span>'
+                f'<span style="width:25%;text-align:right;">{right}</span>'
                 f'</div>'
             )
 
@@ -76,27 +76,27 @@ def cv_to_html(cv_text: str) -> str:
         elif re.match(r'^  +- ', line):
             text = line.strip()[2:].strip()
             html.append(
-                f'<div style="margin-left:44px;font-family:{F};font-size:0.87em;'
-                f'line-height:1.45;color:#000;">o &nbsp;{text}</div>'
+                f'<div style="margin-left:38px;font-family:{F};font-size:12px;'
+                f'line-height:1.4;color:#000;">o &nbsp;{text}</div>'
             )
 
         # ── Bullet: "- " or "• " ─────────────────────────────────────────────
         elif line.startswith("- ") or line.startswith("• "):
             text = line[2:].strip()
             html.append(
-                f'<div style="margin-left:20px;font-family:{F};font-size:0.87em;'
-                f'line-height:1.45;color:#000;">• &nbsp;{text}</div>'
+                f'<div style="margin-left:18px;font-family:{F};font-size:12px;'
+                f'line-height:1.4;color:#000;">• &nbsp;{text}</div>'
             )
 
         # ── Blank line ────────────────────────────────────────────────────────
         elif line.strip() == "":
-            html.append('<div style="height:4px;"></div>')
+            html.append('<div style="height:3px;"></div>')
 
         # ── Plain text fallback ───────────────────────────────────────────────
         else:
             if line.strip():
                 html.append(
-                    f'<p style="font-family:{F};font-size:0.87em;margin:2px 0;">'
+                    f'<p style="font-family:{F};font-size:12px;margin:1px 0;">'
                     f'{line.strip()}</p>'
                 )
 
