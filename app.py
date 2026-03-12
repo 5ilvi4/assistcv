@@ -77,76 +77,39 @@ def _cv_body(cv_text: str) -> str:
     return "\n".join(html)
 
 
-# ── Shared CSS (used in both preview div and print page) ──────────────────────
-_CSS = f"""
-* {{ box-sizing: border-box; margin: 0; padding: 0; }}
-body, .cv-wrap {{
+
+_PREVIEW_CSS = f"""
+<style>
+.cv-wrap {{
   font-family: {F};
-  font-size: 9pt;
+  font-size: 12px;
   line-height: 1.35;
   color: #000;
   background: #fff;
+  padding: 48px 56px;
+  border-radius: 4px;
+  box-shadow: 0 2px 16px rgba(0,0,0,.10);
 }}
-.name-row {{
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 3pt;
-}}
-.name-box {{
-  border: 1.5pt solid #000;
-  padding: 4pt 8pt;
-  font-size: 22pt;
-  line-height: 1.2;
-  width: 37%;
-  text-align: right;
-}}
-.contact {{
-  text-align: center;
-  font-size: 9pt;
-  margin: 0 0 5pt 0;
-}}
-.section {{
-  font-weight: bold;
-  font-size: 9pt;
-  margin: 8pt 0 1pt 0;
-}}
-.entry {{
-  display: flex;
-  font-weight: bold;
-  font-size: 9pt;
-  border-bottom: 0.75pt solid #000;
-  padding: 2pt 0 1pt 0;
-  margin-top: 2pt;
-}}
-.entry-l {{ width: 40%; text-align: left; }}
-.entry-c {{ width: 35%; text-align: center; }}
-.entry-r {{ width: 25%; text-align: right; }}
-.bullet {{
-  margin-left: 14pt;
-  font-size: 9pt;
-  line-height: 1.35;
-}}
-.sub-bullet {{
-  margin-left: 28pt;
-  font-size: 9pt;
-  line-height: 1.35;
-}}
-.plain {{
-  font-size: 9pt;
-  margin: 1pt 0;
-}}
+.cv-wrap .name-row  {{ display:flex; justify-content:flex-end; margin-bottom:4px; }}
+.cv-wrap .name-box  {{ border:1.5px solid #000; padding:4px 8px; font-size:29px;
+                       line-height:1.2; width:37%; text-align:right; }}
+.cv-wrap .contact   {{ text-align:center; font-size:12px; margin:0 0 6px 0; }}
+.cv-wrap .section   {{ font-weight:bold; font-size:12px; margin:10px 0 1px 0; }}
+.cv-wrap .entry     {{ display:flex; font-weight:bold; font-size:12px;
+                       border-bottom:.75px solid #000; padding:2px 0 1px 0; margin-top:2px; }}
+.cv-wrap .entry-l   {{ width:40%; text-align:left; }}
+.cv-wrap .entry-c   {{ width:35%; text-align:center; }}
+.cv-wrap .entry-r   {{ width:25%; text-align:right; }}
+.cv-wrap .bullet    {{ margin-left:14px; font-size:12px; line-height:1.35; }}
+.cv-wrap .sub-bullet{{ margin-left:28px; font-size:12px; line-height:1.35; }}
+.cv-wrap .plain     {{ font-size:12px; margin:1px 0; }}
+</style>
 """
-
 
 def cv_to_preview_html(cv_text: str) -> str:
     """Render CV as an inline HTML block for the Streamlit page."""
     body = _cv_body(cv_text)
-    return (
-        f'<style>.cv-wrap {{ {_CSS} }}</style>'
-        f'<div class="cv-wrap" style="background:#fff;padding:48px 56px;'
-        f'border-radius:4px;box-shadow:0 2px 16px rgba(0,0,0,.10);">'
-        f'{body}</div>'
-    )
+    return f'{_PREVIEW_CSS}<div class="cv-wrap">{body}</div>'
 
 
 def cv_to_print_page(cv_text: str) -> str:
@@ -156,17 +119,99 @@ def cv_to_print_page(cv_text: str) -> str:
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CV – Silvia Adinda</title>
   <style>
+    /* ── screen: A4 page preview ────────────────────────────────────────── */
+    html, body {{
+      margin: 0; padding: 0;
+      background: #e8e8e8;
+      font-family: {F};
+    }}
+    .toolbar {{
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: #333;
+      padding: 10px 24px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }}
+    .toolbar button {{
+      background: #FF4B4B;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      padding: 8px 24px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      font-family: sans-serif;
+    }}
+    .toolbar button:hover {{ background: #e03e3e; }}
+    .toolbar span {{
+      color: #ccc;
+      font-size: 13px;
+      font-family: sans-serif;
+    }}
+    .page-wrap {{
+      display: flex;
+      justify-content: center;
+      padding: 32px 16px 64px;
+    }}
+    .page {{
+      width: 794px;            /* A4 at 96 dpi */
+      min-height: 1123px;
+      padding: 76px;           /* 2.03 cm ≈ 76 px */
+      background: #fff;
+      box-shadow: 0 4px 24px rgba(0,0,0,.25);
+      font-size: 12px;         /* 9 pt at 96 dpi */
+      line-height: 1.35;
+      color: #000;
+    }}
+
+    /* ── CV element styles ──────────────────────────────────────────────── */
+    .name-row  {{ display:flex; justify-content:flex-end; margin-bottom:4px; }}
+    .name-box  {{ border:1.5px solid #000; padding:4px 8px; font-size:29px;
+                 line-height:1.2; width:37%; text-align:right; }}
+    .contact   {{ text-align:center; font-size:12px; margin:0 0 6px 0; }}
+    .section   {{ font-weight:bold; font-size:12px; margin:10px 0 1px 0; }}
+    .entry     {{ display:flex; font-weight:bold; font-size:12px;
+                 border-bottom:.75px solid #000; padding:2px 0 1px 0; margin-top:2px; }}
+    .entry-l   {{ width:40%; text-align:left; }}
+    .entry-c   {{ width:35%; text-align:center; }}
+    .entry-r   {{ width:25%; text-align:right; }}
+    .bullet    {{ margin-left:14px; font-size:12px; line-height:1.35; }}
+    .sub-bullet{{ margin-left:28px; font-size:12px; line-height:1.35; }}
+    .plain     {{ font-size:12px; margin:1px 0; }}
+
+    /* ── print overrides ────────────────────────────────────────────────── */
     @page {{ size: A4; margin: 2.03cm; }}
-    {_CSS}
     @media print {{
-      body {{ -webkit-print-color-adjust: exact; print-color-adjust: exact; }}
+      html, body {{ background: #fff; }}
+      .toolbar   {{ display: none; }}
+      .page-wrap {{ padding: 0; }}
+      .page      {{ width: 100%; min-height: 0; padding: 0;
+                   box-shadow: none; font-size: 9pt; }}
+      .name-box  {{ font-size: 22pt; border-width: 1.5pt; }}
+      .contact   {{ font-size: 9pt; }}
+      .section   {{ font-size: 9pt; }}
+      .entry     {{ font-size: 9pt; border-bottom-width: .75pt; }}
+      .bullet, .sub-bullet, .plain {{ font-size: 9pt; }}
     }}
   </style>
 </head>
 <body>
+  <div class="toolbar">
+    <button onclick="window.print()">🖨️ Save as PDF</button>
+    <span>File → Print → Destination: Save as PDF &nbsp;|&nbsp; Margins: None</span>
+  </div>
+  <div class="page-wrap">
+    <div class="page">
 {body}
+    </div>
+  </div>
 </body>
 </html>"""
 
