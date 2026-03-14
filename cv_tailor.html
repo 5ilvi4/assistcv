@@ -57,7 +57,7 @@
 
     .divider { border: none; border-top: 1px solid #28282c; }
 
-    #download-btn {
+    #download-btn, #download-cv-only-btn {
       width: 100%;
       background: #1a2f1a;
       border: 1px solid #2a4a2a;
@@ -70,7 +70,8 @@
       cursor: pointer;
       transition: background 0.15s;
     }
-    #download-btn:hover { background: #1e3b1e; }
+    #download-btn:hover, #download-cv-only-btn:hover { background: #1e3b1e; }
+    #download-cv-only-btn { background: #1a2a2a; border-color: #2a3e3e; color: #6bb; margin-top: 6px; }
 
     .hint {
       font-size: 11px;
@@ -268,7 +269,8 @@
 
     <hr class="divider">
 
-    <button id="download-btn" onclick="window.print()">&#8659;&nbsp; Download as PDF</button>
+    <button id="download-btn" onclick="window.print()">&#8659;&nbsp; CV + Cover Letter</button>
+    <button id="download-cv-only-btn" onclick="printCVOnly()">&#8659;&nbsp; CV Only</button>
 
     <p class="hint">File → Print → Save as PDF<br>Margins: None &nbsp;|&nbsp; Scale: 100%</p>
 
@@ -514,6 +516,14 @@ function showCV() {
   document.getElementById('download-btn').style.display = '';
   document.getElementById('tracker-btn').style.display = '';
   document.getElementById('cv-btn').style.display = 'none';
+}
+
+function printCVOnly() {
+  const cl = document.getElementById('cover-letter-section');
+  const wasVisible = cl.classList.contains('visible');
+  cl.classList.remove('visible');
+  window.print();
+  if (wasVisible) cl.classList.add('visible');
 }
 
 // ════════════════════════════════════════════════════════════════════════════
