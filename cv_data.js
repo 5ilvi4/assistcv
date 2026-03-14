@@ -456,5 +456,86 @@ const CV_APPLICATIONS = [
 **SQL – BigQuery** | | Advanced
 **Python** | | Intermediate
 **Microsoft Office Suite** | | Advanced`
+  },
+  {
+    key:       "meta-pm-pdo",
+    label:     "Meta – PM, Product Data Operations",
+    company:   "Meta",
+    role:      "Project Manager, Product Data Operations - MSL",
+    jdUrl:     "https://www.linkedin.com/jobs/view/4380215581/",
+    dateAdded: "2026-03-13",
+    cv: `# SILVIA ADINDA
+## https://id.linkedin.com/in/silviatariganadinda // 650 305 6683 // silviadindatarigan@gmail.com
+
+### EDUCATION & HONORS
+
+**Master in Medical Informatics** | Stanford University School of Medicine | School of Medicine
+- Class of 2026 with Full Ride Scholarship by Indonesia Endowment Fund 2025-2026 GPA 4.018/4.00
+
+**Bachelor's in Management** | Universitas Indonesia | July 2018
+- Full Ride Scholarship by Ministry of Education, Culture, and Technology
+- The Most Outstanding/Potential Student: awarded for outstanding achievements of the Year 2015
+
+### EMPLOYMENT
+
+**Senior Technical Project Manager** | General Electric Healthcare | Sept 2023 – May 2025
+- Provided strategic leadership and oversight for the planning, execution, and delivery of technology programs in a regulated environment — managing distributed vendor teams and regional coordinators across 20 countries in Asia, Africa, Latin America, Australia, Europe, the UK, and the Middle East.
+- Established KPIs and program governance frameworks to monitor quality, efficiency, and milestone accountability; reported program progress, insights, and recommendations to executive leadership across concurrent programs: AI/ML Service Renewal Automation, CRM, ServiceMax, and System Migration.
+- Managed onshore and offshore vendor relationships, defining program guidelines, driving cross-functional alignment, and ensuring accountability from engineering and commercial stakeholders.
+- Proactively identified program risks, developed mitigation strategies, and communicated updates and rationale to stakeholders at all levels — navigating ambiguity across complex, multi-stakeholder environments.
+- Awards: The Five Heartbeats Award in the category of "Deliver the Future of Healthcare" 2025
+
+**Sabbatical Leave** | Caregiving | May 2023 – Aug 2023
+- Caregiving sabbatical to attend to my father's well-being following a significant cardiac event.
+
+**Digital Transformation Manager (AI/ML)** | Philip Morris International | Jan 2023 – April 2023
+- Initiated and scaled 2 AI automation programs from 0-to-1: led end-to-end program lifecycle from requirements alignment, operational guidelines development, vendor onboarding, and continuous iteration:
+  - Chatbot-Order Taking Automation: 10k onboarded merchants and 250bio revenue in 3 months.
+  - Call-bot Order Taking Automation: 2k onboarded merchants and 20bio revenue in 3 months.
+- Established data governance framework and operational guidelines for Datalake and reporting systems: defining data quality standards, validation rules, and accountability structures across stakeholders.
+
+**AI/ML and Analytics - Senior Product Manager** | Alodokter | Jan 2022 – 2023
+- Managed large-scale AI/ML data operations — organizing 6 engineers and 2 data scientists across 6 concurrent AI products, driving end-to-end delivery from data collection requirements through validation, quality monitoring, and launch.
+- Developed and implemented operational guidelines for data collection, validation, and quality management across AI systems serving 1 million users per month — establishing acceptance criteria, anomaly resolution workflows, and continuous improvement processes.
+- Drove 0-to-1 delivery of 6 AI products through structured program governance: Chatbot Automation, Recommender Systems, Topic Classification, Spam Flagging, and Feeds Recommender.
+- Other Projects: ETL Migration, Data Governance, A/B Testing and DevOps Migration using Kubernetes.
+
+**Adjunct Lecturer - Data Analytics** | Binus (Bina Nusantara) University | June 2021 – June 2022
+- Prepared and delivered course materials on Data Analytics, Data Governance, ETL, and Data Modeling — coaching students on structured problem-solving and delivery methodologies.
+
+**Project Manager – Log Stream** | LinkAja – Tech Group | 2020 – 2021
+- Managed cross-functional program for large-scale Data Pipeline/Log Stream deployment: established program guidelines, defined KPIs and acceptance criteria, and drove milestone accountability across Engineering, Marketing, Operations, and Finance teams.
+- Reported to CTO: implemented and monitored data governance, quality standards, and accuracy; delivered key milestones including Fraud Alert Monitoring, Marketing Automation, eKYC Processing, and Finance Reporting.
+
+**Senior Data Analyst** | LinkAja – Big Data, AI and Anti-Fraud Eng. | 2020 – 2022
+- Led data governance and quality operations: deployed SDK tracking to validate data collection integrity for user journey metrics using MixPanel and Braze; established data standards and acceptance criteria across growth, retention, and revenue functions.
+- Led AI-driven automation initiatives (eKYC Automation — 80% process automation, User Segmentation RFM) coordinating across Product, Marketing, and Sales Operations teams.
+
+**Business Intelligence Analyst** | GOJEK – Data Science | 2019
+- Developed Fraud Detection automation system for Fraud Operations Team — establishing data quality metrics, analytical frameworks, and detection models; preventing losses of approximately $5 million USD.
+- Prepared insights and reports using statistical tools and data visualization for cross-functional business stakeholders.
+
+**Research Assistant** | United Nation – ILO Jakarta Office | Aug 2014 – December 2015
+- Conducted research and data collection in the Garment Industry; prepared annual reports for key development partners including governments and international sponsors.
+
+### COURSES (ONLINE) & CERTIFICATION
+
+**Computational Thinking** | University of Pennsylvania | November 2019
+**Computer Science 101** | Stanford University | April 2016 – July 2018
+**Data Science Foundations** | IBM | July 2018
+**Big Data Foundation** | IBM | July 2018
+**Data Science Math Skills** | Duke University | September 2019
+
+### SKILLS
+
+**Program Management & 0-to-1 Execution** | | Advanced
+**Large-Scale Data Operations & Quality Management** | | Advanced
+**Vendor & Distributed Workforce Management (Onshore/Offshore)** | | Advanced
+**Risk Identification, Mitigation & Stakeholder Communication** | | Advanced
+**KPI Development & Program Performance Monitoring** | | Advanced
+**AI/ML Program & Product Management** | | Advanced
+**SQL – BigQuery** | | Advanced
+**Python** | | Intermediate
+**Cross-Functional Collaboration & Executive Reporting** | | Advanced`
   }
 ];
