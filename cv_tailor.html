@@ -474,13 +474,14 @@ function renderTracker() {
     html += '<td><strong style="color:#fff">' + app.company + '</strong></td>';
     html += '<td>' + app.role + '</td>';
     html += '<td style="color:#666">' + (app.dateAdded || '–') + '</td>';
-    html += '<td><select onchange="saveTrackerState('' + app.key + '',{status:this.value});renderTracker()">';
+    const k = JSON.stringify(app.key);
+    html += '<td><select onchange="saveTrackerState(' + k + ',{status:this.value});renderTracker()">';
     STATUS_OPTIONS.forEach(opt => {
       html += '<option value="' + opt + '"' + (opt === status ? ' selected' : '') + '>' + opt + '</option>';
     });
     html += '</select></td>';
-    html += '<td><input type="date" value="' + applied + '" onchange="saveTrackerState('' + app.key + '',{dateApplied:this.value})"></td>';
-    html += '<td class="notes-cell"><div class="notes-editable" contenteditable="true" data-key="' + app.key + '" onblur="saveTrackerState('' + app.key + '',{notes:this.innerText.trim()})">' + notes + '</div></td>';
+    html += '<td><input type="date" value="' + applied + '" onchange="saveTrackerState(' + k + ',{dateApplied:this.value})"></td>';
+    html += '<td class="notes-cell"><div class="notes-editable" contenteditable="true" data-key="' + app.key + '" onblur="saveTrackerState(' + k + ',{notes:this.innerText.trim()})">' + notes + '</div></td>';
     html += '<td>' + jdLink + '</td>';
     html += '</tr>';
   });
