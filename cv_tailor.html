@@ -122,16 +122,16 @@
       width: 37%; margin-left: auto;
       margin-top: 3px; margin-bottom: 6px;
     }
-    .cv-page-card .contact  { text-align: center; font-size: 12px; margin: 3px 0 0 0; }
+    .cv-page-card .contact  { text-align: center; font-size: 12px; margin: 3px 0 0 0; white-space: nowrap; overflow: hidden; }
     .cv-page-card .section  { font-weight: bold; font-size: 12px; margin: 9px 0 1px 0; }
     .cv-page-card .entry {
       display: flex; font-weight: bold; font-size: 12px;
       border-bottom: 0.75px solid #000;
       padding: 2px 0 1px 0; margin-top: 3px;
     }
-    .cv-page-card .entry-l { width: 40%; text-align: left; }
-    .cv-page-card .entry-c { width: 35%; text-align: center; }
-    .cv-page-card .entry-r { width: 25%; text-align: right; }
+    .cv-page-card .entry-l { width: 40%; text-align: left;   min-width: 0; white-space: nowrap; overflow: hidden; }
+    .cv-page-card .entry-c { width: 35%; text-align: center; min-width: 0; white-space: nowrap; overflow: hidden; }
+    .cv-page-card .entry-r { width: 25%; text-align: right;  min-width: 0; white-space: nowrap; overflow: hidden; }
     .cv-page-card .bullet {
       padding-left: 73px; text-indent: -24px;
       font-size: 12px; line-height: 1.4; margin: 0;
@@ -166,16 +166,23 @@
 
     /* ── Print ──────────────────────────────────────────────────────────── */
     @media print {
-      html, body { background: #fff; }
-      #app        { display: block; }
+      html, body { background: #fff; height: auto; }
+      #app        { display: block; height: auto; overflow: visible; }
       #left-panel { display: none !important; }
-      #right-panel { display: block; padding: 0; overflow: visible; }
-      .cv-page-card {
-        width: 100%; padding: 0; margin: 0;
-        box-shadow: none; font-size: 9pt; line-height: 1.4;
-        page-break-after: always;
+      #right-panel {
+        display: block; padding: 0; overflow: visible;
+        height: auto; align-items: unset;
       }
-      .cv-page-card:last-of-type { page-break-after: avoid; }
+      #cv-pages-container { display: block; }
+      #tracker-section    { display: none !important; }
+      .cv-page-card {
+        width: 100%; padding: 33px 77px; margin: 0;
+        box-shadow: none; font-size: 9pt; line-height: 1.4;
+        page-break-after: always; break-after: page;
+      }
+      .cv-page-card:last-of-type {
+        page-break-after: avoid; break-after: avoid;
+      }
       .cv-page-card .name-box   { font-size: 22pt; border-width: 1.5pt; }
       .cv-page-card .name-rule  { height: 0.75pt; margin-top: 2pt; margin-bottom: 4pt; }
       .cv-page-card .contact    { font-size: 9pt; }
@@ -185,11 +192,11 @@
       .cv-page-card .bullet     { font-size: 9pt; padding-left: 54pt; text-indent: -18pt; }
       .cv-page-card .sub-bullet { font-size: 9pt; padding-left: 90pt;  text-indent: -18pt; }
       #cover-letter-section {
-        display: block !important; margin-top: 0; padding: 0;
+        display: block !important; margin-top: 0; padding: 33px 77px;
         box-shadow: none; width: 100%; font-size: 9pt;
-        page-break-before: always;
+        page-break-before: always; break-before: page;
       }
-      @page { size: A4; margin: 57.6pt; }
+      @page { size: A4; margin: 0; }
     }
 
     /* ── Tracker ─────────────────────────────────────────────────────────── */
@@ -291,8 +298,9 @@
 // CV data is loaded from cv_data.js — edit that file to add/update versions
 // ════════════════════════════════════════════════════════════════════════════
 
-// Build a quick lookup map from CV_APPLICATIONS
+// Build quick lookup maps from CV_APPLICATIONS
 const CVS = Object.fromEntries(CV_APPLICATIONS.map(a => [a.key, a.cv]));
+const COVERS = Object.fromEntries(CV_APPLICATIONS.map(a => [a.key, a.coverLetter || '']));
 
 // Populate dropdown from CV_APPLICATIONS
 (function populateSelect() {
@@ -513,9 +521,19 @@ function showCV() {
 // ════════════════════════════════════════════════════════════════════════════
 
 document.getElementById('version-select').addEventListener('change', e => {
-  const cv = CVS[e.target.value];
+  const key = e.target.value;
+  const cv = CVS[key];
   if (cv) buildPages(cv);
-  document.getElementById('cover-letter-section').classList.remove('visible');
+  const cl = COVERS[key];
+  const clSection = document.getElementById('cover-letter-section');
+  const clBody    = document.getElementById('cover-letter-body');
+  if (cl) {
+    clBody.innerHTML = cl.trim().split(/\n\n+/).map(p => '<p>' + esc(p.trim()) + '</p>').join('');
+    clSection.classList.add('visible');
+  } else {
+    clBody.innerHTML = '';
+    clSection.classList.remove('visible');
+  }
 });
 
 // Init
