@@ -21,7 +21,7 @@ const CV_APPLICATIONS = [
     jdUrl:     "",
     dateAdded: "",
     cv: `# SILVIA ADINDA
-## https://id.linkedin.com/in/silviatariganadinda // 650 305 6683 // silviadindatarigan@gmail.com
+## https://id.linkedin.com/in/silviatariganadinda // github.com/5ilvi4 // 650 305 6683 // silviadindatarigan@gmail.com
 
 ### EDUCATION & HONORS
 
@@ -32,7 +32,13 @@ const CV_APPLICATIONS = [
 - Full Ride Scholarship by Ministry of Education, Culture, and Technology
 - The Most Outstanding/Potential Student: awarded for outstanding achievements of the Year 2015
 
-### EMPLOYMENT
+### EXPERIENCE
+
+**AI Consultant — Knowledge Management** | Johnson & Johnson | 2025
+- Engaged as external AI and Subject Matter Expert to design and deploy an AI-powered knowledge management system for J&J's Global Marketing team.
+- Built the knowledge repository architecture: curated, structured, and maintained marketing content — brand guidelines, campaign assets, product information, SOPs, and presentations — ensuring accuracy and currency across global markets.
+- Deployed AI chatbot via Microsoft Copilot integrated into Microsoft Teams as an always-available single source of truth, enabling any team member to query in natural language for instant, up-to-date answers.
+- Validated and tested AI responses against real user questions prior to launch; led user adoption and onboarding across the global team.
 
 **Senior Technical Project Manager** | General Electric Healthcare | Sept 2023 – May 2025
 - Leading and managing IT Projects Innovation Roadmap and Strategies for international regions: Asia, Africa, Latin America, New Zealand, Australia, Europe, the UK, and the Middle East.
@@ -86,25 +92,22 @@ const CV_APPLICATIONS = [
 - Conducted research and assessment in Garment Industry to analyze the current condition of Labor in Indonesia from selected companies in Indonesia Worker Survey (Java).
 - Prepared annual report with Better Work Indonesia and Tuft University for Key Development Partners: Governments and Sponsors.
 
-### COURSES (ONLINE) & CERTIFICATION
+### PROJECTS
 
-**Computational Thinking** | University of Pennsylvania | November 2019
-- Applied the pillars of computational thinking, developed and analyzed algorithms, and how solutions can be realized on a computer using the Python programming language.
+**ColpoAI — AI Cervical Cancer Detection** | Personal / University of Limpopo Collaboration | 2025
+- Built clinical decision support tool for detecting pre-cancerous cervical lesions at colposcopy, supporting a nurse + GP remote workflow in low-resource settings.
+- Designed AI model logic, confidence scoring with transparent explainability layer, and 4-class classification output (Cervical Cancer / HSIL / LSIL / Normal). Stack: HTML/JS, GenAI.
+- Affiliated with formal research study at University of Limpopo; funded by SAfAIDS and ASCCP.
 
-**Computer Science 101** | Stanford University | April 2016 – July 2018
-- Performed the understanding and practical application of basic coding.
+**EP/CATH Lab Planning Simulator** | Personal | 2025
+- Built hospital capacity planning simulation tool replaying 7,402 procedures across 260 simulated operating days to recommend optimal holding bay count, closing time, and scheduling policy.
+- Stack: Python, Streamlit. Deployed as interactive web app with cost analysis, policy comparison, and heatmap visualisations.
 
-**Statistics** | IBM | July 2018
-- Demonstrates an understanding of descriptive statistics, normal distribution, standard deviation, variance, correlation, and best practices for data visualization.
+**VibesCheck — Relationship Health Analyser** | Personal Research | 2025
+- Designed 13-step LLM pipeline that analyses chat exports across 28 communication dimensions and 13 interpersonal traits, producing an Overall Relationship Health Score (0–100) with confidence intervals and relationship stage prediction.
 
-**Data Science Foundations** | IBM | July 2018
-- Demonstrated an understanding of the possibilities and opportunities that data science, analytics and big data bring to new applications in any industry.
-
-**Big Data Foundation** | IBM | July 2018
-- Demonstrated an understanding of how Big Data should be processed in a platform that can handle the variety, velocity, and the volume of data by using components that require integration and data governance.
-
-**Data Science Math Skills** | Duke University | September 2019
-- Applied basic math skills for Data Science such as: set theory, graphing and describing functions and their inverses on the x-y plane, rate of change and tangent lines to a curve, exponents, logarithms, and the natural log function, probability theory, including Bayes' theorem.
+**Prior Auth Auto-Assembler** | Personal | 2025
+- Built agentic AI prototype automating prior authorization packet assembly for home oxygen (DMEPOS) — AI extracts clinical evidence from uploaded documents, runs payer-specific rules checks (Medicare, MA plans), and generates submission-ready packets. Stack: HTML/JS, LLM.
 
 ### SKILLS
 
@@ -123,7 +126,13 @@ const CV_APPLICATIONS = [
 **Braze – Application Tracking** | | Advanced
 - Experienced in application tracking, metrics creation, events and attributes creation for various features and products.
 **Firebase – Application Tracking** | | Advanced
-- Experienced in application tracking, metrics creation, events and attributes creation for various features and products.`
+- Experienced in application tracking, metrics creation, events and attributes creation for various features and products.
+
+### CERTIFICATIONS
+
+**Computational Thinking** | University of Pennsylvania | 2019
+**Data Science Math Skills** | Duke University | 2019
+**Computer Science 101** | Stanford University | 2016 – 2018`
   },
   {
     key:       "x",
@@ -133,7 +142,7 @@ const CV_APPLICATIONS = [
     jdUrl:     "",
     dateAdded: "2026-03-13",
     cv: `# SILVIA ADINDA
-## https://id.linkedin.com/in/silviatariganadinda // 650 305 6683 // silviadindatarigan@gmail.com
+## https://id.linkedin.com/in/silviatariganadinda // github.com/5ilvi4 // 650 305 6683 // silviadindatarigan@gmail.com
 
 ### EDUCATION & HONORS
 
@@ -144,7 +153,12 @@ const CV_APPLICATIONS = [
 - Full Ride Scholarship by Ministry of Education, Culture, and Technology
 - The Most Outstanding/Potential Student: awarded for outstanding achievements of the Year 2015
 
-### EMPLOYMENT
+### EXPERIENCE
+
+**AI Consultant — Knowledge Management** | Johnson & Johnson | 2025
+- Engaged as external AI and program expert to design and deploy an AI-powered knowledge management system — built from 0-to-1: architecture design, content curation, AI deployment, and user adoption across J&J's Global Marketing team.
+- Deployed AI chatbot via Microsoft Copilot integrated into Microsoft Teams as a scalable, always-available single source of truth for global marketing users.
+- Validated and tested AI responses against real user questions; defined adoption metrics and led onboarding to drive full team rollout.
 
 **Senior Technical Project Manager** | General Electric Healthcare | Sept 2023 – May 2025
 - Served as the organizational backbone for a global AI/technology program spanning 20 countries across Asia, Africa, Latin America, Australia, Europe, the UK, and the Middle East — coordinating workstreams, managing dependencies, and unblocking decisions on behalf of senior leadership.
@@ -182,13 +196,16 @@ const CV_APPLICATIONS = [
 **Research Assistant** | United Nation – ILO Jakarta Office | Aug 2014 – December 2015
 - Conducted research and assessment in the Garment Industry; prepared annual reports for key development partners including governments and international sponsors.
 
-### COURSES (ONLINE) & CERTIFICATION
+### PROJECTS
 
-**Computational Thinking** | University of Pennsylvania | November 2019
-**Computer Science 101** | Stanford University | April 2016 – July 2018
-**Data Science Foundations** | IBM | July 2018
-**Big Data Foundation** | IBM | July 2018
-**Data Science Math Skills** | Duke University | September 2019
+**VibesCheck — Relationship Health Analyser** | Personal Research | 2025
+- Designed and built a 0-to-1 LLM-powered product: 13-step pipeline analysing chat exports across 28 communication dimensions and 13 interpersonal traits, producing an Overall Relationship Health Score (0–100) with confidence intervals.
+
+**Prior Auth Auto-Assembler** | Personal | 2025
+- Built agentic AI prototype from 0-to-1 automating prior authorization packet assembly — defined product requirements, built rules engine, and shipped a fully functional single-file web app. Stack: HTML/JS, LLM.
+
+**ColpoAI — AI Cervical Cancer Detection** | Personal / University of Limpopo | 2025
+- Built clinical decision support tool for detecting pre-cancerous cervical lesions at colposcopy — designed AI model, confidence scoring, and interface from scratch. Stack: HTML/JS, GenAI.
 
 ### SKILLS
 
@@ -200,7 +217,13 @@ const CV_APPLICATIONS = [
 **Agile Methodology & Roadmap Planning** | | Advanced
 **SQL – BigQuery** | | Advanced
 **Python** | | Intermediate
-**Jira / Asana / Project Management Tools** | | Advanced`
+**Jira / Asana / Project Management Tools** | | Advanced
+
+### CERTIFICATIONS
+
+**Computational Thinking** | University of Pennsylvania | 2019
+**Data Science Math Skills** | Duke University | 2019
+**Computer Science 101** | Stanford University | 2016 – 2018`
   },
   {
     key:       "ey",
@@ -210,7 +233,7 @@ const CV_APPLICATIONS = [
     jdUrl:     "",
     dateAdded: "2026-03-13",
     cv: `# SILVIA ADINDA
-## https://id.linkedin.com/in/silviatariganadinda // 650 305 6683 // silviadindatarigan@gmail.com
+## https://id.linkedin.com/in/silviatariganadinda // github.com/5ilvi4 // 650 305 6683 // silviadindatarigan@gmail.com
 
 ### EDUCATION & HONORS
 
@@ -221,7 +244,12 @@ const CV_APPLICATIONS = [
 - Full Ride Scholarship by Ministry of Education, Culture, and Technology
 - The Most Outstanding/Potential Student: awarded for outstanding achievements of the Year 2015
 
-### EMPLOYMENT
+### EXPERIENCE
+
+**AI Consultant — Knowledge Management** | Johnson & Johnson | 2025
+- Engaged as external AI and technology expert to design and deploy an AI-powered knowledge management system: led full project lifecycle from knowledge architecture design, content governance, AI deployment, and user adoption.
+- Deployed AI chatbot via Microsoft Copilot integrated into Microsoft Teams, establishing a governed single source of truth for J&J's Global Marketing team across global markets.
+- Validated and tested AI responses against real user queries; defined governance standards for content accuracy and currency.
 
 **Senior Technical Project Manager** | General Electric Healthcare | Sept 2023 – May 2025
 - Led technology transformation and IT innovation roadmap for international regions: Asia, Africa, Latin America, New Zealand, Australia, Europe, the UK, and the Middle East — directly within GE's global technology ecosystem.
@@ -263,13 +291,13 @@ const CV_APPLICATIONS = [
 **Research Assistant** | United Nation – ILO Jakarta Office | Aug 2014 – December 2015
 - Conducted labor research and assessment in the Garment Industry; prepared annual reports for key development partners including governments and international sponsors.
 
-### COURSES (ONLINE) & CERTIFICATION
+### PROJECTS
 
-**Computational Thinking** | University of Pennsylvania | November 2019
-**Computer Science 101** | Stanford University | April 2016 – July 2018
-**Data Science Foundations** | IBM | July 2018
-**Big Data Foundation** | IBM | July 2018
-**Data Science Math Skills** | Duke University | September 2019
+**EP/CATH Lab Planning Simulator** | Personal | 2025
+- Built hospital capacity planning simulation tool: replays 7,402 procedures across 260 operating days, outputs recommended bay count, optimal closing time, and best scheduling policy with full cost analysis. Stack: Python, Streamlit.
+
+**Prior Auth Auto-Assembler** | Personal | 2025
+- Built agentic AI prototype automating prior authorization processes: AI extracts data from documents, applies governance rules, and generates submission-ready packets. Stack: HTML/JS, LLM.
 
 ### SKILLS
 
@@ -282,7 +310,13 @@ const CV_APPLICATIONS = [
 **SQL – BigQuery** | | Advanced
 **Python** | | Intermediate
 **Mixpanel – Application Tracking** | | Advanced
-**Braze – Application Tracking** | | Advanced`
+**Braze – Application Tracking** | | Advanced
+
+### CERTIFICATIONS
+
+**Computational Thinking** | University of Pennsylvania | 2019
+**Data Science Math Skills** | Duke University | 2019
+**Computer Science 101** | Stanford University | 2016 – 2018`
   },
   {
     key:       "jj",
@@ -292,7 +326,7 @@ const CV_APPLICATIONS = [
     jdUrl:     "",
     dateAdded: "2026-03-13",
     cv: `# SILVIA ADINDA
-## https://id.linkedin.com/in/silviatariganadinda // 650 305 6683 // silviadindatarigan@gmail.com
+## https://id.linkedin.com/in/silviatariganadinda // github.com/5ilvi4 // 650 305 6683 // silviadindatarigan@gmail.com
 
 ### EDUCATION & HONORS
 
@@ -303,7 +337,12 @@ const CV_APPLICATIONS = [
 - Full Ride Scholarship by Ministry of Education, Culture, and Technology
 - The Most Outstanding/Potential Student: awarded for outstanding achievements of the Year 2015
 
-### EMPLOYMENT
+### EXPERIENCE
+
+**AI Consultant — Knowledge Management** | Johnson & Johnson | 2025
+- Engaged as external AI and technology expert to design and deploy an AI-powered knowledge management system for J&J's Global Marketing team.
+- Led end-to-end program delivery: knowledge architecture design, content curation, AI model validation, Microsoft Copilot + Teams deployment, and global user adoption.
+- Defined acceptance criteria and validated AI response accuracy against real user questions prior to launch; drove onboarding across the global team.
 
 **Senior Technical Project Manager** | General Electric Healthcare | Sept 2023 – May 2025
 - Led technology programs within a regulated medical device environment, driving end-to-end development lifecycle across multi-disciplinary technical teams spanning 20 countries across Asia, Africa, Latin America, Australia, Europe, the UK, and the Middle East.
@@ -351,13 +390,14 @@ const CV_APPLICATIONS = [
 **Research Assistant** | United Nation – ILO Jakarta Office | Aug 2014 – December 2015
 - Conducted research and assessment in the Garment Industry; prepared annual reports for key development partners including governments and international sponsors.
 
-### COURSES (ONLINE) & CERTIFICATION
+### PROJECTS
 
-**Computational Thinking** | University of Pennsylvania | November 2019
-**Computer Science 101** | Stanford University | April 2016 – July 2018
-**Data Science Foundations** | IBM | July 2018
-**Big Data Foundation** | IBM | July 2018
-**Data Science Math Skills** | Duke University | September 2019
+**ColpoAI — AI Cervical Cancer Detection** | Personal / University of Limpopo | 2025
+- Built clinical decision support tool for detecting pre-cancerous cervical lesions at colposcopy in a regulated healthcare research context — designed AI model, confidence scoring with explainability layer, and nurse + GP workflow interface. Stack: HTML/JS, GenAI.
+- Affiliated with formal research study at University of Limpopo; funded by SAfAIDS and ASCCP.
+
+**EP/CATH Lab Planning Simulator** | Personal | 2025
+- Built hospital capacity planning simulation tool for a joint EP/Cath lab — replays 7,402 procedures across 260 simulated operating days; outputs optimal bay count, closing time, and scheduling policy with risk-based cost analysis. Stack: Python, Streamlit.
 
 ### SKILLS
 
@@ -369,7 +409,13 @@ const CV_APPLICATIONS = [
 **Medical Device & Healthcare Technology (GE Healthcare)** | | Advanced
 **SQL – BigQuery** | | Advanced
 **Python** | | Intermediate
-**Jira / Agile Project Management Tools** | | Advanced`
+**Jira / Agile Project Management Tools** | | Advanced
+
+### CERTIFICATIONS
+
+**Computational Thinking** | University of Pennsylvania | 2019
+**Data Science Math Skills** | Duke University | 2019
+**Computer Science 101** | Stanford University | 2016 – 2018`
   },
   {
     key:       "sh",
@@ -379,7 +425,7 @@ const CV_APPLICATIONS = [
     jdUrl:     "",
     dateAdded: "2026-03-13",
     cv: `# SILVIA ADINDA
-## https://id.linkedin.com/in/silviatariganadinda // 650 305 6683 // silviadindatarigan@gmail.com
+## https://id.linkedin.com/in/silviatariganadinda // github.com/5ilvi4 // 650 305 6683 // silviadindatarigan@gmail.com
 
 ### EDUCATION & HONORS
 
@@ -391,7 +437,12 @@ const CV_APPLICATIONS = [
 - Full Ride Scholarship by Ministry of Education, Culture, and Technology
 - The Most Outstanding/Potential Student: awarded for outstanding achievements of the Year 2015
 
-### EMPLOYMENT
+### EXPERIENCE
+
+**AI Consultant — Knowledge Management** | Johnson & Johnson | 2025
+- Engaged as external AI and data expert to design and deploy an AI-powered knowledge management system for J&J's Global Marketing team.
+- Built and governed the knowledge repository: curated, validated, and maintained marketing content — ensuring data accuracy, currency, and integrity across global markets.
+- Deployed AI chatbot via Microsoft Copilot integrated into Microsoft Teams; validated AI response accuracy through systematic testing against real user queries before launch.
 
 **Senior Technical Project Manager** | General Electric Healthcare | Sept 2023 – May 2025
 - Led data management and system deployment in a regulated medical device environment, maintaining high data quality standards and regulatory compliance across 20 countries spanning Asia, Africa, Latin America, Australia, Europe, the UK, and the Middle East.
@@ -435,14 +486,14 @@ const CV_APPLICATIONS = [
 **Research Assistant** | United Nation – ILO Jakarta Office | Aug 2014 – December 2015
 - Conducted data collection and survey management for the Indonesia Worker Survey in the Garment Industry (Java); prepared annual reports for key development partners including governments and international sponsors.
 
-### COURSES (ONLINE) & CERTIFICATION
+### PROJECTS
 
-**Computational Thinking** | University of Pennsylvania | November 2019
-**Computer Science 101** | Stanford University | April 2016 – July 2018
-**Statistics** | IBM | July 2018
-**Data Science Foundations** | IBM | July 2018
-**Big Data Foundation** | IBM | July 2018
-**Data Science Math Skills** | Duke University | September 2019
+**ColpoAI — AI Cervical Cancer Detection** | Personal / University of Limpopo | 2025
+- Built clinical decision support tool for cervical lesion detection at colposcopy: designed data validation pipeline, AI confidence scoring, and structured clinical output (4-class classification with explainability). Stack: HTML/JS, GenAI.
+- Affiliated with formal research study at University of Limpopo; data sourced from histopathology (LLETZ/cone biopsy) as gold standard. Funded by SAfAIDS and ASCCP.
+
+**EP/CATH Lab Planning Simulator** | Personal | 2025
+- Built hospital capacity planning simulation managing clinical data across 7,402 procedures and 260 operating days — data validation, quality metrics, and acceptance criteria for holding bay and scheduling recommendations. Stack: Python, Streamlit.
 
 ### SKILLS
 
@@ -455,7 +506,13 @@ const CV_APPLICATIONS = [
 **Training & Team Onboarding** | | Advanced
 **SQL – BigQuery** | | Advanced
 **Python** | | Intermediate
-**Microsoft Office Suite** | | Advanced`
+**Microsoft Office Suite** | | Advanced
+
+### CERTIFICATIONS
+
+**Computational Thinking** | University of Pennsylvania | 2019
+**Statistics** | IBM | 2018
+**Data Science Math Skills** | Duke University | 2019`
   },
   {
     key:       "meta-pm-pdo",
@@ -465,7 +522,7 @@ const CV_APPLICATIONS = [
     jdUrl:     "https://www.linkedin.com/jobs/view/4380215581/",
     dateAdded: "2026-03-13",
     cv: `# SILVIA ADINDA
-## https://id.linkedin.com/in/silviatariganadinda // 650 305 6683 // silviadindatarigan@gmail.com
+## https://id.linkedin.com/in/silviatariganadinda // github.com/5ilvi4 // 650 305 6683 // silviadindatarigan@gmail.com
 
 ### EDUCATION & HONORS
 
@@ -476,7 +533,12 @@ const CV_APPLICATIONS = [
 - Full Ride Scholarship by Ministry of Education, Culture, and Technology
 - The Most Outstanding/Potential Student: awarded for outstanding achievements of the Year 2015
 
-### EMPLOYMENT
+### EXPERIENCE
+
+**AI Consultant — Knowledge Management** | Johnson & Johnson | 2025
+- Engaged as external AI and program expert to design and deploy an AI-powered knowledge management system for J&J's Global Marketing team.
+- Built the data operations infrastructure: curated, structured, and governed marketing content — brand guidelines, SOPs, product information — as a validated single source of truth for global users.
+- Deployed AI chatbot via Microsoft Copilot integrated into Microsoft Teams; defined quality standards, validated AI outputs against real user queries, and led adoption across the global team.
 
 **Senior Technical Project Manager** | General Electric Healthcare | Sept 2023 – May 2025
 - Provided strategic leadership and oversight for the planning, execution, and delivery of technology programs in a regulated environment — managing distributed vendor teams and regional coordinators across 20 countries in Asia, Africa, Latin America, Australia, Europe, the UK, and the Middle East.
@@ -518,13 +580,16 @@ const CV_APPLICATIONS = [
 **Research Assistant** | United Nation – ILO Jakarta Office | Aug 2014 – December 2015
 - Conducted research and data collection in the Garment Industry; prepared annual reports for key development partners including governments and international sponsors.
 
-### COURSES (ONLINE) & CERTIFICATION
+### PROJECTS
 
-**Computational Thinking** | University of Pennsylvania | November 2019
-**Computer Science 101** | Stanford University | April 2016 – July 2018
-**Data Science Foundations** | IBM | July 2018
-**Big Data Foundation** | IBM | July 2018
-**Data Science Math Skills** | Duke University | September 2019
+**Prior Auth Auto-Assembler** | Personal | 2025
+- Built agentic AI prototype managing large-scale document data operations: AI extracts structured clinical data from unstructured documents, validates against payer-specific quality rules, and assembles submission-ready packets. Stack: HTML/JS, LLM.
+
+**VibesCheck — Relationship Health Analyser** | Personal Research | 2025
+- Designed 13-step LLM data pipeline processing chat exports across 28 dimensions and 13 traits — auto-tuned sessionizer, structured data extraction, quality annotation, scoring, and narrative synthesis. Produces ORHS (0–100) with confidence intervals.
+
+**ColpoAI — AI Cervical Cancer Detection** | Personal / University of Limpopo | 2025
+- Built clinical AI product managing structured data operations: image-based classification pipeline, confidence scoring, and annotated clinical output. Affiliated with formal research study funded by SAfAIDS and ASCCP.
 
 ### SKILLS
 
@@ -536,6 +601,12 @@ const CV_APPLICATIONS = [
 **AI/ML Program & Product Management** | | Advanced
 **SQL – BigQuery** | | Advanced
 **Python** | | Intermediate
-**Cross-Functional Collaboration & Executive Reporting** | | Advanced`
+**Cross-Functional Collaboration & Executive Reporting** | | Advanced
+
+### CERTIFICATIONS
+
+**Computational Thinking** | University of Pennsylvania | 2019
+**Data Science Math Skills** | Duke University | 2019
+**Computer Science 101** | Stanford University | 2016 – 2018`
   }
 ];
