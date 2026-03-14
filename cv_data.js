@@ -495,9 +495,9 @@ const CV_APPLICATIONS = [
 - Established data governance framework and operational guidelines for Datalake and reporting systems: defining data quality standards, validation rules, and accountability structures across stakeholders.
 
 **AI/ML and Analytics - Senior Product Manager** | Alodokter | Jan 2022 – 2023
-- Managed large-scale AI/ML data operations — organizing 6 engineers and 2 data scientists across 6 concurrent AI products, driving end-to-end delivery from data collection requirements through validation, quality monitoring, and launch.
-- Developed and implemented operational guidelines for data collection, validation, and quality management across AI systems serving 1 million users per month — establishing acceptance criteria, anomaly resolution workflows, and continuous improvement processes.
-- Drove 0-to-1 delivery of 6 AI products through structured program governance: Chatbot Automation, Recommender Systems, Topic Classification, Spam Flagging, and Feeds Recommender.
+- Managed large-scale clinical data annotation operations for a healthcare AI platform — defining annotation guidelines, quality standards, and validation workflows for doctor-patient interaction data, health content, and medical classification tasks across 6 AI products serving 1 million users per month.
+- Coordinated annotation workforce of 6 engineers and 2 data scientists; developed and implemented project guidelines, acceptance criteria, anomaly resolution workflows, and continuous improvement processes for annotated clinical datasets.
+- Drove 0-to-1 delivery of 6 AI products through structured program governance: Chatbot Automation (doctor-patient triage), Doctor Recommender System, Health Article Recommender, Medical Topic Classification, Spam Review Flagging, and Feeds Recommender.
 - Other Projects: ETL Migration, Data Governance, A/B Testing and DevOps Migration using Kubernetes.
 
 **Adjunct Lecturer - Data Analytics** | Binus (Bina Nusantara) University | June 2021 – June 2022
