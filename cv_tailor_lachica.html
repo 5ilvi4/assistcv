@@ -110,41 +110,53 @@
     /* ── Keep entry header with first bullet ───────────────────────────── */
     .keep-entry { break-inside: avoid; page-break-inside: avoid; }
 
-    /* ── CV element styles ──────────────────────────────────────────────── */
-    .cv-page-card .name-row { display: flex; justify-content: flex-end; margin-bottom: 0; }
+    /* ── CV element styles — La Chica layout ────────────────────────────── */
+    /* Name: centered, bold, full width, no box */
+    .cv-page-card .name-row { text-align: center; margin-bottom: 2px; }
     .cv-page-card .name-box {
-      border: 1.5px solid #000;
-      padding: 4px 10px 4px 8px;
-      font-size: 29px;
-      line-height: 1.2;
-      width: 37%;
-      text-align: right;
-      box-sizing: border-box;
+      display: inline;
+      font-size: 15px;
+      font-weight: bold;
+      letter-spacing: 0.5px;
     }
+    /* Horizontal rule spanning full width */
     .cv-page-card .name-rule {
       height: 1px; background: #000;
-      width: 37%; margin-left: auto;
-      margin-top: 3px; margin-bottom: 6px;
+      width: 100%;
+      margin-top: 4px; margin-bottom: 4px;
     }
-    .cv-page-card .contact  { text-align: center; font-size: 12px; margin: 3px 0 0 0; white-space: nowrap; overflow: hidden; }
-    .cv-page-card .section  { font-weight: bold; font-size: 12px; margin: 9px 0 1px 0; }
+    /* Contact: centered */
+    .cv-page-card .contact { text-align: center; font-size: 11px; margin: 2px 0 0 0; }
+    /* Section header: bold, centered */
+    .cv-page-card .section {
+      font-weight: bold; font-size: 12px;
+      text-align: center;
+      margin: 10px 0 2px 0;
+    }
+    /* Entry row: role (left) + location (right), no border, bold */
     .cv-page-card .entry {
       display: flex; font-weight: bold; font-size: 12px;
-      border-bottom: 0.75px solid #000;
-      padding: 2px 0 1px 0; margin-top: 3px;
+      padding: 2px 0 0 0; margin-top: 4px;
+      border-bottom: none;
     }
-    .cv-page-card .entry-l { width: 40%; text-align: left;   min-width: 0; white-space: nowrap; overflow: hidden; }
-    .cv-page-card .entry-c { width: 35%; text-align: center; min-width: 0; white-space: nowrap; overflow: hidden; }
-    .cv-page-card .entry-r { width: 25%; text-align: right;  min-width: 0; white-space: nowrap; overflow: hidden; }
+    .cv-page-card .entry-l { flex: 1; text-align: left;  min-width: 0; }
+    .cv-page-card .entry-c { display: none; }
+    .cv-page-card .entry-r { text-align: right; white-space: nowrap; padding-left: 8px; }
+    /* Sub-line: company · date — italic, plain weight */
+    .cv-page-card .plain {
+      font-size: 12px; margin: 0 0 1px 0;
+      font-style: italic;
+    }
+    /* Bullets */
     .cv-page-card .bullet {
-      padding-left: 73px; text-indent: -24px;
+      padding-left: 16px; text-indent: -10px;
       font-size: 12px; line-height: 1.4; margin: 0;
+      font-style: normal;
     }
     .cv-page-card .sub-bullet {
-      padding-left: 121px; text-indent: -24px;
+      padding-left: 28px; text-indent: -10px;
       font-size: 12px; line-height: 1.4; margin: 0;
     }
-    .cv-page-card .plain { font-size: 12px; margin: 1px 0; }
 
     /* ── Cover letter card ──────────────────────────────────────────────── */
     #cover-letter-section {
@@ -187,14 +199,14 @@
       .cv-page-card:last-of-type {
         page-break-after: avoid; break-after: avoid;
       }
-      .cv-page-card .name-box   { font-size: 22pt; border-width: 1.5pt; }
-      .cv-page-card .name-rule  { height: 0.75pt; margin-top: 2pt; margin-bottom: 4pt; }
-      .cv-page-card .contact    { font-size: 9pt; }
+      .cv-page-card .name-box   { font-size: 11pt; }
+      .cv-page-card .name-rule  { height: 0.75pt; margin-top: 3pt; margin-bottom: 3pt; }
+      .cv-page-card .contact    { font-size: 8.5pt; }
       .cv-page-card .section    { font-size: 9pt; margin-top: 8pt; }
-      .cv-page-card .entry      { font-size: 9pt; border-bottom-width: 0.75pt; }
+      .cv-page-card .entry      { font-size: 9pt; }
       .cv-page-card .plain      { font-size: 9pt; }
-      .cv-page-card .bullet     { font-size: 9pt; padding-left: 54pt; text-indent: -18pt; }
-      .cv-page-card .sub-bullet { font-size: 9pt; padding-left: 90pt;  text-indent: -18pt; }
+      .cv-page-card .bullet     { font-size: 9pt; padding-left: 12pt; text-indent: -8pt; }
+      .cv-page-card .sub-bullet { font-size: 9pt; padding-left: 20pt; text-indent: -8pt; }
       #cover-letter-section {
         display: block !important; margin-top: 0; padding: 33px 77px;
         box-shadow: none; width: 100%; font-size: 9pt;
@@ -339,30 +351,26 @@ function cvBodyToHTML(text) {
     const line = rawLine.replace(/\r$/, '').trimEnd();
 
     if (/^# [^#]/.test(line)) {
-      const name  = line.slice(2).trim();
-      const sp    = name.indexOf(' ');
-      const first = sp >= 0 ? name.slice(0, sp) : name;
-      const last  = sp >= 0 ? name.slice(sp + 1) : '';
-      html.push('<div class="name-row"><div class="name-box">' + esc(first) + '&nbsp;<strong>' + esc(last) + '</strong></div></div>');
+      // Centered name, bold, full width — no box
+      const name = line.slice(2).trim();
+      html.push('<div class="name-row"><span class="name-box">' + esc(name) + '</span></div>');
 
     } else if (line.startsWith('## ')) {
+      // Contact line then full-width rule
       html.push('<p class="contact">' + esc(line.slice(3).trim()) + '</p>');
       html.push('<div class="name-rule"></div>');
 
     } else if (line.startsWith('### ')) {
+      // Section header: centered, bold
       html.push('<p class="section">' + esc(line.slice(4).trim().toUpperCase()) + '</p>');
 
     } else if (line.startsWith('**') && line.includes(' | ')) {
+      // Entry: **Role** | | Location  →  role left, location right (no centre column)
       const parts = line.split(' | ').map(p => p.trim());
       const m     = parts[0].match(/\*\*(.+?)\*\*/);
       const role  = m ? m[1] : parts[0];
-      if (parts.length >= 3 && parts[1] === '' && parts[2]) {
-        html.push('<div class="entry"><span class="entry-l" style="width:48%">' + esc(role) + '</span><span class="entry-c" style="width:52%;text-align:left">' + esc(parts[2]) + '</span></div>');
-      } else {
-        const c = parts.length >= 3 ? parts[1] : '';
-        const r = parts.length >= 3 ? parts[2] : (parts[1] || '');
-        html.push('<div class="entry"><span class="entry-l">' + esc(role) + '</span><span class="entry-c">' + esc(c) + '</span><span class="entry-r">' + esc(r) + '</span></div>');
-      }
+      const loc   = parts.length >= 3 ? parts[2] : (parts[1] || '');
+      html.push('<div class="entry"><span class="entry-l">' + esc(role) + '</span><span class="entry-r">' + esc(loc) + '</span></div>');
 
     } else if (/^  +- /.test(line)) {
       html.push('<div class="sub-bullet">o&nbsp;&nbsp;' + esc(line.trim().slice(2).trim()) + '</div>');
