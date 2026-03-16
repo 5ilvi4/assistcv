@@ -157,6 +157,12 @@
       padding-left: 28px; text-indent: -10px;
       font-size: 12px; line-height: 1.4; margin: 0;
     }
+    /* Sub-section header (Organization, Volunteer & Project, etc.) */
+    .cv-page-card .sub-section {
+      font-weight: bold; font-size: 12px;
+      text-align: left;
+      margin: 8px 0 0 0;
+    }
 
     /* ── Cover letter card ──────────────────────────────────────────────── */
     #cover-letter-section {
@@ -362,7 +368,11 @@ function cvBodyToHTML(text) {
 
     } else if (line.startsWith('### ')) {
       // Section header: centered, bold
-      html.push('<p class="section">' + esc(line.slice(4).trim().toUpperCase()) + '</p>');
+      html.push('<p class="section">' + esc(line.slice(4).trim()) + '</p>');
+
+    } else if (line.startsWith('#### ')) {
+      // Sub-section header: bold, left-aligned
+      html.push('<p class="sub-section">' + esc(line.slice(5).trim()) + '</p>');
 
     } else if (line.startsWith('**') && line.includes(' | ')) {
       // Entry: **Role** | | Location  →  role left, location right (no centre column)

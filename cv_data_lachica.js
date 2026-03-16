@@ -12,7 +12,7 @@ const CV_APPLICATIONS = [
     cv: `# LA CHICA SALSABILA BILQIS
 ## Moscow, Russia · +7 (9050) 137712 · officiallachicasal@gmail.com · linkedin.com/in/lachicasal
 
-### EDUCATION
+### Education
 
 **Higher School of Economics** | | Moscow, Russia
 Master's Program, Politics · Economics · Philosophy (Scholarship) · 2022 – 2024
@@ -29,7 +29,10 @@ Erasmus+ Exchange Student, Political Science (Scholarship) · 2022
 **People's Friendship University of Russia** | | Moscow, Russia
 Language Program, International Relations (Scholarship) · 2015 – 2016
 
-### EXPERIENCE
+**Sampoerna Academy** | | Bogor, Indonesia
+High School, Social Sciences (Scholarship) · 2012 – 2015
+
+### Experience
 
 **Director of International Cooperations** | | Yogyakarta, Indonesia
 University of Nahdlatul Ulama (UNU) Yogyakarta · 2025 – 2026
@@ -38,71 +41,92 @@ University of Nahdlatul Ulama (UNU) Yogyakarta · 2025 – 2026
 
 **Legal Consultant** | | Tallinn, Estonia
 Prifinance International · 2024 – 2025
-- Delivered tailored pitches and consultations to prospective clients on offshore and onshore company formation.
-- Incorporated eleven companies, set up two payment systems, and secured license for an educational institution.
+- Delivered tailored pitches and consultations to prospective clients on both offshore and onshore company formation.
+- Incorporated eleven companies, set up two payment systems, and secured license for an educational institutional.
 
 **Business Development Manager** | | Riga, Latvia
 Globus IT · 2021 – 2023
 - Defined revenue growth goals and implemented outreach strategies for new markets in MENA, APAC and LATAM.
-- Translated technical solutions into business cases and led three large-scale IT projects on payment systems within a year.
+- Translated technical solutions into business cases and led three large-scale IT-projects on payment systems within a year.
 
 **Account Manager** | | Hrazdan, Armenia
 ECOS Cloud Mining Co · 2021 – 2022
 - Forecasted B2C and B2B client portfolios, handled enquiries and ongoing account needs in crypto.
-- Generated MQL and SQL from cloud mining contracts and BTC Miners sales.
+- Generated MQL and SQL for the company from cloud mining contracts and BTC Miners sales.
 
 **Client Operational Manager** | | Moscow, Russia
 NovaKid English School · 2021 – 2022
 - Coordinated client communication, resolved operational issues, and converted cold leads to warm leads.
-- Retained seven difficult clients as active course subscribers.
+- Managed to retain seven difficult clients as subscribers to our course.
 
 **Liaison Officer** | | Moscow, Russia
 Embassy of the Republic of Indonesia · 2018 – 2020
 - Liaised Indonesian SMEs and artisans in business meetings with Russian partners.
-- Interpreted during negotiations and trade discussions, supporting the embassy's economic diplomacy agenda.
+- Interpreted during negotiations and trade discussions and supporting the embassy's economic diplomacy agenda.
 
 **Assistant to His Excellency** | | Jakarta, Indonesia
 Embassy of the Kingdom of Jordan · 2018
 - Accompanied His Excellency to official meetings and coordination with Indonesian counterparts.
-- Prepared concise briefings on Indonesian current affairs, enabling the Ambassador to engage strategically with government and private-sector leaders.
+- Prepared concise briefings on Indonesian current affairs and event background, enabling the Ambassador to engage strategically with government and private-sector leaders.
 
-### LEADERSHIP & ACTIVITIES
+### Leadership and Activities
+
+#### Organization
 
 **Supervisor Board Member** | | Jakarta, Indonesia
 Overseas Indonesian Students' Association Alliance (OISAA) · 2021 – 2024
-- Reviewed program plans and policy proposals on education and students' welfare across 65 countries.
+- Reviewed program plans and policy proposals on education and Indonesian students' welfare over 65 countries.
 
 **Board Member** | | Moscow, Russia
 AIESEC · 2020 – 2021
-- Oversaw youth leadership exchange activities and delivered international volunteer opportunities.
+- Oversaw youth leadership exchange activities and delivered international volunteer opportunities for high school students.
 
 **Public Relations & Outreach Coordinator** | | Baltimore, USA
 Civilization Exchange and Cooperation Foundation (CECF) · 2015 – present
 - Organized outreach and communication efforts for intercultural and interfaith dialogue programs.
 
+#### Volunteer & Project
+
 **Chairman** | | Moscow, Russia
 The Home of People (HOPE) · 2020 – present
-- Charity serving churches, mosques and a synagogue.
+- Charity for churches, mosques and a synagogue.
 
-### CONFERENCES & PUBLICATIONS
+**Secretariat and Partnership** | | Jakarta, Indonesia
+Center for Football Industry Innovation · 2025
+- Led a fundraising team for First International Football Innovation Summit.
 
-- Representative – Closed-door diplomatic briefing with UN High Commissioner for Human Rights Zeid Ra'ad Al Hussein and foreign diplomats, Jakarta (2018)
-- Representative – International Volga Dialogue on Russian History, Yelabuga, Russia (2018)
-- Speaker – Model G-20, National Autonomous University of Mexico City, Mexico (2018)
-- Speaker – Voice of Indonesia, Commemorated Anti-drugs Day, Jakarta (2015)
-- "Digital Nomadism as a Global Phenomenon after Covid-19," Sociostudies, November 2025
-- "Theory and Practice of Negotiation: Universal and Regional Level," Russian Council (2018)
+**Cyber Volunteer** | | Jakarta, Indonesia
+Indonesian Youth Conference · 2018
+- Supported digital outreach and online engagement to promote the conference and increase participation.
 
-### LANGUAGES & SKILLS
+**Sponsorship and Partnership** | | Jakarta, Indonesia
+ASEAN Youth Expo (AYE) · 2014
+- Raised sponsorship to support event logistics and operational expenses.
+
+#### Conference
+
+- Representative – Closed-door diplomatic briefing with UN High Commissioner for Human Rights Zeid Ra'ad Al Hussein and foreign diplomats, Jakarta, Indonesia. (2018)
+- Representative – International Volga Dialogue on Russian History, Yelabuga, Russia. (2018)
+- Speaker – Model G-20 at National Autonomous University of Mexico City, Mexico. (2018)
+- Speaker – Voice of Indonesia, Commemorated Anti-drugs Day, Jakarta, Indonesia. (2015)
+
+#### Publication
+
+- "Theory and Practice of Negotiation: Universal and Regional Level", Russian Council (2018): www.sociostudies.org
+- "Digital Nomadism as a Global Phenomenon after Covid-19: Institutional and Socio-Economic Drivers Influencing Migration Experience," Sociostudies, November 2025: russiancouncil.ru
+
+#### Sports
+
+- Budokan Karate Shotokan Club Moscow
+- Fencing Club Victoria El Moscow
+- Equestrian Pradar Club Moscow
+
+### Languages
 
 **Bahasa Indonesia** | | Native
 **English** | | Near-native
 **Russian** | | Basic
-**French** | | Basic
-**Partnership & MoU Negotiation** | | Advanced
-**Business Development (MENA, APAC, LATAM)** | | Advanced
-**Legal & Corporate Compliance** | | Intermediate
-**Diplomatic Protocol & Stakeholder Relations** | | Advanced`
+**French** | | Basic`
   }
   ,
   {
@@ -127,7 +151,7 @@ La Chica Salsabila Bilqis`,
     cv: `# LA CHICA SALSABILA BILQIS
 ## Jakarta, Indonesia · officiallachicasal@gmail.com · linkedin.com/in/lachicasal
 
-### EDUCATION
+### Education
 
 **Higher School of Economics** | | Moscow, Russia
 Master's Program, Politics · Economics · Philosophy (Scholarship) · 2022 – 2024
@@ -141,7 +165,7 @@ Bachelor's Program, International Relations (Scholarship) · 2018 – 2022
 **University of Glasgow** | | Glasgow, United Kingdom
 Erasmus+ Exchange Student, Political Science (Scholarship) · 2022
 
-### EXPERIENCE
+### Experience
 
 **Director of International Cooperations** | | Yogyakarta, Indonesia
 University of Nahdlatul Ulama (UNU) Yogyakarta · 2025 – 2026
@@ -167,7 +191,9 @@ Embassy of the Republic of Indonesia · 2018 – 2020
 Embassy of the Kingdom of Jordan · 2018
 - Supported the Ambassador's engagement with Indonesian government officials and private-sector leaders; prepared strategic briefings on Indonesian political and economic affairs to enable high-level diplomatic dialogue.
 
-### LEADERSHIP & GOVERNMENT ENGAGEMENT
+### Leadership and Activities
+
+#### Organization
 
 **Supervisor Board Member** | | Jakarta, Indonesia
 Overseas Indonesian Students' Association Alliance (OISAA) · 2021 – 2024
@@ -177,15 +203,18 @@ Overseas Indonesian Students' Association Alliance (OISAA) · 2021 – 2024
 Civilization Exchange and Cooperation Foundation (CECF) · 2015 – present
 - Led stakeholder outreach and communications for intercultural and interfaith dialogue programs across government and civil society.
 
-### CONFERENCES & PUBLICATIONS
+#### Conference
 
-- Representative – Closed-door diplomatic briefing with UN High Commissioner for Human Rights Zeid Ra'ad Al Hussein and foreign diplomats, Jakarta (2018)
-- Representative – International Volga Dialogue on Russian History, Yelabuga, Russia (2018)
-- Speaker – Model G-20, National Autonomous University of Mexico City, Mexico (2018)
+- Representative – Closed-door diplomatic briefing with UN High Commissioner for Human Rights Zeid Ra'ad Al Hussein and foreign diplomats, Jakarta, Indonesia. (2018)
+- Representative – International Volga Dialogue on Russian History, Yelabuga, Russia. (2018)
+- Speaker – Model G-20 at National Autonomous University of Mexico City, Mexico. (2018)
+
+#### Publication
+
 - "Digital Nomadism as a Global Phenomenon after Covid-19: Institutional and Socio-Economic Drivers Influencing Migration Experience," Sociostudies, November 2025
-- "Theory and Practice of Negotiation: Universal and Regional Level," Russian Council (2018)
+- "Theory and Practice of Negotiation: Universal and Regional Level", Russian Council (2018)
 
-### LANGUAGES & SKILLS
+### Languages
 
 **Bahasa Indonesia** | | Native
 **English** | | Near-native
@@ -213,7 +242,7 @@ The most direct signal is my decade-long role as Public Relations and Outreach C
 
 At Globus IT, I led the full market development and outreach strategy for new regions across MENA, APAC, and LATAM — developing messaging frameworks, managing relationship-building with new market stakeholders, and translating technical B2B solutions into compelling narratives for non-technical audiences. I led three large-scale IT projects on payment systems and drove revenue growth in markets where our brand had no existing presence. Getting traction in a new market with no prior relationships is the growth marketing challenge STERRY's clients face in crowdfunding and e-commerce.
 
-At the University of Nahdlatul Ulama Yogyakarta, I built and executed the institution's full external communications strategy across four channels (U2U, U2G, U2B, U2C), securing 35 Memoranda of Understanding within the first quarter through structured outreach, relationship-building, and institutional positioning. This required developing targeted messaging for each stakeholder category — government ministries, international universities, private sector partners, and community organisations.
+At the University of Nahdlatul Ulama Yogyakarta, I built and executed the institution's full external communications strategy across four channels (U2U, U2G, U2B, U2C), securing 35 Memoranda of Understanding within the first quarter through structured outreach, relationship-building, and institutional positioning. This required developing targeted messaging for each stakeholder category — government ministries, international universities, private-sector partners, and community organisations.
 
 I am a native Bahasa Indonesia speaker with near-native English proficiency and working knowledge of Russian and French — an asset for managing international KOL and media relationships across the diverse markets STERRY serves. I hold a Master's degree with Honours from the Higher School of Economics (Moscow) and am available for a fully remote role immediately.
 
@@ -224,7 +253,7 @@ La Chica Salsabila Bilqis`,
     cv: `# LA CHICA SALSABILA BILQIS
 ## Jakarta, Indonesia · officiallachicasal@gmail.com · linkedin.com/in/lachicasal
 
-### EDUCATION
+### Education
 
 **Higher School of Economics** | | Moscow, Russia
 Master's Program, Politics · Economics · Philosophy (Scholarship) · 2022 – 2024
@@ -238,65 +267,106 @@ Bachelor's Program, International Relations (Scholarship) · 2018 – 2022
 **University of Glasgow** | | Glasgow, United Kingdom
 Erasmus+ Exchange Student, Political Science (Scholarship) · 2022
 
-### EXPERIENCE
+**People's Friendship University of Russia** | | Moscow, Russia
+Language Program, International Relations (Scholarship) · 2015 – 2016
 
-**Public Relations & Outreach Coordinator** | | Baltimore, USA
-Civilization Exchange and Cooperation Foundation (CECF) · 2015 – present
-- Led communications and outreach strategy for intercultural and interfaith dialogue programs — developing press materials, stakeholder messaging, and media engagement for international audiences across government, civil society, and faith-based communities.
-- Managed media relationships and content pipelines; oversaw reputational positioning and campaign communications for CECF programs across the US, Indonesia, and international partner organisations.
+**Sampoerna Academy** | | Bogor, Indonesia
+High School, Social Sciences (Scholarship) · 2012 – 2015
+
+### Experience
 
 **Director of International Cooperations** | | Yogyakarta, Indonesia
 University of Nahdlatul Ulama (UNU) Yogyakarta · 2025 – 2026
-- Designed and executed the institution's full external communications and outreach strategy across four channels (U2U, U2G, U2B, U2C) — developed targeted messaging for government ministries, international universities, private-sector partners, and community organisations, securing 35 MoUs in the first quarter.
-- Mobilized international institutional funding from MBZ University and GEM Co. Ltd through sustained stakeholder engagement and positioning communications.
-
-**Business Development Manager** | | Riga, Latvia
-Globus IT · 2021 – 2023
-- Developed and executed outreach strategies for market entry across MENA, APAC, and LATAM — built messaging frameworks and stakeholder communications for B2B technology solutions in markets with no prior brand presence.
-- Translated complex technical products into compelling narratives for non-technical audiences; led three large-scale IT projects on payment systems through client relationship management and market activation.
+- Lead international partnership strategy (U2U, U2G, U2B, and U2C), securing 35 MoUs in first quarter.
+- Helped to mobilize MBZ University and GEM Co. Ltd fund to establish Faculties of Future Studies and Metallurgy.
 
 **Legal Consultant** | | Tallinn, Estonia
 Prifinance International · 2024 – 2025
-- Delivered tailored client pitches and consultations, managing the full communications cycle from prospecting to onboarding for offshore and onshore company formation services.
-- Incorporated eleven companies and secured an educational institutional licence — navigating regulatory communications and liaising with government bodies on behalf of clients.
+- Delivered tailored pitches and consultations to prospective clients on both offshore and onshore company formation.
+- Incorporated eleven companies, set up two payment systems, and secured license for an educational institutional.
+
+**Business Development Manager** | | Riga, Latvia
+Globus IT · 2021 – 2023
+- Defined revenue growth goals and implemented outreach strategies for new markets in MENA, APAC and LATAM.
+- Translated technical solutions into business cases and led three large-scale IT-projects on payment systems within a year.
 
 **Account Manager** | | Hrazdan, Armenia
 ECOS Cloud Mining Co · 2021 – 2022
-- Managed B2C and B2B client communications and portfolio relationships in the crypto sector; generated qualified leads from cloud mining contracts and hardware sales.
+- Forecasted B2C and B2B client portfolios, handled enquiries and ongoing account needs in crypto.
+- Generated MQL and SQL for the company from cloud mining contracts and BTC Miners sales.
+
+**Client Operational Manager** | | Moscow, Russia
+NovaKid English School · 2021 – 2022
+- Coordinated client communication, resolved operational issues, and converted cold leads to warm leads.
+- Managed to retain seven difficult clients as subscribers to our course.
 
 **Liaison Officer** | | Moscow, Russia
 Embassy of the Republic of Indonesia · 2018 – 2020
-- Liaised Indonesian SMEs and artisans in business meetings with Russian partners; interpreted during negotiations and trade discussions.
-- Supported the embassy's economic diplomacy communications agenda, including press and stakeholder materials for bilateral trade and cultural programs.
+- Liaised Indonesian SMEs and artisans in business meetings with Russian partners.
+- Interpreted during negotiations and trade discussions and supporting the embassy's economic diplomacy agenda.
 
-### LEADERSHIP & ACTIVITIES
+**Assistant to His Excellency** | | Jakarta, Indonesia
+Embassy of the Kingdom of Jordan · 2018
+- Accompanied His Excellency to official meetings and coordination with Indonesian counterparts.
+- Prepared concise briefings on Indonesian current affairs and event background, enabling the Ambassador to engage strategically with government and private-sector leaders.
+
+### Leadership and Activities
+
+#### Organization
 
 **Supervisor Board Member** | | Jakarta, Indonesia
 Overseas Indonesian Students' Association Alliance (OISAA) · 2021 – 2024
-- Reviewed policy proposals and advised on communications for education and student welfare programs across 65 countries.
+- Reviewed program plans and policy proposals on education and Indonesian students' welfare over 65 countries.
+
+**Board Member** | | Moscow, Russia
+AIESEC · 2020 – 2021
+- Oversaw youth leadership exchange activities and delivered international volunteer opportunities for high school students.
+
+**Public Relations & Outreach Coordinator** | | Baltimore, USA
+Civilization Exchange and Cooperation Foundation (CECF) · 2015 – present
+- Organized outreach and communication efforts for intercultural and interfaith dialogue programs.
+
+#### Volunteer & Project
 
 **Chairman** | | Moscow, Russia
 The Home of People (HOPE) · 2020 – present
-- Led communications and community outreach for a charity serving multi-faith communities (churches, mosques, synagogue).
+- Charity for churches, mosques and a synagogue.
 
-### CONFERENCES & PUBLICATIONS
+**Secretariat and Partnership** | | Jakarta, Indonesia
+Center for Football Industry Innovation · 2025
+- Led a fundraising team for First International Football Innovation Summit.
 
-- Representative – Closed-door diplomatic briefing with UN High Commissioner for Human Rights Zeid Ra'ad Al Hussein and foreign diplomats, Jakarta (2018)
-- Speaker – Model G-20, National Autonomous University of Mexico City, Mexico (2018)
-- "Digital Nomadism as a Global Phenomenon after Covid-19," Sociostudies, November 2025
+**Cyber Volunteer** | | Jakarta, Indonesia
+Indonesian Youth Conference · 2018
+- Supported digital outreach and online engagement to promote the conference and increase participation.
 
-### LANGUAGES & SKILLS
+**Sponsorship and Partnership** | | Jakarta, Indonesia
+ASEAN Youth Expo (AYE) · 2014
+- Raised sponsorship to support event logistics and operational expenses.
+
+#### Conference
+
+- Representative – Closed-door diplomatic briefing with UN High Commissioner for Human Rights Zeid Ra'ad Al Hussein and foreign diplomats, Jakarta, Indonesia. (2018)
+- Representative – International Volga Dialogue on Russian History, Yelabuga, Russia. (2018)
+- Speaker – Model G-20 at National Autonomous University of Mexico City, Mexico. (2018)
+- Speaker – Voice of Indonesia, Commemorated Anti-drugs Day, Jakarta, Indonesia. (2015)
+
+#### Publication
+
+- "Theory and Practice of Negotiation: Universal and Regional Level", Russian Council (2018): www.sociostudies.org
+- "Digital Nomadism as a Global Phenomenon after Covid-19: Institutional and Socio-Economic Drivers Influencing Migration Experience," Sociostudies, November 2025: russiancouncil.ru
+
+#### Sports
+
+- Budokan Karate Shotokan Club Moscow
+- Fencing Club Victoria El Moscow
+- Equestrian Pradar Club Moscow
+
+### Languages
 
 **Bahasa Indonesia** | | Native
 **English** | | Near-native
 **Russian** | | Basic
-**French** | | Basic
-**PR Strategy & Media Relations** | | Advanced
-**Content Creation & Editorial Management** | | Advanced
-**Stakeholder & Community Outreach** | | Advanced
-**KOL & Influencer Partnership Management** | | Intermediate
-**Campaign Performance & ROI Measurement** | | Intermediate
-**Crisis Communication & Reputation Management** | | Intermediate
-**Multi-market Communications (MENA, APAC, LATAM)** | | Advanced`
+**French** | | Basic`
   }
 ];
