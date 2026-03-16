@@ -401,10 +401,18 @@ function cvBodyToHTML(text) {
 
     } else if (line.startsWith('**') && line.includes(' | ')) {
       // Entry row: **Role** | | Location  →  bold, role left, location right
-      const parts = line.split(' | ').map(p => p.trim());
-      const m     = parts[0].match(/\*\*(.+?)\*\*/);
-      const role  = m ? m[1] : parts[0];
-      const loc   = parts.length >= 3 ? parts[2] : (parts[1] || '');
+      let role, loc;
+      if (line.includes(' | | ')) {
+        const idx = line.indexOf(' | | ');
+        const m   = line.slice(0, idx).match(/\*\*(.+?)\*\*/);
+        role = m ? m[1] : line.slice(0, idx).replace(/\*\*/g, '').trim();
+        loc  = line.slice(idx + 5).trim();
+      } else {
+        const parts = line.split(' | ').map(p => p.trim());
+        const m     = parts[0].match(/\*\*(.+?)\*\*/);
+        role = m ? m[1] : parts[0];
+        loc  = parts.length >= 3 ? parts[2] : (parts[1] || '');
+      }
       html.push('<div class="entry"><span class="entry-l">' + esc(role) + '</span><span class="entry-r">' + esc(loc) + '</span></div>');
 
     } else if (!line.startsWith('**') && line.includes(' | | ')) {
