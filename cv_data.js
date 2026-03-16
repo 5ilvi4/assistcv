@@ -668,5 +668,103 @@ Silvia Adinda`,
 **Computational Thinking** | University of Pennsylvania | 2019
 **Data Science Math Skills** | Duke University | 2019
 **Computer Science 101** | Stanford University | 2016 – 2018`
+  },
+  {
+    key:       "nuro",
+    label:     "Nuro \u2013 Technical Program Manager, Systems",
+    company:   "Nuro",
+    role:      "Software Technical Program Manager, Systems",
+    jdUrl:     "https://www.linkedin.com/jobs/view/4383987576/",
+    dateAdded: "2026-03-16",
+    coverLetter: `Dear Nuro Hiring Team,
+
+I am applying for the Software Technical Program Manager, Systems role at Nuro. While my domain is AI/ML systems rather than autonomous vehicles, the core competency you are hiring for — technical program ownership of scenario coverage, simulation campaign design, requirements traceability, and V&V methodology — is where I have consistently worked.
+
+The most direct evidence is a project I built independently: the EP/CATH Lab Planning Simulator, a scenario-based simulation framework that replays 7,402 medical procedures across 260 simulated operating days to validate capacity planning decisions. I designed the scenario selection framework, defined coverage metrics (P95 peak demand, overflow edge cases, close-time boundary conditions), ran five distinct policy campaigns with controlled parameters, and tied simulation outputs back to system requirements. When results were inconclusive or boundary cases were hit, I traced them back to root causes in the simulation logic and requirements definitions. This is the V&V methodology your role requires — not administrative coordination, but technical ownership of what is being validated and whether the evidence is sufficient.
+
+At GE Healthcare, I served as the technical bridge for a 20-country system deployment — maintaining requirements traceability across concurrent workstreams (CRM, AI/ML automation, data migration, system migration), managing interface dependencies between engineering and regional execution teams, and driving milestone accountability from requirements definition through integration testing and launch. When systems failed acceptance criteria, I owned the root-cause process and drove resolution with engineering.
+
+I recognise that autonomous vehicle validation is a specialised domain and I take that seriously. I bring systems engineering program management rigour to a team that needs someone who can own the technical framework, not just track milestones. I am completing a Master's in Medical Informatics at Stanford University School of Medicine (GPA 4.0, Class of 2026) and would welcome the opportunity to discuss how my background applies.
+
+Sincerely,
+Silvia Adinda`,
+    cv: `# SILVIA ADINDA
+## https://id.linkedin.com/in/silviatariganadinda // github.com/5ilvi4 // 650 305 6683 // silviadindatarigan@gmail.com
+
+### EDUCATION & HONORS
+
+**Master in Medical Informatics** | Stanford University School of Medicine | School of Medicine
+- Class of 2026 with Full Ride Scholarship by Indonesia Endowment Fund 2025-2026 GPA 4.018/4.00
+
+**Bachelor's in Management** | Universitas Indonesia | July 2018
+- Full Ride Scholarship by Ministry of Education, Culture, and Technology
+- The Most Outstanding/Potential Student: awarded for outstanding achievements of the Year 2015
+
+### EXPERIENCE
+
+**AI Consultant — Knowledge Management** | Johnson & Johnson | 2025
+- Defined system requirements and validation criteria for an AI-powered knowledge management system; led testing of AI outputs against real-world user queries before launch to ensure response accuracy and reliability.
+- Maintained requirements traceability from content governance standards through AI configuration, testing, and rollout — ensuring alignment between specification and deployed behaviour across J&J's Global Marketing team.
+
+**Senior Technical Project Manager** | General Electric Healthcare | Sept 2023 – May 2025
+- Served as technical bridge between engineering and cross-functional stakeholders across a 20-country system deployment program — owning requirements traceability, dependency management, and milestone accountability across concurrent workstreams: CRM, AI/ML Service Renewal Automation, System Migration, and Data Governance.
+- Defined and maintained alignment between system requirements, test definitions, and acceptance criteria across the full SDLC: from requirements authoring through integration testing, validation, and production launch.
+- Led root-cause analysis and resolution when systems failed acceptance criteria; managed interface dependencies between engineering teams and regional execution to unblock delivery.
+- Drove program performance through structured metrics, risk identification, and executive-level reporting for Asia, Africa, Latin America, Australia, Europe, the UK, and the Middle East.
+- Awards: The Five Heartbeats Award in the category of "Deliver the Future of Healthcare" 2025
+
+**Sabbatical Leave** | Caregiving | May 2023 – Aug 2023
+- Caregiving sabbatical to attend to my father's well-being following a significant cardiac event.
+
+**Digital Transformation Manager (AI/ML)** | Philip Morris International | Jan 2023 – April 2023
+- Designed and managed validation framework for 2 AI automation products: defined test scenarios, success criteria, and failure conditions; oversaw iterative testing cycles prior to each production milestone.
+- Established data governance and quality standards ensuring traceable, auditable data pipelines for finance and reporting.
+
+**AI/ML and Analytics - Senior Product Manager** | Alodokter | Jan 2022 – 2023
+- Owned technical program management for 6 concurrent AI/ML products — maintained requirements documentation, coordinated validation cycles between data scientists and engineers, and managed workstream dependencies across a team of 6 engineers and 2 data scientists.
+- Designed and executed A/B testing frameworks and model validation protocols; traced ML model behaviours back to requirements and escalated root-cause findings to technical leads.
+- Translated complex technical requirements (classification thresholds, clustering parameters, collaborative filtering design) into structured specifications and acceptance criteria for cross-functional review.
+
+**Project Manager – Log Stream** | LinkAja – Tech Group | 2020 – 2021
+- Led requirements definition and traceability for a Data Pipeline/Log Stream program: authored acceptance criteria, managed interface dependencies across Fraud, Marketing, Operations, and Finance groups, and reported data quality and accuracy metrics directly to CTO.
+- Delivered key technical milestones: Fraud Alert Monitoring, DevOps Log Monitoring, eKYC Automation, and Finance Reporting — each with defined requirements, validation evidence, and sign-off criteria.
+
+**Senior Data Analyst** | LinkAja – Big Data, AI and Anti-Fraud Eng. | 2020 – 2022
+- Defined and monitored system-level KPIs and data quality metrics; led root-cause analysis of anomalous system behaviours and translated findings into structured engineering requirements.
+- Built and validated AI-driven automation systems (eKYC document processing, User Segmentation RFM) — designed failure-condition test cases and tracked model behaviour against specification.
+
+**Business Intelligence Analyst** | GOJEK – Data Science | 2019
+- Designed fraud detection automation system: modelled failure-condition behaviour patterns across users, drivers, and merchants; defined detection criteria and validated against ground truth — preventing approximately $5 million USD in losses.
+
+### PROJECTS
+
+**EP/CATH Lab Planning Simulator** | Personal | 2025
+- Built a scenario-based simulation framework replaying 7,402 medical procedures across 260 simulated operating days to validate capacity planning decisions under varying scheduling policies and operational parameters.
+- Designed scenario coverage strategy: defined 5 scheduling policy campaigns, coverage metrics (P95 peak demand, overflow edge cases, boundary close-time conditions), and identified when simulation results were inconclusive or required root-cause investigation.
+- Maintained traceability between system requirements (bay count, close-time thresholds, overflow constraints) and simulation outputs — producing structured validation evidence for each planning decision. Stack: Python, Streamlit.
+
+**ColpoAI — AI Cervical Cancer Detection** | Personal / University of Limpopo Collaboration | 2025
+- Built clinical AI decision support tool with 4-class classification output, confidence scoring, and transparent explainability layer — designed validation criteria and failure-mode outputs to support safe clinical use in low-resource settings.
+- Affiliated with formal research study at University of Limpopo; funded by SAfAIDS and ASCCP.
+
+**Prior Auth Auto-Assembler** | Personal | 2025
+- Built agentic AI system with payer-specific rules validation: defined requirements, failure conditions, and test cases for clinical evidence extraction and submission-packet assembly. Stack: HTML/JS, LLM.
+
+### SKILLS
+
+**Systems Engineering & Requirements Traceability** | | Advanced
+**Scenario-Based Validation & Simulation Design** | | Advanced
+**V&V Methodology & Acceptance Criteria Definition** | | Advanced
+**Technical Program Management (Complex Multi-Workstream)** | | Advanced
+**Root-Cause Analysis & Failure-Condition Diagnosis** | | Advanced
+**Cross-Functional Technical Bridge & Stakeholder Communication** | | Advanced
+**Python** | | Intermediate
+**SQL – BigQuery** | | Advanced
+
+### CERTIFICATIONS
+
+**Computational Thinking** | University of Pennsylvania | 2019
+**Data Science Math Skills** | Duke University | 2019
+**Computer Science 101** | Stanford University | 2016 – 2018`
   }
 ];
