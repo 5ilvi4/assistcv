@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CV Tailor — La Chica Salsabila Bilqis</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      height: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+      background: #111;
+      color: #d8d8d8;
+    }
+
+    /* ── App shell ──────────────────────────────────────────────────────── */
+    #app { display: flex; height: 100vh; overflow: hidden; }
+
+    /* ── Left panel ─────────────────────────────────────────────────────── */
+    #left-panel {
+      width: 280px;
+      min-width: 280px;
+      background: #1c1c1e;
+      border-right: 1px solid #2e2e32;
+      display: flex;
+      flex-direction: column;
+      padding: 28px 20px;
+      gap: 20px;
+    }
+
+    .panel-title    { font-size: 17px; font-weight: 700; color: #fff; letter-spacing: -0.3px; }
+    .panel-subtitle { font-size: 11px; color: #555; margin-top: 3px; }
+
+    .field-label {
+      display: block;
+      font-size: 10.5px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: #666;
+      margin-bottom: 7px;
+    }
+
+    select {
+      width: 100%;
+      background: #2a2a2d;
+      border: 1px solid #3a3a3e;
+      border-radius: 7px;
+      color: #e0e0e0;
+      font-family: inherit;
+      font-size: 13px;
+      padding: 9px 11px;
+      outline: none;
+      cursor: pointer;
+    }
+    select:focus { border-color: #555; }
+
+    .divider { border: none; border-top: 1px solid #28282c; }
+
+    #download-btn, #download-cv-only-btn, #download-cl-only-btn {
+      width: 100%;
+      background: #1a2f1a;
+      border: 1px solid #2a4a2a;
+      border-radius: 7px;
+      color: #6c6;
+      font-family: inherit;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 11px;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    #download-btn:hover, #download-cv-only-btn:hover { background: #1e3b1e; }
+    #download-cv-only-btn { background: #1a2a2a; border-color: #2a3e3e; color: #6bb; margin-top: 6px; }
+    #download-cv-only-btn:hover { background: #1e3535; }
+    #download-cl-only-btn { background: #251a2a; border-color: #3e2a4a; color: #b8a; margin-top: 6px; }
+    #download-cl-only-btn:hover { background: #301e38; }
+
+    .hint {
+      font-size: 11px;
+      color: #444;
+      line-height: 1.5;
+    }
+
+    /* ── Right panel ────────────────────────────────────────────────────── */
+    #right-panel {
+      flex: 1;
+      background: #1a1a1a;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 36px 20px 80px;
+    }
+
+    /* ── CV page card ───────────────────────────────────────────────────── */
+    .cv-page-card {
+      width: 794px;
+      background: #fff;
+      padding: 33px 77px;
+      box-shadow: 0 6px 48px rgba(0,0,0,0.55);
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      line-height: 1.4;
+      color: #000;
+      margin-bottom: 28px;
+    }
+
+    /* ── Keep entry header with first bullet ───────────────────────────── */
+    .keep-entry { break-inside: avoid; page-break-inside: avoid; }
+
+    /* ── CV element styles ──────────────────────────────────────────────── */
+    .cv-page-card .name-row { display: flex; justify-content: flex-end; margin-bottom: 0; }
+    .cv-page-card .name-box {
+      border: 1.5px solid #000;
+      padding: 4px 10px 4px 8px;
+      font-size: 29px;
+      line-height: 1.2;
+      width: 37%;
+      text-align: right;
+      box-sizing: border-box;
+    }
+    .cv-page-card .name-rule {
+      height: 1px; background: #000;
+      width: 37%; margin-left: auto;
+      margin-top: 3px; margin-bottom: 6px;
+    }
+    .cv-page-card .contact  { text-align: center; font-size: 12px; margin: 3px 0 0 0; white-space: nowrap; overflow: hidden; }
+    .cv-page-card .section  { font-weight: bold; font-size: 12px; margin: 9px 0 1px 0; }
+    .cv-page-card .entry {
+      display: flex; font-weight: bold; font-size: 12px;
+      border-bottom: 0.75px solid #000;
+      padding: 2px 0 1px 0; margin-top: 3px;
+    }
+    .cv-page-card .entry-l { width: 40%; text-align: left;   min-width: 0; white-space: nowrap; overflow: hidden; }
+    .cv-page-card .entry-c { width: 35%; text-align: center; min-width: 0; white-space: nowrap; overflow: hidden; }
+    .cv-page-card .entry-r { width: 25%; text-align: right;  min-width: 0; white-space: nowrap; overflow: hidden; }
+    .cv-page-card .bullet {
+      padding-left: 73px; text-indent: -24px;
+      font-size: 12px; line-height: 1.4; margin: 0;
+    }
+    .cv-page-card .sub-bullet {
+      padding-left: 121px; text-indent: -24px;
+      font-size: 12px; line-height: 1.4; margin: 0;
+    }
+    .cv-page-card .plain { font-size: 12px; margin: 1px 0; }
+
+    /* ── Cover letter card ──────────────────────────────────────────────── */
+    #cover-letter-section {
+      width: 794px;
+      background: #fff;
+      padding: 33px 77px;
+      box-shadow: 0 6px 48px rgba(0,0,0,0.55);
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      line-height: 1.65;
+      color: #000;
+      margin-top: 28px;
+      display: none;
+    }
+    #cover-letter-section.visible { display: block; }
+    #cover-letter-section .cl-heading {
+      font-weight: bold; font-size: 12px;
+      border-bottom: 0.75px solid #000;
+      padding-bottom: 3px; margin-bottom: 14px;
+    }
+    #cover-letter-section p { margin-bottom: 10px; }
+
+    /* ── Print ──────────────────────────────────────────────────────────── */
+    @media print {
+      html, body { background: #fff; height: auto; }
+      #app        { display: block; height: auto; overflow: visible; }
+      #left-panel { display: none !important; }
+      #right-panel {
+        display: block; padding: 0; overflow: visible;
+        height: auto; align-items: unset;
+      }
+      #cv-pages-container { display: block; }
+      #tracker-section    { display: none !important; }
+      .cv-page-card {
+        width: 100%; padding: 33px 77px; margin: 0;
+        box-shadow: none; font-size: 9pt; line-height: 1.4;
+        page-break-after: always; break-after: page;
+      }
+      .cv-page-card:last-of-type {
+        page-break-after: avoid; break-after: avoid;
+      }
+      .cv-page-card .name-box   { font-size: 22pt; border-width: 1.5pt; }
+      .cv-page-card .name-rule  { height: 0.75pt; margin-top: 2pt; margin-bottom: 4pt; }
+      .cv-page-card .contact    { font-size: 9pt; }
+      .cv-page-card .section    { font-size: 9pt; margin-top: 8pt; }
+      .cv-page-card .entry      { font-size: 9pt; border-bottom-width: 0.75pt; }
+      .cv-page-card .plain      { font-size: 9pt; }
+      .cv-page-card .bullet     { font-size: 9pt; padding-left: 54pt; text-indent: -18pt; }
+      .cv-page-card .sub-bullet { font-size: 9pt; padding-left: 90pt;  text-indent: -18pt; }
+      #cover-letter-section {
+        display: block !important; margin-top: 0; padding: 33px 77px;
+        box-shadow: none; width: 100%; font-size: 9pt;
+        page-break-before: always; break-before: page;
+      }
+      /* Cover letter only mode */
+      body.print-cl-only #cv-pages-container { display: none !important; }
+      body.print-cl-only #cover-letter-section {
+        page-break-before: avoid !important; break-before: avoid !important;
+      }
+      @page { size: A4; margin: 0; }
+    }
+
+    /* ── Tracker ─────────────────────────────────────────────────────────── */
+    #tracker-section {
+      padding: 32px 40px 80px;
+      overflow-y: auto;
+      height: 100%;
+    }
+    .tracker-title { font-size: 18px; font-weight: 700; color: #fff; margin-bottom: 20px; }
+    .tracker-table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+    .tracker-table th {
+      background: #2a2a2d; color: #888; font-size: 10px; text-transform: uppercase;
+      letter-spacing: 0.6px; padding: 8px 10px; text-align: left;
+      border-bottom: 1px solid #333;
+    }
+    .tracker-table td {
+      padding: 7px 10px; border-bottom: 1px solid #222; vertical-align: top;
+      color: #d0d0d0;
+    }
+    .tracker-table tr:hover td { background: #1e1e21; }
+    .tracker-table select, .tracker-table input[type="date"] {
+      background: #2a2a2d; border: 1px solid #3a3a3e; border-radius: 5px;
+      color: #e0e0e0; font-size: 12px; padding: 4px 7px; width: 100%;
+    }
+    .tracker-table .notes-cell {
+      min-width: 160px; max-width: 240px; word-break: break-word;
+    }
+    .notes-editable {
+      min-height: 20px; outline: none; border-radius: 4px; padding: 2px 4px;
+    }
+    .notes-editable:focus { background: #222; }
+    .tracker-table a { color: #5b9cf6; text-decoration: none; font-size: 11px; }
+    .tracker-table a:hover { text-decoration: underline; }
+    .status-badge {
+      display: inline-block; padding: 2px 8px; border-radius: 10px;
+      font-size: 11px; font-weight: 600;
+    }
+    #tracker-btn {
+      background: #2a2a2d; color: #aaa; border: 1px solid #3a3a3e; border-radius: 7px;
+      padding: 9px 14px; font-size: 12.5px; cursor: pointer; width: 100%;
+      font-family: inherit; text-align: left;
+    }
+    #tracker-btn:hover { background: #333; color: #fff; }
+    #cv-btn {
+      background: #2a2a2d; color: #aaa; border: 1px solid #3a3a3e; border-radius: 7px;
+      padding: 9px 14px; font-size: 12.5px; cursor: pointer; width: 100%;
+      font-family: inherit; text-align: left;
+    }
+    #cv-btn:hover { background: #333; color: #fff; }
+  </style>
+</head>
+<body>
+<div id="app">
+
+  <!-- ══ Left panel ════════════════════════════════════════════════════════ -->
+  <div id="left-panel">
+
+    <div>
+      <div class="panel-title">CV Tailor</div>
+      <div class="panel-subtitle">La Chica Salsabila Bilqis</div>
+    </div>
+
+    <hr class="divider">
+
+    <div>
+      <label class="field-label" for="version-select">Version</label>
+      <select id="version-select"></select>
+    </div>
+
+    <hr class="divider">
+
+    <button id="download-btn" onclick="window.print()">&#8659;&nbsp; CV + Cover Letter</button>
+    <button id="download-cv-only-btn" onclick="printCVOnly()">&#8659;&nbsp; CV Only</button>
+    <button id="download-cl-only-btn" onclick="printCLOnly()" style="display:none">&#8659;&nbsp; Cover Letter Only</button>
+
+    <p class="hint">File → Print → Save as PDF<br>Margins: None &nbsp;|&nbsp; Scale: 100%</p>
+
+    <hr class="divider">
+
+    <button id="tracker-btn" onclick="showTracker()">&#9776;&nbsp; Application Tracker</button>
+    <button id="cv-btn" onclick="showCV()" style="display:none">&#8592;&nbsp; Back to CV</button>
+
+  </div>
+
+  <!-- ══ Right panel ════════════════════════════════════════════════════════ -->
+  <div id="right-panel">
+    <div id="cv-pages-container"></div>
+    <div id="cover-letter-section">
+      <div class="cl-heading">COVER LETTER</div>
+      <div id="cover-letter-body"></div>
+    </div>
+    <div id="tracker-section" style="display:none">
+      <div id="tracker-inner"></div>
+    </div>
+  </div>
+
+</div>
+<script src="cv_data_lachica.js"></script>
+<script>
+// ════════════════════════════════════════════════════════════════════════════
+// CV data is loaded from cv_data.js — edit that file to add/update versions
+// ════════════════════════════════════════════════════════════════════════════
+
+// Build quick lookup maps from CV_APPLICATIONS
+const CVS = Object.fromEntries(CV_APPLICATIONS.map(a => [a.key, a.cv]));
+const COVERS = Object.fromEntries(CV_APPLICATIONS.map(a => [a.key, a.coverLetter || '']));
+
+// Populate dropdown from CV_APPLICATIONS
+(function populateSelect() {
+  const sel = document.getElementById('version-select');
+  CV_APPLICATIONS.forEach(app => {
+    const opt = document.createElement('option');
+    opt.value = app.key;
+    opt.textContent = (app.key === 'default' ? '📄 ' : '🎯 ') + app.label;
+    sel.appendChild(opt);
+  });
+})();
+
+
+// ════════════════════════════════════════════════════════════════════════════
+// CV renderer
+// ════════════════════════════════════════════════════════════════════════════
+
+function esc(s) {
+  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+function cvBodyToHTML(text) {
+  const html = [];
+  for (const rawLine of text.split('\n')) {
+    const line = rawLine.replace(/\r$/, '').trimEnd();
+
+    if (/^# [^#]/.test(line)) {
+      const name  = line.slice(2).trim();
+      const sp    = name.indexOf(' ');
+      const first = sp >= 0 ? name.slice(0, sp) : name;
+      const last  = sp >= 0 ? name.slice(sp + 1) : '';
+      html.push('<div class="name-row"><div class="name-box">' + esc(first) + '&nbsp;<strong>' + esc(last) + '</strong></div></div>');
+
+    } else if (line.startsWith('## ')) {
+      html.push('<p class="contact">' + esc(line.slice(3).trim()) + '</p>');
+      html.push('<div class="name-rule"></div>');
+
+    } else if (line.startsWith('### ')) {
+      html.push('<p class="section">' + esc(line.slice(4).trim().toUpperCase()) + '</p>');
+
+    } else if (line.startsWith('**') && line.includes(' | ')) {
+      const parts = line.split(' | ').map(p => p.trim());
+      const m     = parts[0].match(/\*\*(.+?)\*\*/);
+      const role  = m ? m[1] : parts[0];
+      if (parts.length >= 3 && parts[1] === '' && parts[2]) {
+        html.push('<div class="entry"><span class="entry-l" style="width:48%">' + esc(role) + '</span><span class="entry-c" style="width:52%;text-align:left">' + esc(parts[2]) + '</span></div>');
+      } else {
+        const c = parts.length >= 3 ? parts[1] : '';
+        const r = parts.length >= 3 ? parts[2] : (parts[1] || '');
+        html.push('<div class="entry"><span class="entry-l">' + esc(role) + '</span><span class="entry-c">' + esc(c) + '</span><span class="entry-r">' + esc(r) + '</span></div>');
+      }
+
+    } else if (/^  +- /.test(line)) {
+      html.push('<div class="sub-bullet">o&nbsp;&nbsp;' + esc(line.trim().slice(2).trim()) + '</div>');
+
+    } else if (line.startsWith('- ') || line.startsWith('\u2022 ')) {
+      html.push('<div class="bullet">&#8226;&nbsp;&nbsp;' + esc(line.slice(2).trim()) + '</div>');
+
+    } else if (line.trim() === '') {
+      // skip
+    } else if (line.trim()) {
+      html.push('<p class="plain">' + esc(line.trim()) + '</p>');
+    }
+  }
+  return html.join('\n');
+}
+
+// ════════════════════════════════════════════════════════════════════════════
+// Paginate CV into separate A4 page cards
+// ════════════════════════════════════════════════════════════════════════════
+
+const A4_CONTENT_H = 1123 - 33 - 33; // A4px minus top+bottom padding = 1057
+
+function wrapEntriesIn(root) {
+  root.querySelectorAll('.keep-entry').forEach(w => {
+    while (w.firstChild) w.parentNode.insertBefore(w.firstChild, w);
+    w.remove();
+  });
+  Array.from(root.querySelectorAll('.entry')).forEach(entry => {
+    const wrapper = document.createElement('div');
+    wrapper.className = 'keep-entry';
+    entry.parentNode.insertBefore(wrapper, entry);
+    wrapper.appendChild(entry);
+    const next = wrapper.nextElementSibling;
+    if (next && (next.classList.contains('bullet') || next.classList.contains('sub-bullet') || next.classList.contains('plain'))) {
+      wrapper.appendChild(next);
+    }
+  });
+}
+
+function buildPages(cvText) {
+  const container = document.getElementById('cv-pages-container');
+
+  // Render into a temporary off-screen page card for measurement
+  const temp = document.createElement('div');
+  temp.className = 'cv-page-card';
+  temp.style.cssText += 'position:absolute;visibility:hidden;margin:0;';
+  document.body.appendChild(temp);
+  temp.innerHTML = cvBodyToHTML(cvText);
+  wrapEntriesIn(temp);
+
+  // Walk children and distribute into pages
+  const pages   = [[]];
+  const heights = [0];
+
+  Array.from(temp.children).forEach(child => {
+    const h = child.offsetHeight
+            + parseFloat(getComputedStyle(child).marginTop  || 0)
+            + parseFloat(getComputedStyle(child).marginBottom || 0);
+    const pi = pages.length - 1;
+
+    // If this block (keep-entry or standalone) won't fit, start a new page
+    if (heights[pi] + h > A4_CONTENT_H && heights[pi] > 0) {
+      pages.push([]);
+      heights.push(0);
+    }
+    pages[pages.length - 1].push(child.cloneNode(true));
+    heights[heights.length - 1] += h;
+  });
+
+  document.body.removeChild(temp);
+
+  // Build page card divs
+  container.innerHTML = '';
+  pages.forEach(children => {
+    const card = document.createElement('div');
+    card.className = 'cv-page-card';
+    children.forEach(child => card.appendChild(child));
+    container.appendChild(card);
+  });
+}
+
+// ════════════════════════════════════════════════════════════════════════════
+// Tracker — localStorage persistence
+// ════════════════════════════════════════════════════════════════════════════
+
+const STATUS_OPTIONS = ['To Apply','Applied','Phone Screen','Interview','Final Round','Offer','Rejected','Withdrawn','On Hold'];
+
+const STATUS_COLORS = {
+  'To Apply':    '#555',
+  'Applied':     '#2a5298',
+  'Phone Screen':'#1a6b4a',
+  'Interview':   '#6b4a1a',
+  'Final Round': '#5a1a7a',
+  'Offer':       '#1a6b1a',
+  'Rejected':    '#6b1a1a',
+  'Withdrawn':   '#444',
+  'On Hold':     '#5a5a1a',
+};
+
+function loadTrackerState(key) {
+  try { return JSON.parse(localStorage.getItem('tracker_' + key)) || {}; } catch { return {}; }
+}
+
+function saveTrackerState(key, patch) {
+  const s = loadTrackerState(key);
+  localStorage.setItem('tracker_' + key, JSON.stringify({ ...s, ...patch }));
+}
+
+function renderTracker() {
+  const inner = document.getElementById('tracker-inner');
+  let html = '<div class="tracker-title">Application Tracker</div>';
+  html += '<table class="tracker-table"><thead><tr>';
+  html += '<th>#</th><th>Company</th><th>Role</th><th>Date Added</th><th>Status</th><th>Applied</th><th>Notes</th><th>JD</th>';
+  html += '</tr></thead><tbody>';
+
+  CV_APPLICATIONS.filter(a => a.key !== 'default').forEach((app, idx) => {
+    const s = loadTrackerState(app.key);
+    const status  = s.status      || 'To Apply';
+    const applied = s.dateApplied || '';
+    const notes   = s.notes       || '';
+    const color   = STATUS_COLORS[status] || '#555';
+    const jdLink  = app.jdUrl
+      ? '<a href="' + app.jdUrl + '" target="_blank">Open ↗</a>'
+      : '<span style="color:#555">–</span>';
+
+    html += '<tr>';
+    html += '<td style="color:#555">' + (idx + 1) + '</td>';
+    html += '<td><strong style="color:#fff">' + app.company + '</strong></td>';
+    html += '<td>' + app.role + '</td>';
+    html += '<td style="color:#666">' + (app.dateAdded || '–') + '</td>';
+    const k = JSON.stringify(app.key);
+    html += '<td><select onchange="saveTrackerState(' + k + ',{status:this.value});renderTracker()">';
+    STATUS_OPTIONS.forEach(opt => {
+      html += '<option value="' + opt + '"' + (opt === status ? ' selected' : '') + '>' + opt + '</option>';
+    });
+    html += '</select></td>';
+    html += '<td><input type="date" value="' + applied + '" onchange="saveTrackerState(' + k + ',{dateApplied:this.value})"></td>';
+    html += '<td class="notes-cell"><div class="notes-editable" contenteditable="true" data-key="' + app.key + '" onblur="saveTrackerState(' + k + ',{notes:this.innerText.trim()})">' + notes + '</div></td>';
+    html += '<td>' + jdLink + '</td>';
+    html += '</tr>';
+  });
+
+  html += '</tbody></table>';
+  inner.innerHTML = html;
+}
+
+function showTracker() {
+  document.getElementById('cv-pages-container').style.display = 'none';
+  document.getElementById('cover-letter-section').classList.remove('visible');
+  document.getElementById('tracker-section').style.display = 'block';
+  document.getElementById('download-btn').style.display = 'none';
+  document.getElementById('download-cv-only-btn').style.display = 'none';
+  document.getElementById('download-cl-only-btn').style.display = 'none';
+  document.getElementById('tracker-btn').style.display = 'none';
+  document.getElementById('cv-btn').style.display = 'block';
+  renderTracker();
+}
+
+function showCV() {
+  document.getElementById('cv-pages-container').style.display = '';
+  document.getElementById('tracker-section').style.display = 'none';
+  document.getElementById('download-btn').style.display = '';
+  document.getElementById('download-cv-only-btn').style.display = '';
+  // Cover Letter Only button: only show if current version has a cover letter
+  const key = document.getElementById('version-select').value;
+  document.getElementById('download-cl-only-btn').style.display = COVERS[key] ? '' : 'none';
+  document.getElementById('tracker-btn').style.display = '';
+  document.getElementById('cv-btn').style.display = 'none';
+}
+
+function printCVOnly() {
+  const cl = document.getElementById('cover-letter-section');
+  const wasVisible = cl.classList.contains('visible');
+  cl.classList.remove('visible');
+  window.print();
+  if (wasVisible) cl.classList.add('visible');
+}
+
+function printCLOnly() {
+  const cl = document.getElementById('cover-letter-section');
+  const wasVisible = cl.classList.contains('visible');
+  cl.classList.add('visible');
+  document.body.classList.add('print-cl-only');
+  window.print();
+  document.body.classList.remove('print-cl-only');
+  if (!wasVisible) cl.classList.remove('visible');
+}
+
+// ════════════════════════════════════════════════════════════════════════════
+// UI wiring
+// ════════════════════════════════════════════════════════════════════════════
+
+document.getElementById('version-select').addEventListener('change', e => {
+  const key = e.target.value;
+  const cv = CVS[key];
+  if (cv) buildPages(cv);
+  const cl = COVERS[key];
+  const clSection  = document.getElementById('cover-letter-section');
+  const clBody     = document.getElementById('cover-letter-body');
+  const clOnlyBtn  = document.getElementById('download-cl-only-btn');
+  if (cl) {
+    clBody.innerHTML = cl.trim().split(/\n\n+/).map(p => '<p>' + esc(p.trim()) + '</p>').join('');
+    clSection.classList.add('visible');
+    clOnlyBtn.style.display = '';
+  } else {
+    clBody.innerHTML = '';
+    clSection.classList.remove('visible');
+    clOnlyBtn.style.display = 'none';
+  }
+});
+
+// Init
+buildPages(CVS['default']);
+</script>
+</body>
+</html>
