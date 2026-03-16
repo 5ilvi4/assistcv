@@ -388,4 +388,151 @@ Raised sponsorship to support event logistics and operational expenses.
 </div>
 <!-- /html -->`
   }
+  ,
+  {
+    key:       "apple",
+    label:     "Apple \u2013 Government Affairs Manager, Indonesia",
+    company:   "Apple",
+    role:      "Government Affairs Manager, Indonesia",
+    jdUrl:     "https://www.linkedin.com/jobs/view/4382249423/",
+    dateAdded: "2026-03-16",
+    coverLetter: `Dear Apple Hiring Team,
+
+I am applying for the Government Affairs Manager, Indonesia role at Apple. My career has been built at the intersection of diplomatic engagement, policy advocacy, and institutional relations across Indonesian government channels — making this role a direct expression of the work I have done, rather than a pivot.
+
+The clearest evidence is my role as Liaison Officer at the Embassy of the Republic of Indonesia in Moscow, where I represented Indonesia's economic and trade interests in direct engagement with government partners, facilitated bilateral business negotiations, and supported the embassy's economic diplomacy agenda. In 2018, I was selected as a representative to a closed-door diplomatic briefing with the United Nations High Commissioner for Human Rights alongside foreign diplomats — a reflection of the trust placed in my judgment in high-stakes government contexts.
+
+As Director of International Cooperations at the University of Nahdlatul Ulama Yogyakarta, I led the institution's engagement strategy across U2G (university-to-government) channels — working directly with Indonesian government ministries, educational regulatory bodies, and institutional partners to secure 35 Memoranda of Understanding within the first quarter. This required sustained policy navigation, stakeholder alignment across central and local government levels, and the ability to translate institutional goals into actionable engagement outcomes. It is the operational model Apple needs for its government affairs function in Indonesia.
+
+At Prifinance International, I advised multinational clients on regulatory compliance and managed government-facing licensing processes across multiple jurisdictions — developing the ability to assess legal and regulatory risk quickly and guide strategy accordingly. At Globus IT, I developed market-entry strategies for technology products across MENA, APAC, and LATAM, translating regulatory and policy environments into business positioning for senior leadership in a technology-sector context.
+
+I am a native Bahasa Indonesia speaker with near-native English proficiency, hold a Master's degree with Honours (Politics · Economics · Philosophy) from the Higher School of Economics in Moscow, and a Bachelor's in International Relations. I understand Indonesia's policy-making architecture and am well-positioned to monitor regulatory developments, engage government stakeholders at central and local levels, and build the coalitions Apple needs to secure market access and operate effectively in the region.
+
+Sincerely,
+La Chica Salsabila Bilqis`,
+    cv: `# LA CHICA SALSABILA BILQIS
+## Jakarta, Indonesia · officiallachicasal@gmail.com · linkedin.com/in/lachicasal
+
+### Education
+
+**Higher School of Economics** | | Moscow, Russia
+Master's Program, Politics · Economics · Philosophy (Scholarship) | | 2022 – 2024
+Diploma with Honours
+Teaching Assistant, course Corporate Social Responsibility
+
+**Lobachevsky State University** | | Moscow, Russia
+Bachelor's Program, International Relations (Scholarship) | | 2018 – 2022
+Honorable Student, Rector's Award (2024)
+
+**University of Glasgow** | | Glasgow, United Kingdom
+Erasmus+ Exchange Student, Political Science (Scholarship) | | 2022
+
+**People's Friendship University of Russia** | | Moscow, Russia
+Language Program, International Relations (Scholarship) | | 2015 – 2016
+
+**Sampoerna Academy** | | Bogor, Indonesia
+High School, Social Sciences (Scholarship) | | 2012 – 2015
+
+### Experience
+
+**Director of International Cooperations** | | Yogyakarta, Indonesia
+University of Nahdlatul Ulama (UNU) Yogyakarta | | 2025 – 2026
+- Led U2G government engagement strategy — worked directly with Indonesian government ministries and regulatory bodies to secure 35 MoUs in the first quarter, navigating central and local government approval processes.
+- Assessed regulatory and policy requirements for new academic programs; mobilized international institutional funding from MBZ University and GEM Co. Ltd by aligning stakeholder interests across government and private-sector decision-makers.
+
+**Legal Consultant** | | Tallinn, Estonia
+Prifinance International | | 2024 – 2025
+- Advised multinational clients on regulatory and compliance frameworks across jurisdictions; assessed the impact of legal and licensing requirements and provided actionable guidance to enable market entry and operations.
+- Managed government-facing licensing processes — incorporating eleven companies, setting up two payment systems, and securing an educational institutional licence through direct engagement with regulatory authorities.
+
+**Business Development Manager** | | Riga, Latvia
+Globus IT | | 2021 – 2023
+- Monitored regulatory and policy environments across MENA, APAC, and LATAM technology markets; translated policy developments and government structures into market-entry strategies and business cases for senior leadership.
+- Led three large-scale IT projects on payment systems, managing government and institutional relationships to obtain market authorisations and secure operational approvals within a single year.
+
+**Account Manager** | | Hrazdan, Armenia
+ECOS Cloud Mining Co | | 2021 – 2022
+- Forecasted B2C and B2B client portfolios, handled enquiries and ongoing account needs in crypto.
+- Generated MQL and SQL for the company from cloud mining contracts and BTC Miners sales.
+
+**Client Operational Manager** | | Moscow, Russia
+NovaKid English School | | 2021 – 2022
+- Coordinated client communication, resolved operational issues, and converted cold leads to warm leads.
+- Managed to retain seven difficult clients as subscribers to our course.
+
+**Liaison Officer** | | Moscow, Russia
+Embassy of the Republic of Indonesia | | 2018 – 2020
+- Represented Indonesia's economic and trade interests in direct engagement with Russian government partners, business associations, and industry stakeholders — supporting the embassy's economic diplomacy agenda.
+- Facilitated business meetings between Indonesian SMEs and Russian counterparts; interpreted during government negotiations and trade discussions.
+
+**Assistant to His Excellency** | | Jakarta, Indonesia
+Embassy of the Kingdom of Jordan | | 2018
+- Supported the Ambassador's engagement with Indonesian government officials and private-sector leaders.
+- Prepared strategic briefings on Indonesian current affairs and political developments, enabling the Ambassador to engage effectively with government and private-sector leaders at the highest level.
+
+### Leadership and Activities
+
+#### Organization
+
+**Supervisor Board Member** | | Jakarta, Indonesia
+Overseas Indonesian Students' Association Alliance (OISAA) | | 2021 – 2024
+Reviewed and advised on policy proposals related to education and Indonesian student welfare across 65 countries — building coalition positions and engaging government stakeholders at the national level.
+
+**Board Member** | | Moscow, Russia
+AIESEC | | 2020 – 2021
+Oversaw youth leadership exchange activities and delivered international volunteer opportunities for high school students.
+
+**Public Relations & Outreach Coordinator** | | Baltimore, USA
+Civilization Exchange and Cooperation Foundation (CECF) | | 2015 – present
+Organized outreach and communication efforts for intercultural and interfaith dialogue programs across government and civil society stakeholders.
+
+#### Volunteer & Project
+
+**Chairman** | | Moscow, Russia
+The Home of People (HOPE) | | 2020 – present
+Charity for churches, mosques and a synagogue.
+
+**Secretariat and Partnership** | | Jakarta, Indonesia
+Center for Football Industry Innovation | | 2025
+Led a fundraising team for First International Football Innovation Summit.
+
+**Cyber Volunteer** | | Jakarta, Indonesia
+Indonesian Youth Conference | | 2018
+Supported digital outreach and online engagement to promote the conference and increase participation.
+
+**Sponsorship and Partnership** | | Jakarta, Indonesia
+ASEAN Youth Expo (AYE) | | 2014
+Raised sponsorship to support event logistics and operational expenses.
+
+#### Conference
+
+- Representative – Closed-door diplomatic briefing with UN High Commissioner for Human Rights Zeid Ra'ad Al Hussein and foreign diplomats, Jakarta, Indonesia. | | 2018
+- Representative – International Volga Dialogue on Russian History, Yelabuga, Russia. | | 2018
+- Speaker – Model G-20 at National Autonomous University of Mexico City, Mexico. | | 2018
+- Speaker – Voice of Indonesia, Commemorated Anti-drugs Day, Jakarta, Indonesia. | | 2015
+
+#### Publication
+
+- "Theory and Practice of Negotiation: Universal and Regional Level", Russian Council (2018): www.sociostudies.org
+- "Digital Nomadism as a Global Phenomenon after Covid-19: Institutional and Socio-Economic Drivers Influencing Migration Experience," Sociostudies, November 2025: russiancouncil.ru
+
+<!-- html -->
+<div style="display:flex;border:0.75px solid #000;margin-top:10px;font-size:12px;line-height:1.5">
+  <div style="flex:1;padding:4px 10px 6px;border-right:0.75px solid #000">
+    <p style="font-weight:bold;text-align:center;margin-bottom:3px">Sports</p>
+    <p style="margin-bottom:2px">Member:</p>
+    <p style="padding-left:12px;text-indent:-9px;margin:0">&#8226;&nbsp;Budokan Karate <em>Shotokan</em> Club Moscow</p>
+    <p style="padding-left:12px;text-indent:-9px;margin:0">&#8226;&nbsp;Fencing Club Victoria El Moscow</p>
+    <p style="padding-left:12px;text-indent:-9px;margin:0">&#8226;&nbsp;Equestrian Pradar Club Moscow</p>
+  </div>
+  <div style="flex:1;padding:4px 10px 6px">
+    <p style="font-weight:bold;text-align:center;margin-bottom:3px">Languages</p>
+    <p style="padding-left:12px;text-indent:-9px;margin:0">&#8226;&nbsp;Bahasa Indonesia &#8211; Native</p>
+    <p style="padding-left:12px;text-indent:-9px;margin:0">&#8226;&nbsp;English &#8211; Near-native</p>
+    <p style="padding-left:12px;text-indent:-9px;margin:0">&#8226;&nbsp;Russian &#8211; Basic</p>
+    <p style="padding-left:12px;text-indent:-9px;margin:0">&#8226;&nbsp;French &#8211; Basic</p>
+  </div>
+</div>
+<!-- /html -->`
+  }
 ];
