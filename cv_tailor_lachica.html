@@ -142,16 +142,32 @@
     .cv-page-card .entry-l { flex: 1; text-align: left;  min-width: 0; }
     .cv-page-card .entry-c { display: none; }
     .cv-page-card .entry-r { text-align: right; white-space: nowrap; padding-left: 8px; }
-    /* Sub-line: company · date — italic, plain weight */
+    /* Plain description text — non-italic */
     .cv-page-card .plain {
       font-size: 12px; margin: 0 0 1px 0;
-      font-style: italic;
+      font-style: normal;
     }
+    /* Sub-line: company (left italic) + date (right italic) */
+    .cv-page-card .plain-row {
+      display: flex; font-size: 12px; font-style: italic; margin: 0 0 1px 0;
+    }
+    .cv-page-card .plain-row .plain-l { flex: 1; min-width: 0; }
+    .cv-page-card .plain-row .plain-r { text-align: right; white-space: nowrap; padding-left: 8px; }
     /* Bullets */
     .cv-page-card .bullet {
       padding-left: 16px; text-indent: -10px;
       font-size: 12px; line-height: 1.4; margin: 0;
       font-style: normal;
+    }
+    /* Bullet with right-aligned date (Conference) */
+    .cv-page-card .bullet-row {
+      display: flex; font-size: 12px; line-height: 1.4; margin: 0;
+    }
+    .cv-page-card .bullet-row .bullet-main {
+      flex: 1; padding-left: 16px; text-indent: -10px; min-width: 0;
+    }
+    .cv-page-card .bullet-row .bullet-date {
+      font-style: italic; white-space: nowrap; padding-left: 8px; flex-shrink: 0; align-self: flex-start;
     }
     .cv-page-card .sub-bullet {
       padding-left: 28px; text-indent: -10px;
@@ -353,11 +369,20 @@ function esc(s) {
 
 function cvBodyToHTML(text) {
   const html = [];
+  let rawHtml = null;
   for (const rawLine of text.split('\n')) {
     const line = rawLine.replace(/\r$/, '').trimEnd();
 
+    // Raw HTML passthrough block
+    if (line.trim() === '<!-- html -->') { rawHtml = []; continue; }
+    if (line.trim() === '<!-- /html -->') {
+      if (rawHtml !== null) html.push(rawHtml.join('\n'));
+      rawHtml = null; continue;
+    }
+    if (rawHtml !== null) { rawHtml.push(rawLine); continue; }
+
     if (/^# [^#]/.test(line)) {
-      // Centered name, bold, full width — no box
+      // Centered name, bold, full width
       const name = line.slice(2).trim();
       html.push('<div class="name-row"><span class="name-box">' + esc(name) + '</span></div>');
 
@@ -375,21 +400,37 @@ function cvBodyToHTML(text) {
       html.push('<p class="sub-section">' + esc(line.slice(5).trim()) + '</p>');
 
     } else if (line.startsWith('**') && line.includes(' | ')) {
-      // Entry: **Role** | | Location  →  role left, location right (no centre column)
+      // Entry row: **Role** | | Location  →  bold, role left, location right
       const parts = line.split(' | ').map(p => p.trim());
       const m     = parts[0].match(/\*\*(.+?)\*\*/);
       const role  = m ? m[1] : parts[0];
       const loc   = parts.length >= 3 ? parts[2] : (parts[1] || '');
       html.push('<div class="entry"><span class="entry-l">' + esc(role) + '</span><span class="entry-r">' + esc(loc) + '</span></div>');
 
+    } else if (!line.startsWith('**') && line.includes(' | | ')) {
+      // Sub-line: Company | | Date  →  italic, company left, date right
+      const idx   = line.indexOf(' | | ');
+      const left  = line.slice(0, idx).trim();
+      const right = line.slice(idx + 5).trim();
+      html.push('<div class="plain-row"><span class="plain-l">' + esc(left) + '</span><span class="plain-r">' + esc(right) + '</span></div>');
+
     } else if (/^  +- /.test(line)) {
       html.push('<div class="sub-bullet">o&nbsp;&nbsp;' + esc(line.trim().slice(2).trim()) + '</div>');
 
     } else if (line.startsWith('- ') || line.startsWith('\u2022 ')) {
-      html.push('<div class="bullet">&#8226;&nbsp;&nbsp;' + esc(line.slice(2).trim()) + '</div>');
+      // Bullet — check for right-aligned date via " | | "
+      const content = line.slice(2).trim();
+      if (content.includes(' | | ')) {
+        const idx  = content.indexOf(' | | ');
+        const left = content.slice(0, idx).trim();
+        const date = content.slice(idx + 5).trim();
+        html.push('<div class="bullet-row"><div class="bullet-main">&#8226;&nbsp;&nbsp;' + esc(left) + '</div><span class="bullet-date">' + esc(date) + '</span></div>');
+      } else {
+        html.push('<div class="bullet">&#8226;&nbsp;&nbsp;' + esc(content) + '</div>');
+      }
 
     } else if (line.trim() === '') {
-      // skip
+      // skip blank lines
     } else if (line.trim()) {
       html.push('<p class="plain">' + esc(line.trim()) + '</p>');
     }
@@ -413,8 +454,14 @@ function wrapEntriesIn(root) {
     wrapper.className = 'keep-entry';
     entry.parentNode.insertBefore(wrapper, entry);
     wrapper.appendChild(entry);
-    const next = wrapper.nextElementSibling;
-    if (next && (next.classList.contains('bullet') || next.classList.contains('sub-bullet') || next.classList.contains('plain'))) {
+    // Pull in plain-row (sub-line) if it follows immediately
+    let next = wrapper.nextElementSibling;
+    if (next && (next.classList.contains('plain-row') || next.classList.contains('plain'))) {
+      wrapper.appendChild(next);
+      next = wrapper.nextElementSibling;
+    }
+    // Then pull in first bullet/description
+    if (next && (next.classList.contains('bullet') || next.classList.contains('bullet-row') || next.classList.contains('sub-bullet') || next.classList.contains('plain'))) {
       wrapper.appendChild(next);
     }
   });
