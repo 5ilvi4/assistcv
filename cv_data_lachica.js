@@ -329,38 +329,38 @@ High School, Social Sciences (Scholarship) | | 2012 – 2015
 
 **Director of International Cooperations** | | Yogyakarta, Indonesia
 University of Nahdlatul Ulama (UNU) Yogyakarta | | 2025 – 2026
-- Lead international partnership strategy (U2U, U2G, U2B, and U2C), securing 35 MoUs in first quarter.
-- Helped to mobilize MBZ University and GEM Co. Ltd fund to establish Faculties of Future Studies and Metallurgy.
+- Designed and executed the institution's external communications strategy across four stakeholder channels (U2U, U2G, U2B, U2C) — developed targeted messaging and pitch materials for each audience, securing 35 MoUs in the first quarter through structured outreach and institutional positioning.
+- Led partnership and sponsorship engagement with international institutions (MBZ University, GEM Co. Ltd), crafting the narrative and collateral that mobilized funding to establish two new academic faculties.
 
 **Legal Consultant** | | Tallinn, Estonia
 Prifinance International | | 2024 – 2025
-- Delivered tailored pitches and consultations to prospective clients on both offshore and onshore company formation.
-- Incorporated eleven companies, set up two payment systems, and secured license for an educational institutional.
+- Developed tailored client-facing communications and pitch materials for offshore and onshore company formation — advising on positioning and narrative across multiple jurisdictions for multinational clients.
+- Managed reputational and compliance messaging for eleven incorporated entities, navigating cross-border regulatory environments while maintaining client trust and clear communication.
 
 **Business Development Manager** | | Riga, Latvia
 Globus IT | | 2021 – 2023
-- Defined revenue growth goals and implemented outreach strategies for new markets in MENA, APAC and LATAM.
-- Translated technical solutions into business cases and led three large-scale IT-projects on payment systems within a year.
+- Built market messaging frameworks and outreach campaigns for IT solutions across MENA, APAC, and LATAM — translated complex B2B technology products into compelling narratives for non-technical audiences, driving adoption in new markets.
+- Led three large-scale IT projects on payment systems; managed media, partner, and stakeholder relationships to build brand presence in markets with no prior recognition within a single year.
 
 **Account Manager** | | Hrazdan, Armenia
 ECOS Cloud Mining Co | | 2021 – 2022
-- Forecasted B2C and B2B client portfolios, handled enquiries and ongoing account needs in crypto.
-- Generated MQL and SQL for the company from cloud mining contracts and BTC Miners sales.
+- Managed B2C and B2B client communications and account relationships in crypto, generating qualified leads through targeted outreach and content-driven engagement.
+- Produced client-facing materials and managed ongoing account needs from cloud mining contracts and BTC Miners sales.
 
 **Client Operational Manager** | | Moscow, Russia
 NovaKid English School | | 2021 – 2022
-- Coordinated client communication, resolved operational issues, and converted cold leads to warm leads.
-- Managed to retain seven difficult clients as subscribers to our course.
+- Coordinated client communication across multiple touchpoints, resolved issues, and converted cold leads to warm leads through consistent relationship management.
+- Retained seven difficult clients through personalised communications and responsive service recovery.
 
 **Liaison Officer** | | Moscow, Russia
 Embassy of the Republic of Indonesia | | 2018 – 2020
-- Liaised Indonesian SMEs and artisans in business meetings with Russian partners.
-- Interpreted during negotiations and trade discussions and supporting the embassy's economic diplomacy agenda.
+- Developed briefing materials and communications representing Indonesia's economic interests; managed messaging and positioning for trade and diplomatic engagement with Russian government partners and business associations.
+- Facilitated high-level trade negotiations and official diplomatic discussions — ensuring message clarity and reputational coherence for the embassy across bilateral engagements.
 
 **Assistant to His Excellency** | | Jakarta, Indonesia
 Embassy of the Kingdom of Jordan | | 2018
-- Accompanied His Excellency to official meetings and coordination with Indonesian counterparts.
-- Prepared concise briefings on Indonesian current affairs and event background, enabling the Ambassador to engage strategically with government and private-sector leaders.
+- Prepared strategic briefings and background communications on Indonesian political and economic affairs, enabling the Ambassador to engage effectively with government and private-sector leaders at the highest level.
+- Supported the Ambassador's official engagements and coordinated messaging with Indonesian counterparts across government and civil society.
 
 ### Leadership and Activities
 
@@ -368,7 +368,7 @@ Embassy of the Kingdom of Jordan | | 2018
 
 **Supervisor Board Member** | | Jakarta, Indonesia
 Overseas Indonesian Students' Association Alliance (OISAA) | | 2021 – 2024
-Reviewed program plans and policy proposals on education and Indonesian students' welfare over 65 countries.
+Reviewed and contributed to program communications and policy proposals on education and Indonesian student welfare across 65 countries — representing the organization's positions in stakeholder outreach and advocacy.
 
 **Board Member** | | Moscow, Russia
 AIESEC | | 2020 – 2021
@@ -376,25 +376,25 @@ Oversaw youth leadership exchange activities and delivered international volunte
 
 **Public Relations & Outreach Coordinator** | | Baltimore, USA
 Civilization Exchange and Cooperation Foundation (CECF) | | 2015 – present
-Organized outreach and communication efforts for intercultural and interfaith dialogue programs.
+Led PR strategy, media outreach, stakeholder communications, and content creation for intercultural and interfaith dialogue programs since 2015 — managing media relationships, event communications, and audience engagement across the US, Indonesia, and internationally.
 
 #### Volunteer & Project
 
 **Chairman** | | Moscow, Russia
 The Home of People (HOPE) | | 2020 – present
-Charity for churches, mosques and a synagogue.
+Managed community communications and stakeholder outreach for a multi-faith charity serving churches, mosques, and a synagogue.
 
 **Secretariat and Partnership** | | Jakarta, Indonesia
 Center for Football Industry Innovation | | 2025
-Led a fundraising team for First International Football Innovation Summit.
+Led partnership communications and sponsorship outreach for the First International Football Innovation Summit — developed pitch materials and managed sponsor relations to secure funding.
 
 **Cyber Volunteer** | | Jakarta, Indonesia
 Indonesian Youth Conference | | 2018
-Supported digital outreach and online engagement to promote the conference and increase participation.
+Led digital outreach and online engagement campaigns to promote the conference and drive participation growth.
 
 **Sponsorship and Partnership** | | Jakarta, Indonesia
 ASEAN Youth Expo (AYE) | | 2014
-Raised sponsorship to support event logistics and operational expenses.
+Developed sponsorship communications and negotiated partnerships to fund event logistics and operations.
 
 #### Conference
 
