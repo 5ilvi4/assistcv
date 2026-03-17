@@ -289,6 +289,48 @@
       font-family: inherit; text-align: left;
     }
     #cv-btn:hover { background: #333; color: #fff; }
+
+    /* ── JD panel ────────────────────────────────────────────────────────── */
+    #jd-url-input {
+      width: 100%; background: #2a2a2d; border: 1px solid #3a3a3e; border-radius: 7px;
+      color: #e0e0e0; font-family: inherit; font-size: 12px; padding: 8px 10px; outline: none;
+    }
+    #jd-url-input:focus { border-color: #555; }
+    .jd-action-btn {
+      flex: 1; background: #2a2a2d; border: 1px solid #3a3a3e; border-radius: 6px;
+      color: #aaa; font-family: inherit; font-size: 12px; padding: 7px 8px; cursor: pointer;
+    }
+    .jd-action-btn:hover { background: #333; color: #fff; }
+    #jd-section {
+      display: none; width: 100%; height: 100%; overflow-y: auto; padding: 32px 40px 80px;
+    }
+    .jd-inner { max-width: 794px; margin: 0 auto; }
+    .jd-title { font-size: 18px; font-weight: 700; color: #fff; margin-bottom: 16px; }
+    .jd-toolbar {
+      display: flex; align-items: center; gap: 8px; margin-bottom: 14px; flex-wrap: wrap;
+    }
+    .jd-toolbar-url {
+      flex: 1; font-size: 11px; color: #5b9cf6; overflow: hidden;
+      text-overflow: ellipsis; white-space: nowrap; min-width: 0;
+    }
+    .jd-toolbar-url a { color: inherit; text-decoration: none; }
+    .jd-toolbar-url a:hover { text-decoration: underline; }
+    .jd-toolbar-btn {
+      flex: none; background: #2a2a2d; border: 1px solid #3a3a3e; border-radius: 6px;
+      color: #aaa; font-family: inherit; font-size: 12px; padding: 5px 12px; cursor: pointer;
+    }
+    .jd-toolbar-btn:hover { background: #333; color: #fff; }
+    #jd-paste-area {
+      display: none; width: 100%; background: #1c1c1e; border: 1px solid #2e2e32;
+      border-radius: 8px; color: #ccc; font-family: inherit; font-size: 12px;
+      padding: 14px; resize: vertical; min-height: 180px; outline: none; margin-bottom: 10px;
+    }
+    #jd-paste-area:focus { border-color: #444; }
+    #jd-text-panel {
+      background: #1c1c1e; border: 1px solid #2e2e32; border-radius: 8px;
+      padding: 20px 24px; font-size: 12.5px; line-height: 1.65; color: #ccc;
+      white-space: pre-wrap; word-break: break-word;
+    }
   </style>
 </head>
 <body>
@@ -319,6 +361,18 @@
 
     <hr class="divider">
 
+    <div>
+      <label class="field-label">Job Description</label>
+      <input id="jd-url-input" type="url" placeholder="Paste job URL…">
+      <div style="display:flex;gap:6px;margin-top:6px">
+        <button class="jd-action-btn" onclick="fetchAndShowJD()">&#8635;&nbsp;Fetch</button>
+        <button class="jd-action-btn" id="jd-view-btn" style="display:none" onclick="showJD()">View JD &#8250;</button>
+      </div>
+      <div id="jd-status" class="hint" style="margin-top:5px"></div>
+    </div>
+
+    <hr class="divider">
+
     <button id="tracker-btn" onclick="showTracker()">&#9776;&nbsp; Application Tracker</button>
     <button id="cv-btn" onclick="showCV()" style="display:none">&#8592;&nbsp; Back to CV</button>
 
@@ -333,6 +387,18 @@
     </div>
     <div id="tracker-section" style="display:none">
       <div id="tracker-inner"></div>
+    </div>
+    <div id="jd-section">
+      <div class="jd-inner">
+        <div class="jd-title">Job Description</div>
+        <div class="jd-toolbar">
+          <div class="jd-toolbar-url" id="jd-toolbar-url"></div>
+          <button class="jd-toolbar-btn" onclick="fetchAndShowJD()">&#8635; Re-fetch</button>
+          <button class="jd-toolbar-btn" onclick="toggleJDEdit()">&#9998; Edit</button>
+        </div>
+        <textarea id="jd-paste-area" placeholder="Paste job description text here, then click Save…" onblur="saveJDFromTextarea()"></textarea>
+        <div id="jd-text-panel"></div>
+      </div>
     </div>
   </div>
 
@@ -623,6 +689,7 @@ function showTracker() {
   document.getElementById('cv-pages-container').style.display = 'none';
   document.getElementById('cover-letter-section').classList.remove('visible');
   document.getElementById('tracker-section').style.display = 'block';
+  document.getElementById('jd-section').style.display = 'none';
   document.getElementById('download-btn').style.display = 'none';
   document.getElementById('download-cv-only-btn').style.display = 'none';
   document.getElementById('download-cl-only-btn').style.display = 'none';
@@ -634,6 +701,7 @@ function showTracker() {
 function showCV() {
   document.getElementById('cv-pages-container').style.display = '';
   document.getElementById('tracker-section').style.display = 'none';
+  document.getElementById('jd-section').style.display = 'none';
   document.getElementById('download-btn').style.display = '';
   document.getElementById('download-cv-only-btn').style.display = '';
   // Cover Letter Only button: only show if current version has a cover letter
@@ -641,6 +709,105 @@ function showCV() {
   document.getElementById('download-cl-only-btn').style.display = COVERS[key] ? '' : 'none';
   document.getElementById('tracker-btn').style.display = '';
   document.getElementById('cv-btn').style.display = 'none';
+}
+
+// ════════════════════════════════════════════════════════════════════════════
+// JD Fetch + Panel
+// ════════════════════════════════════════════════════════════════════════════
+
+function jdKey() {
+  return 'jd_' + document.getElementById('version-select').value;
+}
+function saveJDData(url, text) {
+  localStorage.setItem(jdKey(), JSON.stringify({ url, text }));
+}
+function loadJDData() {
+  try { return JSON.parse(localStorage.getItem(jdKey())) || null; } catch { return null; }
+}
+
+function stripHtml(html) {
+  const d = document.createElement('div');
+  d.innerHTML = html;
+  d.querySelectorAll('script,style,nav,header,footer,aside').forEach(e => e.remove());
+  return (d.innerText || d.textContent || '').replace(/[ \t]+/g, ' ').replace(/\n{3,}/g, '\n\n').trim();
+}
+
+async function fetchAndShowJD() {
+  const url = document.getElementById('jd-url-input').value.trim();
+  const status = document.getElementById('jd-status');
+  if (!url) { status.textContent = 'Enter a URL first.'; return; }
+  status.textContent = 'Fetching…';
+  try {
+    const proxy = 'https://api.allorigins.win/get?url=' + encodeURIComponent(url);
+    const res = await fetch(proxy, { signal: AbortSignal.timeout(12000) });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const data = await res.json();
+    const text = stripHtml(data.contents || '');
+    if (!text || text.length < 80) throw new Error('empty');
+    saveJDData(url, text);
+    status.textContent = '✓ Loaded';
+    renderJDPanel(url, text, false);
+    showJD();
+  } catch (e) {
+    const saved = loadJDData();
+    status.textContent = saved && saved.text
+      ? '✓ Loaded from memory (fetch failed)'
+      : 'Could not fetch — paste text manually in JD view.';
+    renderJDPanel(url, saved ? saved.text : '', true);
+    showJD();
+  }
+}
+
+function renderJDPanel(url, text, showEdit) {
+  const toolbarUrl = document.getElementById('jd-toolbar-url');
+  const panel = document.getElementById('jd-text-panel');
+  const paste = document.getElementById('jd-paste-area');
+  toolbarUrl.innerHTML = url
+    ? '<a href="' + url + '" target="_blank">' + url + ' ↗</a>'
+    : '<span style="color:#555">No URL</span>';
+  panel.textContent = text || '';
+  panel.style.display = text ? '' : 'none';
+  paste.value = text || '';
+  paste.style.display = (showEdit || !text) ? '' : 'none';
+  document.getElementById('jd-view-btn').style.display = '';
+}
+
+function toggleJDEdit() {
+  const paste = document.getElementById('jd-paste-area');
+  if (paste.style.display === 'none') {
+    const saved = loadJDData();
+    paste.value = saved ? saved.text : '';
+    paste.style.display = '';
+    paste.focus();
+  } else {
+    saveJDFromTextarea();
+    paste.style.display = 'none';
+  }
+}
+
+function saveJDFromTextarea() {
+  const paste = document.getElementById('jd-paste-area');
+  const url = document.getElementById('jd-url-input').value.trim();
+  const text = paste.value.trim();
+  if (!text) return;
+  saveJDData(url, text);
+  const panel = document.getElementById('jd-text-panel');
+  panel.textContent = text;
+  panel.style.display = '';
+  document.getElementById('jd-status').textContent = '✓ Saved';
+  document.getElementById('jd-view-btn').style.display = '';
+}
+
+function showJD() {
+  document.getElementById('cv-pages-container').style.display = 'none';
+  document.getElementById('cover-letter-section').classList.remove('visible');
+  document.getElementById('tracker-section').style.display = 'none';
+  document.getElementById('jd-section').style.display = '';
+  document.getElementById('download-btn').style.display = 'none';
+  document.getElementById('download-cv-only-btn').style.display = 'none';
+  document.getElementById('download-cl-only-btn').style.display = 'none';
+  document.getElementById('tracker-btn').style.display = 'none';
+  document.getElementById('cv-btn').style.display = 'block';
 }
 
 function printCVOnly() {
@@ -682,10 +849,31 @@ document.getElementById('version-select').addEventListener('change', e => {
     clSection.classList.remove('visible');
     clOnlyBtn.style.display = 'none';
   }
+  // Load saved JD for this version
+  const saved = loadJDData();
+  const urlInput = document.getElementById('jd-url-input');
+  const viewBtn  = document.getElementById('jd-view-btn');
+  const status   = document.getElementById('jd-status');
+  if (saved && saved.url)  urlInput.value = saved.url;
+  else urlInput.value = CV_APPLICATIONS.find(a => a.key === key)?.jdUrl || '';
+  viewBtn.style.display = saved && saved.text ? '' : 'none';
+  status.textContent = saved && saved.text ? '✓ JD saved' : '';
 });
 
 // Init
 buildPages(CVS['default']);
+
+// Pre-populate JD URL from saved data or jdUrl field
+(function initJD() {
+  const saved = loadJDData();
+  const firstApp = CV_APPLICATIONS[0];
+  document.getElementById('jd-url-input').value =
+    (saved && saved.url) ? saved.url : (firstApp.jdUrl || '');
+  if (saved && saved.text) {
+    document.getElementById('jd-view-btn').style.display = '';
+    document.getElementById('jd-status').textContent = '✓ JD saved';
+  }
+})();
 </script>
 </body>
 </html>
