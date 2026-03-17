@@ -503,19 +503,43 @@ function buildPages(cvText) {
   const pages   = [[]];
   const heights = [0];
 
-  Array.from(temp.children).forEach(child => {
-    const h = child.offsetHeight
-            + parseFloat(getComputedStyle(child).marginTop  || 0)
-            + parseFloat(getComputedStyle(child).marginBottom || 0);
-    const pi = pages.length - 1;
+  function elH(el) {
+    return el.offsetHeight
+         + parseFloat(getComputedStyle(el).marginTop    || 0)
+         + parseFloat(getComputedStyle(el).marginBottom || 0);
+  }
 
-    // If this block (keep-entry or standalone) won't fit, start a new page
+  // A header-only block: keep-entry containing only section/sub-section headers
+  // (no real content — entry, bullet, plain-row — inside)
+  function isHeaderOnly(el) {
+    return el.classList.contains('keep-entry')
+        && el.querySelector('.section, .sub-section')
+        && !el.querySelector('.entry, .bullet, .bullet-row, .plain-row, .plain');
+  }
+
+  const children = Array.from(temp.children);
+  children.forEach((child, idx) => {
+    const h = elH(child);
+    let pi = pages.length - 1;
+
+    // Normal overflow: block doesn't fit → new page
     if (heights[pi] + h > A4_CONTENT_H && heights[pi] > 0) {
-      pages.push([]);
-      heights.push(0);
+      pages.push([]); heights.push(0);
+      pi = pages.length - 1;
     }
-    pages[pages.length - 1].push(child.cloneNode(true));
-    heights[heights.length - 1] += h;
+
+    // Lookahead: header-only block fits on current page but the next element
+    // won't also fit → push header down so it opens the next page with content
+    if (isHeaderOnly(child) && idx < children.length - 1 && heights[pi] > 0) {
+      const nextH = elH(children[idx + 1]);
+      if (heights[pi] + h + nextH > A4_CONTENT_H) {
+        pages.push([]); heights.push(0);
+        pi = pages.length - 1;
+      }
+    }
+
+    pages[pi].push(child.cloneNode(true));
+    heights[pi] += h;
   });
 
   document.body.removeChild(temp);
