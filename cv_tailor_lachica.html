@@ -457,6 +457,19 @@ function wrapEntriesIn(root) {
     while (w.firstChild) w.parentNode.insertBefore(w.firstChild, w);
     w.remove();
   });
+  // Keep section/sub-section headers with their next element
+  Array.from(root.querySelectorAll('.section, .sub-section')).forEach(hdr => {
+    const next = hdr.nextElementSibling;
+    if (next) {
+      const wrapper = document.createElement('div');
+      wrapper.className = 'keep-entry';
+      hdr.parentNode.insertBefore(wrapper, hdr);
+      wrapper.appendChild(hdr);
+      wrapper.appendChild(next);
+    }
+  });
+
+  // Keep entry header + sub-line + first bullet together
   Array.from(root.querySelectorAll('.entry')).forEach(entry => {
     const wrapper = document.createElement('div');
     wrapper.className = 'keep-entry';
