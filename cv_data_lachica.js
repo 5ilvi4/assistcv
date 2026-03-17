@@ -171,6 +171,12 @@ Honorable Student, Rector's Award (2024)
 **University of Glasgow** | | Glasgow, United Kingdom
 Erasmus+ Exchange Student, Political Science (Scholarship) | | 2022
 
+**People's Friendship University of Russia** | | Moscow, Russia
+Language Program, International Relations (Scholarship) | | 2015 – 2016
+
+**Sampoerna Academy** | | Bogor, Indonesia
+High School, Social Sciences (Scholarship) | | 2012 – 2015
+
 ### Experience
 
 **Director of International Cooperations** | | Yogyakarta, Indonesia
@@ -187,6 +193,16 @@ Prifinance International | | 2024 – 2025
 Globus IT | | 2021 – 2023
 - Developed and executed stakeholder engagement strategies for market entry across MENA, APAC and LATAM, translating regulatory and policy environments into business cases for senior leadership.
 - Led three large-scale IT projects on payment systems — managed government and institutional relationships to enable market authorisations within a single year.
+
+**Account Manager** | | Hrazdan, Armenia
+ECOS Cloud Mining Co | | 2021 – 2022
+- Forecasted B2C and B2B client portfolios, handled enquiries and ongoing account needs in crypto.
+- Generated MQL and SQL for the company from cloud mining contracts and BTC Miners sales.
+
+**Client Operational Manager** | | Moscow, Russia
+NovaKid English School | | 2021 – 2022
+- Coordinated client communication, resolved operational issues, and converted cold leads to warm leads.
+- Managed to retain seven difficult clients as subscribers to our course.
 
 **Liaison Officer** | | Moscow, Russia
 Embassy of the Republic of Indonesia | | 2018 – 2020
@@ -205,36 +221,59 @@ Embassy of the Kingdom of Jordan | | 2018
 Overseas Indonesian Students' Association Alliance (OISAA) | | 2021 – 2024
 Reviewed and advised on policy proposals related to education and Indonesian student welfare across 65 countries — engaging government stakeholders and institutional partners at the national level.
 
+**Board Member** | | Moscow, Russia
+AIESEC | | 2020 – 2021
+Oversaw youth leadership exchange activities and delivered international volunteer opportunities for high school students.
+
 **Public Relations & Outreach Coordinator** | | Baltimore, USA
 Civilization Exchange and Cooperation Foundation (CECF) | | 2015 – present
 Led stakeholder outreach and communications for intercultural and interfaith dialogue programs across government and civil society.
+
+#### Volunteer & Project
+
+**Chairman** | | Moscow, Russia
+The Home of People (HOPE) | | 2020 – present
+Charity for churches, mosques and a synagogue.
+
+**Secretariat and Partnership** | | Jakarta, Indonesia
+Center for Football Industry Innovation | | 2025
+Led a fundraising team for First International Football Innovation Summit.
+
+**Cyber Volunteer** | | Jakarta, Indonesia
+Indonesian Youth Conference | | 2018
+Supported digital outreach and online engagement to promote the conference and increase participation.
+
+**Sponsorship and Partnership** | | Jakarta, Indonesia
+ASEAN Youth Expo (AYE) | | 2014
+Raised sponsorship to support event logistics and operational expenses.
 
 #### Conference
 
 - Representative – Closed-door diplomatic briefing with UN High Commissioner for Human Rights Zeid Ra'ad Al Hussein and foreign diplomats, Jakarta, Indonesia. | | 2018
 - Representative – International Volga Dialogue on Russian History, Yelabuga, Russia. | | 2018
 - Speaker – Model G-20 at National Autonomous University of Mexico City, Mexico. | | 2018
+- Speaker – Voice of Indonesia, Commemorated Anti-drugs Day, Jakarta, Indonesia. | | 2015
 
 #### Publication
 
-- "Digital Nomadism as a Global Phenomenon after Covid-19: Institutional and Socio-Economic Drivers Influencing Migration Experience," Sociostudies, November 2025
-- "Theory and Practice of Negotiation: Universal and Regional Level", Russian Council (2018)
+- "Theory and Practice of Negotiation: Universal and Regional Level", Russian Council (2018): www.sociostudies.org
+- "Digital Nomadism as a Global Phenomenon after Covid-19: Institutional and Socio-Economic Drivers Influencing Migration Experience," Sociostudies, November 2025: russiancouncil.ru
 
 <!-- html -->
 <div style="display:flex;border:0.75px solid #000;margin-top:10px;font-size:12px;line-height:1.5">
+  <div style="flex:1;padding:4px 10px 6px;border-right:0.75px solid #000">
+    <p style="font-weight:bold;text-align:center;margin-bottom:3px">Sports</p>
+    <p style="margin-bottom:2px">Member:</p>
+    <p style="padding-left:12px;text-indent:-9px;margin:0">&#8226;&nbsp;Budokan Karate <em>Shotokan</em> Club Moscow</p>
+    <p style="padding-left:12px;text-indent:-9px;margin:0">&#8226;&nbsp;Fencing Club Victoria El Moscow</p>
+    <p style="padding-left:12px;text-indent:-9px;margin:0">&#8226;&nbsp;Equestrian Pradar Club Moscow</p>
+  </div>
   <div style="flex:1;padding:4px 10px 6px">
     <p style="font-weight:bold;text-align:center;margin-bottom:3px">Languages</p>
     <p style="padding-left:12px;text-indent:-9px;margin:0">&#8226;&nbsp;Bahasa Indonesia &#8211; Native</p>
     <p style="padding-left:12px;text-indent:-9px;margin:0">&#8226;&nbsp;English &#8211; Near-native</p>
     <p style="padding-left:12px;text-indent:-9px;margin:0">&#8226;&nbsp;Russian &#8211; Basic</p>
     <p style="padding-left:12px;text-indent:-9px;margin:0">&#8226;&nbsp;French &#8211; Basic</p>
-  </div>
-  <div style="flex:1;padding:4px 10px 6px;border-left:0.75px solid #000">
-    <p style="font-weight:bold;text-align:center;margin-bottom:3px">Key Skills</p>
-    <p style="padding-left:12px;text-indent:-9px;margin:0">&#8226;&nbsp;Government Relations &amp; Advocacy</p>
-    <p style="padding-left:12px;text-indent:-9px;margin:0">&#8226;&nbsp;Policy Engagement &amp; Issue Management</p>
-    <p style="padding-left:12px;text-indent:-9px;margin:0">&#8226;&nbsp;MoU &amp; Partnership Negotiation</p>
-    <p style="padding-left:12px;text-indent:-9px;margin:0">&#8226;&nbsp;Regulatory &amp; Compliance Navigation</p>
   </div>
 </div>
 <!-- /html -->`
