@@ -1192,5 +1192,80 @@ Silvia Adinda`,
 **Computational Thinking** | University of Pennsylvania | 2019
 **Data Science Math Skills** | Duke University | 2019
 **Computer Science 101** | Stanford University | 2016 – 2018`
+  },
+  {
+    key:       "msft-tpm-aiml",
+    label:     "Microsoft — TPM Generalist (AI/ML)",
+    company:   "Microsoft",
+    role:      "Technical Program Manager - Generalist (AI/ML)",
+    jdUrl:     "https://apply.careers.microsoft.com/careers/job/1970393556637655?utm_source=linkedin&domain=microsoft.com&src=LinkedIn",
+    dateAdded: "2026-03-28",
+    cv: `#! SILVIA ADINDA
+##! adinda@stanford.edu  •  650 305 6683  •  linkedin.com/in/silviatariganadinda  •  github.com/5ilvi4  •  Los Altos Hills, California
+
+Technical Program Manager with 8+ years driving AI/ML programs from 0→1 across healthcare, fintech, and consumer tech. Track record of managing cross-functional programs spanning engineering, research, and product teams — 20 countries deployed, AI products at millions-of-users scale. Hands-on with Python, SQL/BigQuery, data pipelines, and AI tooling (Microsoft Copilot, LLMs). Comfortable owning complex programs across offices, teams, and time zones.
+
+=== Education:
+>>> 2025–2026 ||| Master in Medical Informatics, Stanford University School of Medicine
+~- GPA 3.775/4.00 · Full Ride Scholarship, Ministry of Finance (LPDP)
+~- Coursework: Data Driven Medicine · Digitally-Enabled Healthcare · Biodesign for Digital Health · Modeling Biomedical Systems · Healthcare Operations Management · Bioethical Challenges of New Technology · Principles of Business Strategy
+
+>>>  ||| Bachelor's in Economics, Universitas Indonesia
+~- Full Ride Scholarship · Most Outstanding Student
+
+=== Experience:
+>>> Sep 2023–May 2025 ||| Senior Technical Project Manager, General Electric Healthcare, International Region
+~- Leading and managing IT Projects Innovation Roadmap and Strategies for international regions: Asia, Africa, Latin America, New Zealand, Australia, Europe, the UK, and the Middle East.
+~- Leading the end-to-end System Deployment: global business process alignment, system ideation, technical development, preparing user adoption, and launch of technology for Service and Commercial Business Group – 20 Countries Deployed, users onboarded.
+~- Projects: CRM, ServiceMax – Salesforce, iCenter, Service Board, System Migration, AI/ML Service Renewal Automation Process, Data Migration and Governance.
+~- Awards: The Five Heartbeats Award in the category of "Deliver the Future of Healthcare" 2025.
+
+>>> 2025 ||| AI Consultant — Knowledge Management, Johnson & Johnson, Irvine, USA
+~- Engaged as external AI and Subject Matter Expert to design and deploy an AI-powered knowledge management system for J&J's Global Marketing team.
+~- Built the knowledge repository architecture: curated, structured, and maintained marketing content — brand guidelines, campaign assets, product information, SOPs, and presentations — ensuring accuracy and currency across global markets.
+~- Deployed AI chatbot via Microsoft Copilot integrated into Microsoft Teams as an always-available single source of truth, enabling any team member to query in natural language for instant, up-to-date answers.
+~- Validated and tested AI responses against real user questions prior to launch; led user adoption and onboarding across the global team.
+
+>>> Jan–April 2023 ||| Digital Transformation Manager (AI/ML), Philip Morris International
+~- Led and automated Merchant Order Taking process by supporting 2 AI Products: deployment, user adoption, and product iteration.
+~- Chatbot Order Taking Automation: 10k onboarded merchants and 250bio revenue in 3 months.
+~- Call-bot Order Taking Automation: 2k onboarded merchants and 20bio revenue in 3 months.
+~- Organized and managed the framework and roadmap of Datalake, Data Governance, User Governance for finance and reporting: integrity, security, establishing policies and standards for data handling.
+
+>>> Jan 2022–2023 ||| AI/ML and Analytics — Senior Product Manager, Alodokter
+~- Led the roadmap of AI/ML: data governance, new business opportunities, technology ideation, development of new features and product initiatives — organizing 6 engineers and 2 data scientists.
+~- Led and maintained 6 AI/ML Products: Chatbot Automation (1 million users/month during Covid-19), Doctors' Recommender, Health Articles Recommender, Ads Topic Classifier, Spam Review Flagger, and Feeds Recommender (Collaborative Filtering + Hybrid LightFM).
+~- Worked with patient EMR data for the Chatbot Automation — including data pipeline ingestion, analysis, and model training for personalised responses.
+~- Other Projects: ETL Migration, Data Governance, A/B Testing and DevOps Migration using Kubernetes.
+
+>>> 2020–2021 ||| Project Manager — Log Stream, LinkAja – Tech Group
+~- Managed cross-functional Agile project for Data Pipeline/Log Stream deployment; reported to CTO.
+~- Delivered: Fraud Alert Monitoring, DevOps Log Monitoring, Marketing Automation, eKYC Process, and Finance Reporting.
+
+>>> 2020–2022 ||| Senior Data Analyst, LinkAja – Big Data, AI and Anti-Fraud Engineering
+~- Conducted end-to-end analysis for growth, retention, and revenue; deployed Data Governance via MixPanel and Braze.
+~- Led AI automation initiatives: eKYC Automation (tampered, deblurring, 4 Points Transformation) — automating 80% of process; User Segmentation (RFM).
+
+>>> 2019 ||| Business Intelligence Analyst, GOJEK – Data Science
+~- Analyzed and detected fraud patterns across users, drivers, and merchants.
+~- Led Fraud Detection automation system for Fraud Operation Team — preventing losses of ~$5 million USD.
+
+=== Projects:
+>>> 2025 ||| EP/CATH Lab Planning Simulator, Personal Project
+~- Built hospital capacity planning simulation tool replaying 7,402 procedures across 260 simulated operating days to recommend optimal holding bay count, closing time, and scheduling policy.
+~- Stack: Python, Streamlit. Deployed as interactive web app with cost analysis, policy comparison, and heatmap visualisations.
+
+>>> 2025 ||| Prior Auth Auto-Assembler, Personal Project
+~- Built agentic AI prototype automating prior authorization packet assembly for home oxygen (DMEPOS) — extracts clinical evidence, runs payer-specific rules checks (Medicare, MA plans), generates submission-ready packets. Stack: HTML/JS, LLM.
+
+>>> 2025 ||| ColpoAI — AI Cervical Cancer Detection, Personal / University of Limpopo Collaboration
+~- Built clinical decision support tool for detecting pre-cancerous cervical lesions at colposcopy, supporting a nurse + GP remote workflow in low-resource settings.
+~- 4-class classification output (Cervical Cancer / HSIL / LSIL / Normal) with confidence scoring and explainability layer. Stack: HTML/JS, GenAI.
+~- Affiliated with formal research study at University of Limpopo; funded by SAfAIDS and ASCCP.
+
+=== Additional Information:
+~- Technical: Python · SQL/BigQuery · Tableau · PowerBI · Mixpanel · Braze · Firebase · Microsoft Copilot · ChatGPT · Claude · Gemini · R · HL7 · FHIR · DICOM
+~- Languages: English (fluent) · Indonesian (native)
+~- Certifications: Computational Thinking – Univ. of Pennsylvania (2019) · Data Science Math Skills – Duke University (2019) · Computer Science 101 – Stanford University (2016–2018)`
   }
 ];
