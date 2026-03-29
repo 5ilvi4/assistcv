@@ -25,7 +25,7 @@ const CV_APPLICATIONS = [
 
 ### EDUCATION & HONORS
 
-**Master in Medical Informatics** | Stanford University School of Medicine | School of Medicine
+**Master in Medical Informatics** | Stanford Univ. School of Medicine | Class of 2026
 - Class of 2026 with Full Ride Scholarship by Indonesia Endowment Fund 2025-2026 GPA 4.018/4.00
 
 **Bachelor's in Management** | Universitas Indonesia | July 2018
@@ -88,7 +88,7 @@ const CV_APPLICATIONS = [
 - Led and formulating Fraud Detection automation system through for Fraud Operation Team: successfully preventing losses of around $5 million USD.
 - Prepared insights and reports using statistical tools, data visualization and business use case for business team: transactional, in-app behavior, and other behavioral data.
 
-**Research Assistant** | United Nation – ILO Jakarta Office | Aug 2014 – December 2015
+**Research Assistant** | United Nation – ILO Jakarta Office | Aug 2014 – Dec 2015
 - Conducted research and assessment in Garment Industry to analyze the current condition of Labor in Indonesia from selected companies in Indonesia Worker Survey (Java).
 - Prepared annual report with Better Work Indonesia and Tuft University for Key Development Partners: Governments and Sponsors.
 
@@ -135,6 +135,230 @@ const CV_APPLICATIONS = [
 **Computer Science 101** | Stanford University | 2016 – 2018`
   },
   {
+    key:       "default-v2",
+    label:     "Original V.2",
+    company:   "",
+    role:      "",
+    jdUrl:     "",
+    dateAdded: "2026-03-28",
+    cv: `# SILVIA ADINDA
+## https://id.linkedin.com/in/silviatariganadinda // github.com/5ilvi4 // 650 305 6683 // silviadindatarigan@gmail.com
+
+### PROFILE
+
+Silvia Adinda is an AI and technology program leader with over 8 years of experience across healthcare, fintech, and consumer technology, combining deep technical fluency with a consistent track record of delivering AI programs that get adopted and produce measurable business outcomes. She operates at the intersection of AI strategy, program execution, and organizational change — equally comfortable defining a product roadmap, deploying an agentic AI system, and running the change management program that makes it stick.
+
+Her career spans the full AI lifecycle: from ideating and building AI/ML products from scratch, to deploying them in production at scale, to governing the data infrastructure that sustains them, to leading the training and onboarding that drives real adoption. She has done this at global organizations including GE Healthcare, Johnson & Johnson, Philip Morris International, Alodokter, LinkAja, and GOJEK — and independently as a builder and researcher.
+
+At GE Healthcare (2023–2025), she served as Senior Technical Project Manager leading the AI and technology Innovation Roadmap across 20 countries spanning Asia, Africa, Latin America, Australasia, Europe, the UK, and the Middle East. She managed the full lifecycle of enterprise technology programs — from business process alignment and system ideation through technical development, user adoption, and launch — across the Service and Commercial Business Groups. Programs included CRM transformation, AI/ML Service Renewal Automation, Enterprise System Migration, and Data Governance. She was recognized with the Five Heartbeats Award for "Deliver the Future of Healthcare" in 2025.
+
+At Johnson & Johnson (2025), she was engaged as an external AI and Subject Matter Expert to design and deploy an AI-powered knowledge management system for the Global Marketing function. She built the knowledge repository architecture, deployed an AI chatbot via Microsoft Copilot integrated into Microsoft Teams as the team's single source of truth, and personally led the validation, user adoption, and global onboarding program.
+
+At Philip Morris International (2023), she led the deployment of two AI automation products — a Chatbot and a Call-bot for merchant order-taking — from zero to production in under three months, onboarding 10,000+ merchants and generating 250bio and 20bio revenue respectively, while simultaneously building the data governance and user governance frameworks for finance and reporting.
+
+At Alodokter (2022–2023), she served as Senior Product Manager for AI/ML, leading the roadmap and coordinating 6 engineers and 2 data scientists across 6 AI/ML products in production — including a Chatbot that scaled to 1 million users per month during Covid-19, two Recommender Systems, classification and spam detection models using Fasttext and SKlearn, and a Feeds Recommender built on Collaborative Filtering and Hybrid LightFM. She also led ETL Migration, Data Governance, A/B Testing infrastructure, and Kubernetes-based DevOps migration.
+
+At LinkAja (2020–2022), she held two roles: as Project Manager for the Log Stream program (reporting directly to the CTO), she delivered five mission-critical data pipeline capabilities across Fraud, Marketing, Operations, and Finance; as Senior Data Analyst in the Big Data, AI and Anti-Fraud Engineering team, she led AI automation initiatives including eKYC identity verification automation (80% process automated) and RFM-based user segmentation, and governed data quality and analytics infrastructure using MixPanel and Braze.
+
+At GOJEK (2019), she built and deployed a Fraud Detection automation system that prevented approximately $5 million USD in losses, analyzing behavioral patterns across users, drivers, and merchants.
+
+She has also taught as an Adjunct Lecturer in Data Analytics at Binus University (2021–2022), designing and delivering curriculum on Technical Project Management, Data Analytics, Data Governance, ETL, Design Thinking, Data Modeling, and Data Visualization.
+
+Beyond her professional roles, she independently builds AI systems: ColpoAI, an AI clinical decision support tool for cervical cancer detection affiliated with a formal research study at the University of Limpopo (funded by SAfAIDS and ASCCP); a Prior Auth Auto-Assembler, an agentic AI system automating prior authorization packet assembly for home oxygen with payer-specific rules validation; an EP/CATH Lab Planning Simulator built in Python and Streamlit that replayed 7,402 procedures to optimize hospital capacity planning; and VibesCheck, a 13-step LLM pipeline analysing chat exports across 28 communication dimensions and 13 interpersonal traits.
+
+She is completing a Master's in Medical Informatics at Stanford University School of Medicine (GPA 4.018/4.00, Class of 2026) on a full ride scholarship from the Indonesia Endowment Fund, and holds a Bachelor's in Management from Universitas Indonesia (full ride scholarship, Most Outstanding Student 2015). She is hands-on with Microsoft Copilot, ChatGPT, Claude, Gemini, Python, SQL/BigQuery, Tableau, PowerBI, Mixpanel, Braze, and Firebase.
+
+### EDUCATION
+
+**Stanford Univ. School of Medicine** | Stanford, CA | Class of 2026
+Master in Medical Informatics · GPA 4.018/4.00 · LPDP Full Scholarship
+
+**Universitas Indonesia** | Jakarta, Indonesia | July 2018
+Bachelor's in Management · Full Scholarship · Most Outstanding Student 2015
+
+### SKILLS
+
+**AI Program Management & Digital Transformation** | | Advanced
+- Designing and running AI programs from ideation through deployment, adoption, and iteration across global organizations.
+**AI/ML Product Development** | | Advanced
+- Built and shipped 6+ AI/ML products in production: chatbots, recommender systems, classification models, agentic AI systems.
+**Change Management & User Adoption** | | Advanced
+- Designed and led adoption programs, hands-on training, and onboarding across thousands of users at J&J, GE Healthcare, PMI, and Alodokter.
+**Data Analysis & Governance** | | Advanced
+- End-to-end data analysis, data governance frameworks, KPI design, and business insight generation.
+**Technical Tools** | | Advanced
+- Microsoft Copilot, ChatGPT, Claude, Gemini · Python · SQL/BigQuery · Tableau · PowerBI · Mixpanel · Braze · Firebase
+
+### EXPERIENCE
+
+**AI Consultant — Knowledge Management** | Johnson & Johnson | 2025
+- Engaged as external AI and Subject Matter Expert to design and deploy an AI-powered knowledge management system for J&J's Global Marketing team.
+- Built the knowledge repository architecture: curated, structured, and maintained marketing content — brand guidelines, campaign assets, product information, SOPs, and presentations — ensuring accuracy and currency across global markets.
+- Deployed AI chatbot via Microsoft Copilot integrated into Microsoft Teams as an always-available single source of truth, enabling any team member to query in natural language for instant, up-to-date answers.
+- Validated and tested AI responses against real user questions prior to launch; led user adoption and onboarding across the global team.
+
+**Senior Technical Project Manager** | General Electric Healthcare | Sept 2023 – May 2025
+- Leading and managing IT Projects Innovation Roadmap and Strategies for international regions: Asia, Africa, Latin America, New Zealand, Australia, Europe, the UK, and the Middle East.
+- Leading the end-to-end System Deployment: global business process alignment, system ideation, technical development, preparing user adoption, and launch of technology for Service and Commercial Business Group – 20 Countries Deployed, users on boarded.
+- Projects: CRM, ServiceMax – Salesforce, iCenter, Service Board, System Migration, AI/ML Service Renewal Automation Process, Data Migration and Governance.
+- Awards: The Five Heartbeats Award in the category of "Deliver the Future of Healthcare" 2025
+
+**Sabbatical Leave** | Caregiving | May 2023 – Aug 2023
+- Caregiving sabbatical to attend to my father's well-being following a significant cardiac event.
+
+**Digital Transformation Manager (AI/ML)** | Philip Morris International | Jan 2023 – April 2023
+- Led and automated Merchant Order Taking process by supporting 2 AI Products: deployment, user adoption, and product iteration:
+  - Chatbot-Order Taking Automation: 10k on boarded merchant and 250bio revenue in 3 months.
+  - Call-bot Order Taking Automation: 2k on boarded merchant and 20bio revenue in 3 months.
+- Organized and managed the framework and roadmap of Datalake, Data Governance, User governance for finance and reporting: integrity, security, establishing policies and standards for data handling.
+
+**AI/ML and Analytics - Senior Product Manager** | Alodokter | Jan 2022 – 2023
+- Led the roadmap of AI/ML: data governance, new business opportunities, technology ideation, development of new features and product initiatives — organizing 6 engineers and 2 data scientists.
+- Supported and automating core process of Alodokter by leading and maintaining 6 AI/ML Products:
+  - Chatbot Automation: using Binary Classification and Multi-class classification, scaling for 1 million users per month during Covid-19.
+  - Aloweb Recommender System: Doctors' Recommender (Clustering).
+  - Almobile Recommender System: Health Articles Recommender (using Clustering and CTR).
+  - Ads Topic Classification with Qtagger: Fasttext and SKlearn — Naive Bayes and linear model.
+  - Spam Review Flagging with Qtagger: Fasttext and SKlearn — Naive Bayes and linear model.
+  - Feeds Recommender: Collaborative Filtering Based, Content Based and Hybrid Based-LightFM.
+- Implemented Exploratory Data Analysis for business hypotheses validations and model testing.
+- Other Projects: ETL Migration, Data Governance, A/B Testing and DevOps Migration using Kubernetes.
+
+**Adjunct Lecturer - Data Analytics** | Binus (Bina Nusantara) University | June 2021 – June 2022
+- Prepared teaching materials: Technical Project Management, Introduction to Data Analytics and Data Governance, ETL, Design Thinking, Data Processing, Data Modeling, Data Analysis, and Data Visualization with Story Telling.
+- Taught undergraduate students from various undergraduate programs: Data Analytics (beginner level).
+
+**Senior Data Analyst** | LinkAja – Big Data, AI and Anti-Fraud Eng. | 2020 – 2022
+- Leveraged data to understand business needs by conducting end-to-end analysis that includes data gathering, analysis, ongoing scaled deliverables, reports and presentations: growth, retention, revenue.
+- Deployed and Monitoring Data Governance process: Implementing Trackers (SDK) to LinkAja User Journey metrics, preparing the required data points and acceptance criteria using MixPanel and Braze.
+- Led Automation Projects by utilizing Artificial Intelligence to implement growth initiatives with Product, Marketing and Sales Operations Teams:
+  - Users' eKYC Automation (tampered, deblurring, 4 Points Transformation) – automating 80% process.
+  - User Segmentation: Mapping and Analyzing Recency, Frequency and Monetary (RFM).
+
+**Project Manager – Log Stream** | LinkAja – Tech Group | 2020 – 2021
+- Managed cross-functional project using Agile Methodology for Data Pipeline/Log Stream deployment and implementation: work plans, project resources, requirements, and result evaluation.
+- Reported to CTO: implementing and monitoring data governance, data quality, and accuracy.
+- Led the delivery of acceptance criteria and key milestone: Fraud Alert Monitoring, DevOps Log Monitoring, Marketing Automation for Marketing Group, eKYC Process for Operation Group, Reporting for Finance Group.
+
+**Business Intelligence Analyst** | GOJEK – Data Science | 2019
+- Analyzed and detecting fraud patterns behavior by users, drivers, and merchants.
+- Led and formulating Fraud Detection automation system through for Fraud Operation Team: successfully preventing losses of around $5 million USD.
+- Prepared insights and reports using statistical tools, data visualization and business use case for business team: transactional, in-app behavior, and other behavioral data.
+
+**Research Assistant** | United Nation – ILO Jakarta Office | Aug 2014 – Dec 2015
+- Conducted research and assessment in Garment Industry to analyze the current condition of Labor in Indonesia from selected companies in Indonesia Worker Survey (Java).
+- Prepared annual report with Better Work Indonesia and Tuft University for Key Development Partners: Governments and Sponsors.
+
+### PROJECTS
+
+**ColpoAI — AI Cervical Cancer Detection** | Personal / University of Limpopo Collaboration | 2025
+- Built clinical decision support tool for detecting pre-cancerous cervical lesions at colposcopy, supporting a nurse + GP remote workflow in low-resource settings.
+- Designed AI model logic, confidence scoring with transparent explainability layer, and 4-class classification output (Cervical Cancer / HSIL / LSIL / Normal). Stack: HTML/JS, GenAI.
+- Affiliated with formal research study at University of Limpopo; funded by SAfAIDS and ASCCP.
+
+**EP/CATH Lab Planning Simulator** | Personal | 2025
+- Built hospital capacity planning simulation tool replaying 7,402 procedures across 260 simulated operating days to recommend optimal holding bay count, closing time, and scheduling policy.
+- Stack: Python, Streamlit. Deployed as interactive web app with cost analysis, policy comparison, and heatmap visualisations.
+
+**VibesCheck — Relationship Health Analyser** | Personal Research | 2025
+- Designed 13-step LLM pipeline that analyses chat exports across 28 communication dimensions and 13 interpersonal traits, producing an Overall Relationship Health Score (0–100) with confidence intervals and relationship stage prediction.
+
+**Prior Auth Auto-Assembler** | Personal | 2025
+- Built agentic AI prototype automating prior authorization packet assembly for home oxygen (DMEPOS) — AI extracts clinical evidence from uploaded documents, runs payer-specific rules checks (Medicare, MA plans), and generates submission-ready packets. Stack: HTML/JS, LLM.
+
+### CERTIFICATIONS
+
+**Computational Thinking** | University of Pennsylvania | 2019
+**Data Science Math Skills** | Duke University | 2019
+**Computer Science 101** | Stanford University | 2016 – 2018`
+  },
+  {
+    key:       "default-v3",
+    label:     "Original V.3 — Chronological",
+    company:   "",
+    role:      "",
+    jdUrl:     "",
+    dateAdded: "2026-03-28",
+    cv: `#! SILVIA ADINDA
+##! adinda@stanford.edu  •  650 305 6683  •  linkedin.com/in/silviatariganadinda  •  github.com/5ilvi4
+
+AI and technology program leader with 8+ years of experience across healthcare, fintech, and consumer technology. Track record of building and deploying AI/ML products, leading large-scale technology programs across 20 countries, and driving user adoption across thousands of users. Hands-on with Python, SQL/BigQuery, Tableau, PowerBI, Mixpanel, Braze, Firebase, and Microsoft Copilot.
+
+=== Education:
+>>> 2025–2026 ||| Master in Medical Informatics, Stanford University School of Medicine
+~- GPA 4.018/4.00 · Full Ride Scholarship, Ministry of Finance (LPDP)
+
+>>>  ||| Bachelor's in Economics, Universitas Indonesia
+~- Full Ride Scholarship · Most Outstanding Student
+
+=== Experience:
+>>> 2025 ||| AI Consultant — Knowledge Management, Johnson & Johnson, Irvine, USA
+~- Engaged as external AI and Subject Matter Expert to design and deploy an AI-powered knowledge management system for J&J's Global Marketing team.
+~- Built the knowledge repository architecture: curated, structured, and maintained marketing content — brand guidelines, campaign assets, product information, SOPs, and presentations — ensuring accuracy and currency across global markets.
+~- Deployed AI chatbot via Microsoft Copilot integrated into Microsoft Teams as an always-available single source of truth, enabling any team member to query in natural language for instant, up-to-date answers.
+~- Validated and tested AI responses against real user questions prior to launch; led user adoption and onboarding across the global team.
+
+>>> Sep 2023–May 2025 ||| Senior Technical Project Manager, General Electric Healthcare, International Region
+~- Leading and managing IT Projects Innovation Roadmap and Strategies for international regions: Asia, Africa, Latin America, New Zealand, Australia, Europe, the UK, and the Middle East.
+~- Leading the end-to-end System Deployment: global business process alignment, system ideation, technical development, preparing user adoption, and launch of technology for Service and Commercial Business Group – 20 Countries Deployed, users onboarded.
+~- Projects: CRM, ServiceMax – Salesforce, iCenter, Service Board, System Migration, AI/ML Service Renewal Automation Process, Data Migration and Governance.
+~- Awards: The Five Heartbeats Award in the category of "Deliver the Future of Healthcare" 2025.
+
+>>> May–Aug 2023 ||| Sabbatical Leave, Caregiving
+~- Caregiving sabbatical to attend to my father's well-being following a significant cardiac event.
+
+>>> Jan–April 2023 ||| Digital Transformation Manager (AI/ML), Philip Morris International
+~- Led and automated Merchant Order Taking process by supporting 2 AI Products: deployment, user adoption, and product iteration.
+~- Chatbot Order Taking Automation: 10k onboarded merchants and 250bio revenue in 3 months.
+~- Call-bot Order Taking Automation: 2k onboarded merchants and 20bio revenue in 3 months.
+~- Organized and managed the framework and roadmap of Datalake, Data Governance, User Governance for finance and reporting: integrity, security, establishing policies and standards for data handling.
+
+>>> Jan 2022–2023 ||| AI/ML and Analytics — Senior Product Manager, Alodokter
+~- Led the roadmap of AI/ML: data governance, new business opportunities, technology ideation, development of new features and product initiatives — organizing 6 engineers and 2 data scientists.
+~- Led and maintained 6 AI/ML Products: Chatbot Automation (1 million users/month during Covid-19), Doctors' Recommender, Health Articles Recommender, Ads Topic Classifier, Spam Review Flagger, and Feeds Recommender (Collaborative Filtering + Hybrid LightFM).
+~- Other Projects: ETL Migration, Data Governance, A/B Testing and DevOps Migration using Kubernetes.
+
+>>> Jun 2021–Jun 2022 ||| Adjunct Lecturer — Data Analytics, Binus (Bina Nusantara) University
+~- Prepared and delivered teaching materials: Technical Project Management, Introduction to Data Analytics and Data Governance, ETL, Design Thinking, Data Processing, Data Modeling, Data Analysis, and Data Visualization.
+
+>>> 2020–2022 ||| Senior Data Analyst, LinkAja – Big Data, AI and Anti-Fraud Engineering
+~- Conducted end-to-end analysis for growth, retention, and revenue; deployed Data Governance via MixPanel and Braze.
+~- Led AI automation initiatives: eKYC Automation (tampered, deblurring, 4 Points Transformation) — automating 80% of process; User Segmentation (RFM).
+
+>>> 2020–2021 ||| Project Manager — Log Stream, LinkAja – Tech Group
+~- Managed cross-functional Agile project for Data Pipeline/Log Stream deployment; reported to CTO.
+~- Delivered: Fraud Alert Monitoring, DevOps Log Monitoring, Marketing Automation, eKYC Process, and Finance Reporting.
+
+>>> 2019 ||| Business Intelligence Analyst, GOJEK – Data Science
+~- Analyzed and detected fraud patterns across users, drivers, and merchants.
+~- Led Fraud Detection automation system for Fraud Operation Team — preventing losses of ~$5 million USD.
+
+>>> Aug 2014–Dec 2015 ||| Research Assistant, United Nations – ILO Jakarta Office
+~- Conducted research and assessment in Indonesia's Garment Industry (Indonesia Worker Survey, Java).
+~- Prepared annual report with Better Work Indonesia and Tufts University for key development partners.
+
+=== Projects:
+>>> 2025 ||| ColpoAI — AI Cervical Cancer Detection, Personal / University of Limpopo Collaboration
+~- Built clinical decision support tool for detecting pre-cancerous cervical lesions at colposcopy, supporting a nurse + GP remote workflow in low-resource settings.
+~- 4-class classification output (Cervical Cancer / HSIL / LSIL / Normal) with confidence scoring and explainability layer. Stack: HTML/JS, GenAI.
+~- Affiliated with formal research study at University of Limpopo; funded by SAfAIDS and ASCCP.
+
+>>> 2025 ||| EP/CATH Lab Planning Simulator, Personal Project
+~- Built hospital capacity planning simulation tool replaying 7,402 procedures across 260 simulated operating days to recommend optimal holding bay count, closing time, and scheduling policy.
+~- Stack: Python, Streamlit. Deployed as interactive web app with cost analysis, policy comparison, and heatmap visualisations.
+
+>>> 2025 ||| VibesCheck — Relationship Health Analyser, Personal Research
+~- Designed 13-step LLM pipeline analysing chat exports across 28 communication dimensions and 13 interpersonal traits, producing an Overall Relationship Health Score (0–100) with confidence intervals and relationship stage prediction.
+
+>>> 2025 ||| Prior Auth Auto-Assembler, Personal Project
+~- Built agentic AI prototype automating prior authorization packet assembly for home oxygen (DMEPOS) — extracts clinical evidence, runs payer-specific rules checks (Medicare, MA plans), generates submission-ready packets. Stack: HTML/JS, LLM.
+
+=== Additional Information:
+~- Technical: Python · SQL/BigQuery · Tableau · PowerBI · Mixpanel · Braze · Firebase · Microsoft Copilot · ChatGPT · Claude · Gemini · R
+~- Languages: English (fluent) · Indonesian (native)
+~- Certifications: Computational Thinking – Univ. of Pennsylvania (2019) · Data Science Math Skills – Duke University (2019) · Computer Science 101 – Stanford University (2016–2018)`
+  },
+  {
     key:       "x",
     label:     "X \u2013 Program Manager, Early Stage",
     company:   "X",
@@ -158,7 +382,7 @@ Silvia Adinda`,
 
 ### EDUCATION & HONORS
 
-**Master in Medical Informatics** | Stanford University School of Medicine | School of Medicine
+**Master in Medical Informatics** | Stanford Univ. School of Medicine | Class of 2026
 - Class of 2026 with Full Ride Scholarship by Indonesia Endowment Fund 2025-2026 GPA 4.018/4.00
 
 **Bachelor's in Management** | Universitas Indonesia | July 2018
@@ -205,7 +429,7 @@ Silvia Adinda`,
 - Formulated Fraud Detection automation system for the Fraud Operations Team: analytically modeled behavior patterns and defined metrics — preventing losses of approximately $5 million USD.
 - Prepared actionable insights and reports using statistical tools and data visualization for cross-functional stakeholders.
 
-**Research Assistant** | United Nation – ILO Jakarta Office | Aug 2014 – December 2015
+**Research Assistant** | United Nation – ILO Jakarta Office | Aug 2014 – Dec 2015
 - Conducted research and assessment in the Garment Industry; prepared annual reports for key development partners including governments and international sponsors.
 
 ### PROJECTS
@@ -261,7 +485,7 @@ Silvia Adinda`,
 
 ### EDUCATION & HONORS
 
-**Master in Medical Informatics** | Stanford University School of Medicine | School of Medicine
+**Master in Medical Informatics** | Stanford Univ. School of Medicine | Class of 2026
 - Class of 2026 with Full Ride Scholarship by Indonesia Endowment Fund 2025-2026 GPA 4.018/4.00
 
 **Bachelor's in Management** | Universitas Indonesia | July 2018
@@ -312,7 +536,7 @@ Silvia Adinda`,
 - Formulated and delivered Fraud Detection automation system for the Fraud Operations Team: successfully preventing losses of approximately $5 million USD.
 - Prepared insights and reports using statistical tools and data visualization for cross-functional business stakeholders.
 
-**Research Assistant** | United Nation – ILO Jakarta Office | Aug 2014 – December 2015
+**Research Assistant** | United Nation – ILO Jakarta Office | Aug 2014 – Dec 2015
 - Conducted labor research and assessment in the Garment Industry; prepared annual reports for key development partners including governments and international sponsors.
 
 ### PROJECTS
@@ -366,7 +590,7 @@ Silvia Adinda`,
 
 ### EDUCATION & HONORS
 
-**Master in Medical Informatics** | Stanford University School of Medicine | School of Medicine
+**Master in Medical Informatics** | Stanford Univ. School of Medicine | Class of 2026
 - Class of 2026 with Full Ride Scholarship by Indonesia Endowment Fund 2025-2026 GPA 4.018/4.00
 
 **Bachelor's in Management** | Universitas Indonesia | July 2018
@@ -423,7 +647,7 @@ Silvia Adinda`,
 - Formulated Fraud Detection automation system for the Fraud Operations Team — modelled behaviour patterns, defined metrics, and drove cross-functional alignment — preventing losses of approximately $5 million USD.
 - Prepared insights and reports using statistical tools and data visualisation for cross-functional business stakeholders.
 
-**Research Assistant** | United Nation – ILO Jakarta Office | Aug 2014 – December 2015
+**Research Assistant** | United Nation – ILO Jakarta Office | Aug 2014 – Dec 2015
 - Conducted research and assessment in the Garment Industry; prepared annual reports for key development partners including governments and international sponsors.
 
 ### PROJECTS
@@ -477,7 +701,7 @@ Silvia Adinda`,
 
 ### EDUCATION & HONORS
 
-**Master in Medical Informatics** | Stanford University School of Medicine | School of Medicine
+**Master in Medical Informatics** | Stanford Univ. School of Medicine | Class of 2026
 - Class of 2026 with Full Ride Scholarship by Indonesia Endowment Fund 2025-2026 GPA 4.018/4.00
 - Coursework in clinical data standards, health information systems, regulatory frameworks, and medical data governance.
 
@@ -531,7 +755,7 @@ Silvia Adinda`,
 - Conducted end-to-end data validation and quality analysis: gathering, cleaning, and processing transactional and behavioural data to detect fraud patterns and support business reporting.
 - Prepared insights using statistical tools and data visualization; prevented losses of approximately $5 million USD through rigorous data-driven analysis.
 
-**Research Assistant** | United Nation – ILO Jakarta Office | Aug 2014 – December 2015
+**Research Assistant** | United Nation – ILO Jakarta Office | Aug 2014 – Dec 2015
 - Conducted data collection and survey management for the Indonesia Worker Survey in the Garment Industry (Java); prepared annual reports for key development partners including governments and international sponsors.
 
 ### PROJECTS
@@ -586,7 +810,7 @@ Silvia Adinda`,
 
 ### EDUCATION & HONORS
 
-**Master in Medical Informatics** | Stanford University School of Medicine | School of Medicine
+**Master in Medical Informatics** | Stanford Univ. School of Medicine | Class of 2026
 - Class of 2026 with Full Ride Scholarship by Indonesia Endowment Fund 2025-2026 GPA 4.018/4.00
 
 **Bachelor's in Management** | Universitas Indonesia | July 2018
@@ -637,7 +861,7 @@ Silvia Adinda`,
 - Developed Fraud Detection automation system for Fraud Operations Team — establishing data quality metrics, analytical frameworks, and detection models; preventing losses of approximately $5 million USD.
 - Prepared insights and reports using statistical tools and data visualization for cross-functional business stakeholders.
 
-**Research Assistant** | United Nation – ILO Jakarta Office | Aug 2014 – December 2015
+**Research Assistant** | United Nation – ILO Jakarta Office | Aug 2014 – Dec 2015
 - Conducted research and data collection in the Garment Industry; prepared annual reports for key development partners including governments and international sponsors.
 
 ### PROJECTS
@@ -693,7 +917,7 @@ Silvia Adinda`,
 
 ### EDUCATION & HONORS
 
-**Master in Medical Informatics** | Stanford University School of Medicine | School of Medicine
+**Master in Medical Informatics** | Stanford Univ. School of Medicine | Class of 2026
 - Class of 2026 with Full Ride Scholarship by Indonesia Endowment Fund 2025-2026 GPA 4.018/4.00
 
 **Bachelor's in Management** | Universitas Indonesia | July 2018
@@ -758,6 +982,110 @@ Silvia Adinda`,
 **Technical Program Management (Complex Multi-Workstream)** | | Advanced
 **Root-Cause Analysis & Failure-Condition Diagnosis** | | Advanced
 **Cross-Functional Technical Bridge & Stakeholder Communication** | | Advanced
+**Python** | | Intermediate
+**SQL – BigQuery** | | Advanced
+
+### CERTIFICATIONS
+
+**Computational Thinking** | University of Pennsylvania | 2019
+**Data Science Math Skills** | Duke University | 2019
+**Computer Science 101** | Stanford University | 2016 – 2018`
+  },
+  {
+    key:       "ge-ai-program-leader-pc",
+    label:     "GE Healthcare – AI Program Leader, People & Culture",
+    company:   "GE Healthcare",
+    role:      "AI Program Leader - People & Culture",
+    jdUrl:     "https://careers.gehealthcare.com/global/en/job/GEVGHLGLOBALR4037879EXTERNALENGLOBAL/AI-Program-Leader-People-Culture?utm_source=linkedin&utm_medium=phenom-feeds",
+    dateAdded: "2026-03-28",
+    coverLetter: `Dear GE Healthcare Hiring Team,
+
+I am applying for the AI Program Leader - People & Culture role. I know GE Healthcare from the inside — I spent nearly two years there as a Senior Technical Project Manager, leading AI and technology transformation programs across 20 countries. I understand the internal culture, how decisions get made, and what it actually takes to land a program inside GE. That experience, combined with a consistent track record of deploying AI capabilities that get adopted and sustained, is what I bring to this role.
+
+The clearest parallel to what this role requires is my engagement at Johnson & Johnson, where I was brought in to build and deploy an AI-powered knowledge management system for the Global Marketing function from scratch. I designed the use case, built the program architecture, deployed an AI chatbot via Microsoft Copilot integrated into Microsoft Teams, and owned the full change management — hands-on training, governance, AI response validation, global onboarding, and adoption tracking through to completion. That is exactly the mandate here: identify high-value AI use cases within P&C, build and execute the program, enable the team to use the tools confidently, and drive adoption until the change is embedded.
+
+I understand that P&C transformation through AI means going beyond tools — it means changing how people in a function work, how they think about their processes, and how they interact with AI day to day. My experience teaching data analytics as a university lecturer, combined with years of designing and leading adoption programs for AI products across thousands of users, has given me a practical understanding of how adults learn new technology and what it takes to shift behavior at scale — not just in theory, but in practice.
+
+At Philip Morris International, I managed the deployment and user adoption of two AI automation products from zero to production in under three months — onboarding 10,000+ merchants while running data governance and product iteration in parallel. At GE Healthcare, I managed the full AI and technology innovation roadmap across the Service and Commercial Business Groups internationally, including AI/ML Service Renewal Automation and Data Governance, coordinating cross-functional and cross-regional teams to deliver outcomes.
+
+I am hands-on with the tools this role centres on: Microsoft Copilot, ChatGPT, Claude, and Gemini. I have independently built and deployed agentic AI systems. I approach AI adoption as a sustained change management program — and I have the track record to show it.
+
+I am completing a Master's in Medical Informatics at Stanford University School of Medicine (GPA 4.0, Class of 2026) and am ready to contribute from day one.
+
+Sincerely,
+Silvia Adinda`,
+    cv: `# SILVIA ADINDA
+## https://id.linkedin.com/in/silviatariganadinda // github.com/5ilvi4 // 650 305 6683 // silviadindatarigan@gmail.com
+
+### EDUCATION & HONORS
+
+**Master in Medical Informatics** | Stanford Univ. School of Medicine | Class of 2026
+- Full Ride Scholarship by Indonesia Endowment Fund · GPA 4.018/4.00
+
+**Bachelor's in Management** | Universitas Indonesia | July 2018
+- Full Ride Scholarship by Ministry of Education, Culture, and Technology
+- The Most Outstanding/Potential Student: awarded for outstanding achievements of the Year 2015
+
+### EXPERIENCE
+
+**AI Consultant — Knowledge Management** | Johnson & Johnson | 2025
+- Designed and led an end-to-end AI program for J&J's Global Marketing function: identified the AI use case, built the program architecture from zero, deployed AI capability via Microsoft Copilot integrated into Microsoft Teams, and drove full organizational adoption across the global team.
+- Built and governed the knowledge repository underpinning the AI system: curated and structured marketing content — brand guidelines, campaign assets, SOPs, product information, and presentations — ensuring accuracy and currency across global markets.
+- Owned the change management and capability-building program: provided hands-on training and support to team members on AI tools, validated AI response accuracy against real user queries, led onboarding across regions, and tracked adoption metrics through to full rollout — ensuring the AI capability was embedded into daily workflows, not just deployed.
+
+**Senior Technical Project Manager** | General Electric Healthcare | Sept 2023 – May 2025
+- Led AI and technology Innovation Roadmap across GE Healthcare's Service and Commercial Business Groups — 20 countries across Asia, Africa, Latin America, New Zealand, Australia, Europe, the UK, and the Middle East. Built the cross-functional program infrastructure that made first-time deployments land: process alignment, stakeholder coordination, user adoption, and change management at international scale.
+- Led end-to-end system deployment: global business process alignment, system ideation, technical development, user adoption preparation, and launch across the Service and Commercial Business Groups.
+- Projects: CRM, ServiceMax – Salesforce, iCenter, Service Board, Enterprise System Migration, AI/ML Service Renewal Automation, Data Migration and Governance.
+- Awards: The Five Heartbeats Award in the category of "Deliver the Future of Healthcare" 2025
+
+**Sabbatical Leave** | Caregiving | May 2023 – Aug 2023
+- Caregiving sabbatical to attend to my father's well-being following a significant cardiac event.
+
+**Digital Transformation Manager (AI/ML)** | Philip Morris International | Jan 2023 – April 2023
+- Led the ideation, development, and execution of 2 AI products that transformed core business processes — managing full program lifecycle from deployment through user adoption and product iteration:
+  - Chatbot-Order Taking Automation: 10k merchants onboarded and 250bio revenue in 3 months.
+  - Call-bot Order Taking Automation: 2k merchants onboarded and 20bio revenue in 3 months.
+- Organised and managed the framework and roadmap for Datalake, Data Governance, and User Governance for finance and reporting: established policies and standards for data integrity, security, and data handling.
+
+**AI/ML and Analytics - Senior Product Manager** | Alodokter | Jan 2022 – 2023
+- Led the AI/ML roadmap for a digital health platform — driving the ideation, development, and execution of AI use cases that automated and improved core processes, coordinating 6 engineers and 2 data scientists across 6 AI/ML products in production (including AI Chatbot scaling to 1M users/month, Recommender Systems, and Feeds Recommender using Collaborative Filtering and Hybrid LightFM).
+- Used data analysis and A/B testing to generate actionable insights that informed product strategy and business decisions; led ETL Migration, Data Governance, and Kubernetes-based DevOps migration.
+
+**Adjunct Lecturer - Data Analytics** | Binus (Bina Nusantara) University | June 2021 – June 2022
+- Designed curriculum and taught undergraduate students on Technical Project Management, Data Analytics, Data Governance, ETL, Design Thinking, and Data Visualization — applying adult learning principles to build genuine AI and data literacy, not just awareness.
+
+**Project Manager – Log Stream** | LinkAja – Tech Group | 2020 – 2021
+- Managed cross-functional Agile program for Data Pipeline/Log Stream deployment across Fraud, Marketing, Operations, and Finance groups; reported to CTO on data governance, quality, and milestone accountability.
+- Delivered: Fraud Alert Monitoring, DevOps Log Monitoring, Marketing Automation, eKYC Process Automation, and Finance Reporting.
+
+**Senior Data Analyst** | LinkAja / GOJEK | 2019 – 2022
+- Led AI automation projects: eKYC identity verification automation (80% process automated), RFM-based user segmentation, and Fraud Detection system preventing ~$5M USD in losses (GOJEK).
+- Governed data quality and analytics infrastructure across growth, retention, and revenue functions using MixPanel, Braze, SQL/BigQuery.
+
+### PROJECTS
+
+**Prior Auth Auto-Assembler** | Personal | 2025
+- Built an agentic AI system end-to-end: designed the use case, built AI agent logic with payer-specific rules validation (Medicare, MA plans), and delivered production-ready automation for prior authorisation packet assembly. Stack: HTML/JS, LLM.
+
+**ColpoAI — AI Cervical Cancer Detection** | Personal / University of Limpopo | 2025
+- Built AI clinical decision support tool for cervical lesion detection with 4-class classification output and transparent explainability layer. Affiliated with formal research study; funded by SAfAIDS and ASCCP. Stack: HTML/JS, GenAI.
+
+**VibesCheck — Relationship Health Analyser** | Personal Research | 2025
+- Designed a 13-step LLM pipeline analysing communication data across 28 dimensions and 13 interpersonal traits — producing a scored output with confidence intervals and relationship stage prediction.
+
+### SKILLS
+
+**AI Program Management & P&C Process Transformation** | | Advanced
+- Proven track record designing and running AI programs from use case ideation through deployment, adoption, and sustained change across multiple industries.
+**AI Use Case Ideation, Development & Execution** | | Advanced
+- Independently ideated, built, and shipped AI/ML products in healthcare, fintech, and consumer technology contexts.
+**Change Management, User Adoption & Organisational Enablement** | | Advanced
+- Delivered hands-on training, onboarding programs, and adoption tracking across thousands of users at J&J, PMI, GE Healthcare, and Alodokter.
+**Agentic AI & LLM System Design** | | Advanced
+- Independently built and deployed agentic AI systems; hands-on with Microsoft Copilot, ChatGPT, Claude, and Gemini.
+**Data Analysis & Stakeholder Communication** | | Advanced
+- End-to-end data analysis for business decisions; presenting insights and program outcomes to senior leadership.
 **Python** | | Intermediate
 **SQL – BigQuery** | | Advanced
 

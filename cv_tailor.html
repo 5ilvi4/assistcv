@@ -133,9 +133,9 @@
       border-bottom: 0.75px solid #000;
       padding: 2px 0 1px 0; margin-top: 3px;
     }
-    .cv-page-card .entry-l { width: 40%; text-align: left;   min-width: 0; white-space: nowrap; overflow: hidden; }
-    .cv-page-card .entry-c { width: 35%; text-align: center; min-width: 0; white-space: nowrap; overflow: hidden; }
-    .cv-page-card .entry-r { width: 25%; text-align: right;  min-width: 0; white-space: nowrap; overflow: hidden; }
+    .cv-page-card .entry-l { width: 44%; text-align: left;   min-width: 0; white-space: nowrap; overflow: hidden; }
+    .cv-page-card .entry-c { width: 36%; text-align: center; min-width: 0; white-space: nowrap; overflow: hidden; }
+    .cv-page-card .entry-r { width: 20%; text-align: right;  min-width: 0; white-space: nowrap; overflow: hidden; }
     .cv-page-card .bullet {
       padding-left: 73px; text-indent: -24px;
       font-size: 12px; line-height: 1.4; margin: 0;
@@ -145,6 +145,59 @@
       font-size: 12px; line-height: 1.4; margin: 0;
     }
     .cv-page-card .plain { font-size: 12px; margin: 1px 0; }
+
+    /* ── Stanford Chronological name header ────────────────────────────── */
+    .cv-page-card .chron-name {
+      font-size: 22px; font-weight: bold;
+      font-variant: small-caps; letter-spacing: 0.02em;
+      text-align: left; margin-bottom: 1px;
+    }
+    .cv-page-card .chron-contact {
+      font-size: 12px; text-align: left;
+      margin: 0 0 4px 0;
+    }
+    .cv-page-card .chron-name-rule {
+      height: 0.75px; background: #000;
+      margin-bottom: 4px;
+    }
+    @media print {
+      .cv-page-card .chron-name    { font-size: 16pt; }
+      .cv-page-card .chron-contact { font-size: 9pt; }
+    }
+
+    /* ── Stanford Chronological layout ─────────────────────────────────── */
+    .cv-page-card .chron-section {
+      font-weight: bold; font-size: 12px;
+      font-variant: small-caps; letter-spacing: 0.03em;
+      border-bottom: 0.75px solid #000;
+      padding-bottom: 1px; margin: 10px 0 3px 0;
+    }
+    .cv-page-card .chron-row {
+      display: flex; font-size: 12px; margin: 4px 0 0 0;
+      align-items: flex-start;
+    }
+    .cv-page-card .chron-date {
+      width: 122px; min-width: 122px; max-width: 122px;
+      font-size: 12px; line-height: 1.4; padding-right: 6px;
+      flex-shrink: 0; white-space: nowrap; overflow: hidden;
+    }
+    .cv-page-card .chron-body {
+      flex: 1; font-size: 12px; line-height: 1.4;
+    }
+    .cv-page-card .chron-title { font-weight: bold; }
+    .cv-page-card .chron-bullet {
+      /* bullet marker at 122px, text wraps from 134px — tight alignment with body */
+      padding-left: 134px; text-indent: -12px; padding-right: 0;
+      font-size: 12px; line-height: 1.4; margin: 0;
+    }
+
+    @media print {
+      .cv-page-card .chron-section { font-size: 9pt; }
+      .cv-page-card .chron-row     { font-size: 9pt; }
+      .cv-page-card .chron-date    { font-size: 9pt; width: 92pt; min-width: 92pt; max-width: 92pt; }
+      .cv-page-card .chron-body    { font-size: 9pt; }
+      .cv-page-card .chron-bullet  { font-size: 9pt; padding-left: 102pt; text-indent: -10pt; }
+    }
 
     /* ── Cover letter card ──────────────────────────────────────────────── */
     #cover-letter-section {
@@ -345,12 +398,47 @@ function cvBodyToHTML(text) {
       const last  = sp >= 0 ? name.slice(sp + 1) : '';
       html.push('<div class="name-row"><div class="name-box">' + esc(first) + '&nbsp;<strong>' + esc(last) + '</strong></div></div>');
 
+    } else if (line.startsWith('#! ')) {
+      // Stanford chron: large bold small-caps name, left-aligned, no box
+      const name  = line.slice(3).trim();
+      const sp    = name.indexOf(' ');
+      const first = sp >= 0 ? name.slice(0, sp) : name;
+      const last  = sp >= 0 ? name.slice(sp + 1) : '';
+      html.push('<div class="chron-name">' + esc(first) + ' <strong>' + esc(last) + '</strong></div>');
+
+    } else if (line.startsWith('##! ')) {
+      // Stanford chron: contact line left-aligned + full-width rule below
+      html.push('<p class="chron-contact">' + esc(line.slice(4).trim()) + '</p>');
+      html.push('<div class="chron-name-rule"></div>');
+
     } else if (line.startsWith('## ')) {
       html.push('<p class="contact">' + esc(line.slice(3).trim()) + '</p>');
       html.push('<div class="name-rule"></div>');
 
     } else if (line.startsWith('### ')) {
       html.push('<p class="section">' + esc(line.slice(4).trim().toUpperCase()) + '</p>');
+
+    } else if (line.startsWith('=== ')) {
+      // Stanford chronological section header: bold small-caps with rule below
+      html.push('<p class="chron-section">' + esc(line.slice(4).trim()) + '</p>');
+
+    } else if (line.startsWith('>>> ')) {
+      // Stanford chronological entry: >>> date ||| Role, Company
+      const inner = line.slice(4);
+      const sep   = inner.indexOf(' ||| ');
+      const date  = sep >= 0 ? inner.slice(0, sep).trim() : '';
+      const body  = sep >= 0 ? inner.slice(sep + 5).trim() : inner.trim();
+      // Split on first ', ' — role is bold, company is bold too
+      const cm       = body.indexOf(', ');
+      const rolePart = cm >= 0 ? body.slice(0, cm) : body;
+      const compPart = cm >= 0 ? body.slice(cm + 2) : '';
+      const bodyHTML = '<span class="chron-title">' + esc(rolePart) + '</span>'
+                     + (compPart ? ', <strong>' + esc(compPart) + '</strong>' : '');
+      html.push('<div class="chron-row"><span class="chron-date">' + esc(date) + '</span><span class="chron-body">' + bodyHTML + '</span></div>');
+
+    } else if (line.startsWith('~- ')) {
+      // Stanford chronological bullet — indented to body column
+      html.push('<div class="chron-bullet">&#8226;&nbsp;&nbsp;' + esc(line.slice(3).trim()) + '</div>');
 
     } else if (line.startsWith('**') && line.includes(' | ')) {
       const parts = line.split(' | ').map(p => p.trim());
@@ -390,6 +478,7 @@ function wrapEntriesIn(root) {
     while (w.firstChild) w.parentNode.insertBefore(w.firstChild, w);
     w.remove();
   });
+  // Wrap classic 3-col .entry + its first following bullet/plain
   Array.from(root.querySelectorAll('.entry')).forEach(entry => {
     const wrapper = document.createElement('div');
     wrapper.className = 'keep-entry';
@@ -397,6 +486,17 @@ function wrapEntriesIn(root) {
     wrapper.appendChild(entry);
     const next = wrapper.nextElementSibling;
     if (next && (next.classList.contains('bullet') || next.classList.contains('sub-bullet') || next.classList.contains('plain'))) {
+      wrapper.appendChild(next);
+    }
+  });
+  // Wrap Stanford chronological .chron-row + its first following .chron-bullet
+  Array.from(root.querySelectorAll('.chron-row')).forEach(row => {
+    const wrapper = document.createElement('div');
+    wrapper.className = 'keep-entry';
+    row.parentNode.insertBefore(wrapper, row);
+    wrapper.appendChild(row);
+    const next = wrapper.nextElementSibling;
+    if (next && next.classList.contains('chron-bullet')) {
       wrapper.appendChild(next);
     }
   });
@@ -575,7 +675,7 @@ document.getElementById('version-select').addEventListener('change', e => {
 });
 
 // Init
-buildPages(CVS['default']);
+buildPages(CVS['default-v3']);
 </script>
 </body>
 </html>
