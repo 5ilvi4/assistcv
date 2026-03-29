@@ -232,21 +232,48 @@
       }
       #cv-pages-container { display: block; }
       #tracker-section    { display: none !important; }
+
+      /* Card fills the page — @page margins handle whitespace */
       .cv-page-card {
-        width: 100%; padding: 33px 77px; margin: 0;
-        box-shadow: none; font-size: 12px; line-height: 1.4;
+        width: 100%; padding: 0; margin: 0;
+        box-shadow: none;
+        font-size: 10pt; line-height: 1.4;
       }
+
+      /* Scale all chron elements to pt */
+      .cv-page-card .chron-name    { font-size: 16pt; }
+      .cv-page-card .chron-contact { font-size: 10pt; }
+      .cv-page-card .chron-section { font-size: 10pt; }
+      .cv-page-card .chron-row,
+      .cv-page-card .chron-date,
+      .cv-page-card .chron-body,
+      .cv-page-card .chron-bullet  { font-size: 10pt; }
+      .cv-page-card .chron-date    { width: 92pt; min-width: 92pt; max-width: 92pt; }
+      .cv-page-card .chron-bullet  { padding-left: 102pt; text-indent: -10pt; }
+
+      /* Classic layout */
+      .cv-page-card .name-box   { font-size: 20pt; }
+      .cv-page-card .contact,
+      .cv-page-card .section,
+      .cv-page-card .entry,
+      .cv-page-card .plain,
+      .cv-page-card .bullet,
+      .cv-page-card .sub-bullet { font-size: 10pt; }
+      .cv-page-card .bullet     { padding-left: 54pt; text-indent: -16pt; }
+      .cv-page-card .sub-bullet { padding-left: 88pt;  text-indent: -16pt; }
+
       #cover-letter-section.visible {
-        display: block !important; margin-top: 0; padding: 33px 77px;
-        box-shadow: none; width: 100%; font-size: 12px;
+        display: block !important; margin-top: 0; padding: 0;
+        box-shadow: none; width: 100%; font-size: 10pt;
         page-break-before: always; break-before: page;
       }
-      /* Cover letter only mode */
       body.print-cl-only #cv-pages-container { display: none !important; }
       body.print-cl-only #cover-letter-section.visible {
         page-break-before: avoid !important; break-before: avoid !important;
       }
-      @page { size: A4; margin: 0; }
+
+      /* Standard A4 margins — clean, professional */
+      @page { size: A4; margin: 18mm 20mm 18mm 20mm; }
     }
 
     /* ── Tracker ─────────────────────────────────────────────────────────── */
