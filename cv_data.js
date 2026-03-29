@@ -26,7 +26,7 @@ const CV_APPLICATIONS = [
 ### EDUCATION & HONORS
 
 **Master in Medical Informatics** | Stanford Univ. School of Medicine | Class of 2026
-- Class of 2026 with Full Ride Scholarship by Indonesia Endowment Fund 2025-2026 GPA 4.018/4.00
+- Class of 2026 with Full Ride Scholarship by Indonesia Endowment Fund 2025-2026 GPA 3.775/4.00
 
 **Bachelor's in Management** | Universitas Indonesia | July 2018
 - Full Ride Scholarship by Ministry of Education, Culture, and Technology
@@ -166,12 +166,12 @@ She has also taught as an Adjunct Lecturer in Data Analytics at Binus University
 
 Beyond her professional roles, she independently builds AI systems: ColpoAI, an AI clinical decision support tool for cervical cancer detection affiliated with a formal research study at the University of Limpopo (funded by SAfAIDS and ASCCP); a Prior Auth Auto-Assembler, an agentic AI system automating prior authorization packet assembly for home oxygen with payer-specific rules validation; an EP/CATH Lab Planning Simulator built in Python and Streamlit that replayed 7,402 procedures to optimize hospital capacity planning; and VibesCheck, a 13-step LLM pipeline analysing chat exports across 28 communication dimensions and 13 interpersonal traits.
 
-She is completing a Master's in Medical Informatics at Stanford University School of Medicine (GPA 4.018/4.00, Class of 2026) on a full ride scholarship from the Indonesia Endowment Fund, and holds a Bachelor's in Management from Universitas Indonesia (full ride scholarship, Most Outstanding Student 2015). She is hands-on with Microsoft Copilot, ChatGPT, Claude, Gemini, Python, SQL/BigQuery, Tableau, PowerBI, Mixpanel, Braze, and Firebase.
+She is completing a Master's in Medical Informatics at Stanford University School of Medicine (GPA 3.775/4.00, Class of 2026) on a full ride scholarship from the Indonesia Endowment Fund, and holds a Bachelor's in Management from Universitas Indonesia (full ride scholarship, Most Outstanding Student 2015). She is hands-on with Microsoft Copilot, ChatGPT, Claude, Gemini, Python, SQL/BigQuery, Tableau, PowerBI, Mixpanel, Braze, and Firebase.
 
 ### EDUCATION
 
 **Stanford Univ. School of Medicine** | Stanford, CA | Class of 2026
-Master in Medical Informatics · GPA 4.018/4.00 · LPDP Full Scholarship
+Master in Medical Informatics · GPA 3.775/4.00 · LPDP Full Scholarship
 
 **Universitas Indonesia** | Jakarta, Indonesia | July 2018
 Bachelor's in Management · Full Scholarship · Most Outstanding Student 2015
@@ -286,7 +286,7 @@ AI and technology program leader with 8+ years of experience across healthcare, 
 
 === Education:
 >>> 2025–2026 ||| Master in Medical Informatics, Stanford University School of Medicine
-~- GPA 4.018/4.00 · Full Ride Scholarship, Ministry of Finance (LPDP)
+~- GPA 3.775/4.00 · Full Ride Scholarship, Ministry of Finance (LPDP)
 ~- Coursework: Data Driven Medicine · Digitally-Enabled Healthcare · Biodesign for Digital Health · Modeling Biomedical Systems · Healthcare Operations Management · Bioethical Challenges of New Technology · Principles of Business Strategy
 
 >>>  ||| Bachelor's in Economics, Universitas Indonesia
@@ -334,7 +334,7 @@ AI and technology program leader with 8+ years of experience across healthcare, 
 ~- Analyzed and detected fraud patterns across users, drivers, and merchants.
 ~- Led Fraud Detection automation system for Fraud Operation Team — preventing losses of ~$5 million USD.
 
->>> Aug 2014–Dec 2015 ||| Research Assistant, United Nations – ILO Jakarta Office
+>>> 2014–2015 ||| Research Assistant, United Nations – ILO Jakarta Office
 ~- Conducted research and assessment in Indonesia's Garment Industry (Indonesia Worker Survey, Java).
 ~- Prepared annual report with Better Work Indonesia and Tufts University for key development partners.
 
@@ -355,7 +355,7 @@ AI and technology program leader with 8+ years of experience across healthcare, 
 ~- Built agentic AI prototype automating prior authorization packet assembly for home oxygen (DMEPOS) — extracts clinical evidence, runs payer-specific rules checks (Medicare, MA plans), generates submission-ready packets. Stack: HTML/JS, LLM.
 
 === Additional Information:
-~- Technical: Python · SQL/BigQuery · Tableau · PowerBI · Mixpanel · Braze · Firebase · Microsoft Copilot · ChatGPT · Claude · Gemini · R
+~- Technical: Python · SQL/BigQuery · Tableau · PowerBI · Mixpanel · Braze · Firebase · Microsoft Copilot · ChatGPT · Claude · Gemini · R · HL7 · FHIR · DICOM
 ~- Languages: English (fluent) · Indonesian (native)
 ~- Certifications: Computational Thinking – Univ. of Pennsylvania (2019) · Data Science Math Skills – Duke University (2019) · Computer Science 101 – Stanford University (2016–2018)`
   },
@@ -374,7 +374,7 @@ At GE HealthCare, I spent nearly two years as Senior Technical Project Manager d
 
 Before GE, I led data platform and AI/ML product strategy across Alodokter, LinkAja, and Philip Morris International — defining multi-year roadmaps, establishing data governance frameworks, and translating platform capabilities into downstream product value. At Alodokter, I owned the full AI/ML product roadmap across six products and coordinated engineers, data scientists, and business stakeholders in a fast-moving, ambiguous environment. At LinkAja, I led Data Pipeline and Log Stream deployment end-to-end — building the data infrastructure that powered fraud detection, marketing automation, and finance reporting.
 
-I am currently completing a Master's in Medical Informatics at Stanford University School of Medicine (GPA 4.018/4.00, graduating 2026), which has deepened my understanding of healthcare data standards — FHIR, HL7, DICOM — and the interoperability challenges that make a well-designed data fabric so strategically critical for GE HealthCare's portfolio.
+I am currently completing a Master's in Medical Informatics at Stanford University School of Medicine (GPA 3.775/4.00, graduating 2026), which has deepened my understanding of healthcare data standards — FHIR, HL7, DICOM — and the interoperability challenges that make a well-designed data fabric so strategically critical for GE HealthCare's portfolio.
 
 I would welcome the opportunity to bring this combination of internal GE context, data platform expertise, and product strategy to the Data Fabric team.
 
@@ -387,7 +387,7 @@ AI and technology program leader with 8+ years of experience across healthcare, 
 
 === Education:
 >>> 2025–2026 ||| Master in Medical Informatics, Stanford University School of Medicine
-~- GPA 4.018/4.00 · Full Ride Scholarship, Ministry of Finance (LPDP)
+~- GPA 3.775/4.00 · Full Ride Scholarship, Ministry of Finance (LPDP)
 ~- Coursework: Data Driven Medicine · Digitally-Enabled Healthcare · Biodesign for Digital Health · Modeling Biomedical Systems · Healthcare Operations Management · Bioethical Challenges of New Technology · Principles of Business Strategy
 
 >>>  ||| Bachelor's in Economics, Universitas Indonesia
@@ -432,7 +432,7 @@ AI and technology program leader with 8+ years of experience across healthcare, 
 ~- Analyzed and detected fraud patterns across users, drivers, and merchants.
 ~- Led Fraud Detection automation system for Fraud Operation Team — preventing losses of ~$5 million USD.
 
->>> Aug 2014–Dec 2015 ||| Research Assistant, United Nations – ILO Jakarta Office
+>>> 2014–2015 ||| Research Assistant, United Nations – ILO Jakarta Office
 ~- Conducted research and assessment in Indonesia's Garment Industry (Indonesia Worker Survey, Java).
 ~- Prepared annual report with Better Work Indonesia and Tufts University for key development partners.
 
@@ -450,7 +450,7 @@ AI and technology program leader with 8+ years of experience across healthcare, 
 ~- Affiliated with formal research study at University of Limpopo; funded by SAfAIDS and ASCCP.
 
 === Additional Information:
-~- Technical: Python · SQL/BigQuery · Tableau · PowerBI · Mixpanel · Braze · Firebase · Microsoft Copilot · ChatGPT · Claude · Gemini · R
+~- Technical: Python · SQL/BigQuery · Tableau · PowerBI · Mixpanel · Braze · Firebase · Microsoft Copilot · ChatGPT · Claude · Gemini · R · HL7 · FHIR · DICOM
 ~- Languages: English (fluent) · Indonesian (native)
 ~- Certifications: Computational Thinking – Univ. of Pennsylvania (2019) · Data Science Math Skills – Duke University (2019) · Computer Science 101 – Stanford University (2016–2018)`
   },
@@ -479,7 +479,7 @@ Silvia Adinda`,
 ### EDUCATION & HONORS
 
 **Master in Medical Informatics** | Stanford Univ. School of Medicine | Class of 2026
-- Class of 2026 with Full Ride Scholarship by Indonesia Endowment Fund 2025-2026 GPA 4.018/4.00
+- Class of 2026 with Full Ride Scholarship by Indonesia Endowment Fund 2025-2026 GPA 3.775/4.00
 
 **Bachelor's in Management** | Universitas Indonesia | July 2018
 - Full Ride Scholarship by Ministry of Education, Culture, and Technology
@@ -582,7 +582,7 @@ Silvia Adinda`,
 ### EDUCATION & HONORS
 
 **Master in Medical Informatics** | Stanford Univ. School of Medicine | Class of 2026
-- Class of 2026 with Full Ride Scholarship by Indonesia Endowment Fund 2025-2026 GPA 4.018/4.00
+- Class of 2026 with Full Ride Scholarship by Indonesia Endowment Fund 2025-2026 GPA 3.775/4.00
 
 **Bachelor's in Management** | Universitas Indonesia | July 2018
 - Full Ride Scholarship by Ministry of Education, Culture, and Technology
@@ -687,7 +687,7 @@ Silvia Adinda`,
 ### EDUCATION & HONORS
 
 **Master in Medical Informatics** | Stanford Univ. School of Medicine | Class of 2026
-- Class of 2026 with Full Ride Scholarship by Indonesia Endowment Fund 2025-2026 GPA 4.018/4.00
+- Class of 2026 with Full Ride Scholarship by Indonesia Endowment Fund 2025-2026 GPA 3.775/4.00
 
 **Bachelor's in Management** | Universitas Indonesia | July 2018
 - Full Ride Scholarship by Ministry of Education, Culture, and Technology
@@ -798,7 +798,7 @@ Silvia Adinda`,
 ### EDUCATION & HONORS
 
 **Master in Medical Informatics** | Stanford Univ. School of Medicine | Class of 2026
-- Class of 2026 with Full Ride Scholarship by Indonesia Endowment Fund 2025-2026 GPA 4.018/4.00
+- Class of 2026 with Full Ride Scholarship by Indonesia Endowment Fund 2025-2026 GPA 3.775/4.00
 - Coursework in clinical data standards, health information systems, regulatory frameworks, and medical data governance.
 
 **Bachelor's in Management** | Universitas Indonesia | July 2018
@@ -907,7 +907,7 @@ Silvia Adinda`,
 ### EDUCATION & HONORS
 
 **Master in Medical Informatics** | Stanford Univ. School of Medicine | Class of 2026
-- Class of 2026 with Full Ride Scholarship by Indonesia Endowment Fund 2025-2026 GPA 4.018/4.00
+- Class of 2026 with Full Ride Scholarship by Indonesia Endowment Fund 2025-2026 GPA 3.775/4.00
 
 **Bachelor's in Management** | Universitas Indonesia | July 2018
 - Full Ride Scholarship by Ministry of Education, Culture, and Technology
@@ -1014,7 +1014,7 @@ Silvia Adinda`,
 ### EDUCATION & HONORS
 
 **Master in Medical Informatics** | Stanford Univ. School of Medicine | Class of 2026
-- Class of 2026 with Full Ride Scholarship by Indonesia Endowment Fund 2025-2026 GPA 4.018/4.00
+- Class of 2026 with Full Ride Scholarship by Indonesia Endowment Fund 2025-2026 GPA 3.775/4.00
 
 **Bachelor's in Management** | Universitas Indonesia | July 2018
 - Full Ride Scholarship by Ministry of Education, Culture, and Technology
@@ -1116,7 +1116,7 @@ Silvia Adinda`,
 ### EDUCATION & HONORS
 
 **Master in Medical Informatics** | Stanford Univ. School of Medicine | Class of 2026
-- Full Ride Scholarship by Indonesia Endowment Fund · GPA 4.018/4.00
+- Full Ride Scholarship by Indonesia Endowment Fund · GPA 3.775/4.00
 
 **Bachelor's in Management** | Universitas Indonesia | July 2018
 - Full Ride Scholarship by Ministry of Education, Culture, and Technology
