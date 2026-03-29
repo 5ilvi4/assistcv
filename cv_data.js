@@ -382,64 +382,73 @@ Silvia Adinda`,
     cv: `#! SILVIA ADINDA
 ##! adinda@stanford.edu  •  650 305 6683  •  linkedin.com/in/silviatariganadinda  •  github.com/5ilvi4
 
-Principal product and data strategy leader with 8+ years of experience defining platform roadmaps, building data products, and aligning engineering and business stakeholders across healthcare and technology. Proven track record delivering multi-year platform initiatives — from data pipeline infrastructure to AI/ML product suites — at cloud scale and across global organizations. Hands-on with Python, SQL/BigQuery, Tableau, PowerBI, and AI tooling.
+AI and technology program leader with 8+ years of experience across healthcare, fintech, and consumer technology. Track record of building and deploying AI/ML products, leading large-scale technology programs across 20 countries, and driving user adoption across thousands of users. Hands-on with Python, SQL/BigQuery, Tableau, PowerBI, Mixpanel, Braze, Firebase, and Microsoft Copilot.
 
 === Education:
 >>> 2025–2026 ||| Master in Medical Informatics, Stanford University School of Medicine
-~- GPA 4.018/4.00 · Full Ride Scholarship, Ministry of Finance (LPDP) · Coursework: Healthcare Data Standards (FHIR, HL7, DICOM), Clinical Informatics, AI in Medicine
+~- GPA 4.018/4.00 · Full Ride Scholarship, Ministry of Finance (LPDP)
 
 >>>  ||| Bachelor's in Economics, Universitas Indonesia
 ~- Full Ride Scholarship · Most Outstanding Student
 
 === Experience:
 >>> Sep 2023–May 2025 ||| Senior Technical Project Manager, General Electric Healthcare, International Region
-~- Defined and drove the IT Innovation Roadmap and product strategy for international regions across 20 countries — aligning engineering, architecture, and commercial stakeholders on platform priorities and multi-year delivery plans.
-~- Led end-to-end platform deployment lifecycle: business process alignment, system ideation, technical development, user adoption, and launch across Service and Commercial Business Groups.
-~- Owned strategy and execution for data-centric platform initiatives: AI/ML Service Renewal Automation, Data Migration and Governance, CRM, ServiceMax–Salesforce, and System Migration.
-~- Awards: The Five Heartbeats Award — "Deliver the Future of Healthcare" 2025.
+~- Leading and managing IT Projects Innovation Roadmap and Strategies for international regions: Asia, Africa, Latin America, New Zealand, Australia, Europe, the UK, and the Middle East.
+~- Leading the end-to-end System Deployment: global business process alignment, system ideation, technical development, preparing user adoption, and launch of technology for Service and Commercial Business Group – 20 Countries Deployed, users onboarded.
+~- Projects: CRM, ServiceMax – Salesforce, iCenter, Service Board, System Migration, AI/ML Service Renewal Automation Process, Data Migration and Governance.
+~- Awards: The Five Heartbeats Award in the category of "Deliver the Future of Healthcare" 2025.
 
 >>> Jan–April 2023 ||| Digital Transformation Manager (AI/ML), Philip Morris International
-~- Defined data platform strategy and governed Datalake, Data Governance, and User Governance frameworks — establishing policies, standards, and automation for data integrity across finance and reporting.
-~- Led deployment and adoption of 2 AI automation products; drove platform reuse and downstream business value: 10k merchants onboarded, 250bio revenue in 3 months.
+~- Led and automated Merchant Order Taking process by supporting 2 AI Products: deployment, user adoption, and product iteration.
+~- Chatbot Order Taking Automation: 10k onboarded merchants and 250bio revenue in 3 months.
+~- Call-bot Order Taking Automation: 2k onboarded merchants and 20bio revenue in 3 months.
+~- Organized and managed the framework and roadmap of Datalake, Data Governance, User Governance for finance and reporting: integrity, security, establishing policies and standards for data handling.
 
 >>> Jan 2022–2023 ||| AI/ML and Analytics — Senior Product Manager, Alodokter
-~- Owned the multi-year AI/ML product roadmap: defined platform strategy, prioritized capability investments, and aligned 6 engineers and 2 data scientists across concurrent data product initiatives.
-~- Drove build and launch of 6 AI/ML platform products — including Chatbot (1M users/month), Recommender Systems, and Collaborative Filtering (LightFM) — balancing flexibility, reuse, and enterprise consistency.
-~- Established data governance, ETL migration, and A/B testing frameworks enabling faster iteration and broader platform reuse.
+~- Led the roadmap of AI/ML: data governance, new business opportunities, technology ideation, development of new features and product initiatives — organizing 6 engineers and 2 data scientists.
+~- Led and maintained 6 AI/ML Products: Chatbot Automation (1 million users/month during Covid-19), Doctors' Recommender, Health Articles Recommender, Ads Topic Classifier, Spam Review Flagger, and Feeds Recommender (Collaborative Filtering + Hybrid LightFM).
+~- Other Projects: ETL Migration, Data Governance, A/B Testing and DevOps Migration using Kubernetes.
 
 >>> 2020–2022 ||| Senior Data Analyst, LinkAja – Big Data, AI and Anti-Fraud Engineering
-~- Defined data product strategy for growth, retention, and revenue analytics; deployed Data Governance via MixPanel and Braze across marketing, product, and operations teams.
-~- Led AI-driven data automation: eKYC Automation (automating 80% of process) and User Segmentation (RFM) — enabling downstream product teams to build on reusable data capabilities.
+~- Conducted end-to-end analysis for growth, retention, and revenue; deployed Data Governance via MixPanel and Braze.
+~- Led AI automation initiatives: eKYC Automation (tampered, deblurring, 4 Points Transformation) — automating 80% of process; User Segmentation (RFM).
 
 >>> 2020–2021 ||| Project Manager — Log Stream, LinkAja – Tech Group
-~- Led 0-to-1 platform delivery of Data Pipeline/Log Stream infrastructure — defined roadmap, managed cross-functional teams, and reported to CTO.
-~- Delivered scalable platform capabilities: Fraud Alert Monitoring, DevOps Log Monitoring, Marketing Automation, eKYC Process, and Finance Reporting.
+~- Managed cross-functional Agile project for Data Pipeline/Log Stream deployment; reported to CTO.
+~- Delivered: Fraud Alert Monitoring, DevOps Log Monitoring, Marketing Automation, eKYC Process, and Finance Reporting.
 
 >>> May–Aug 2023 ||| Sabbatical Leave, Caregiving
 ~- Caregiving sabbatical to attend to my father's well-being following a significant cardiac event.
 
 >>> 2025 ||| AI Consultant — Knowledge Management, Johnson & Johnson, Irvine, USA
-~- Designed and deployed AI-powered knowledge platform for J&J's Global Marketing team — architecture, content enrichment, AI chatbot (Microsoft Copilot/Teams), and user adoption.
+~- Engaged as external AI and Subject Matter Expert to design and deploy an AI-powered knowledge management system for J&J's Global Marketing team.
+~- Built the knowledge repository architecture: curated, structured, and maintained marketing content — brand guidelines, campaign assets, product information, SOPs, and presentations — ensuring accuracy and currency across global markets.
+~- Deployed AI chatbot via Microsoft Copilot integrated into Microsoft Teams as an always-available single source of truth, enabling any team member to query in natural language for instant, up-to-date answers.
+~- Validated and tested AI responses against real user questions prior to launch; led user adoption and onboarding across the global team.
 
 >>> 2019 ||| Business Intelligence Analyst, GOJEK – Data Science
-~- Built Fraud Detection automation system — analytically modeled behavior patterns and defined data metrics, preventing ~$5M USD in losses.
+~- Analyzed and detected fraud patterns across users, drivers, and merchants.
+~- Led Fraud Detection automation system for Fraud Operation Team — preventing losses of ~$5 million USD.
 
 >>> Aug 2014–Dec 2015 ||| Research Assistant, United Nations – ILO Jakarta Office
-~- Conducted research and prepared annual reports for key development partners.
+~- Conducted research and assessment in Indonesia's Garment Industry (Indonesia Worker Survey, Java).
+~- Prepared annual report with Better Work Indonesia and Tufts University for key development partners.
 
 === Projects:
->>> 2025 ||| EP/CATH Lab Planning Simulator, Personal Project
-~- Built hospital capacity planning simulation tool — data-driven platform modelling 7,402 procedures across 260 simulated days, with policy comparison and cost analysis. Stack: Python, Streamlit.
+>>> 2025 ||| ColpoAI — AI Cervical Cancer Detection, Personal / University of Limpopo Collaboration
+~- Built clinical decision support tool for detecting pre-cancerous cervical lesions at colposcopy, supporting a nurse + GP remote workflow in low-resource settings.
+~- 4-class classification output (Cervical Cancer / HSIL / LSIL / Normal) with confidence scoring and explainability layer. Stack: HTML/JS, GenAI.
+~- Affiliated with formal research study at University of Limpopo; funded by SAfAIDS and ASCCP.
 
->>> 2025 ||| ColpoAI — AI Cervical Cancer Detection, Personal / University of Limpopo
-~- Clinical decision support platform: 4-class AI classification with confidence scoring and explainability layer. Affiliated with formal research at University of Limpopo; funded by SAfAIDS and ASCCP.
+>>> 2025 ||| EP/CATH Lab Planning Simulator, Personal Project
+~- Built hospital capacity planning simulation tool replaying 7,402 procedures across 260 simulated operating days to recommend optimal holding bay count, closing time, and scheduling policy.
+~- Stack: Python, Streamlit. Deployed as interactive web app with cost analysis, policy comparison, and heatmap visualisations.
 
 >>> 2025 ||| Prior Auth Auto-Assembler, Personal Project
-~- Agentic AI platform automating prior authorization packet assembly — payer-specific rules engine (Medicare, MA plans), clinical evidence extraction, submission-ready output. Stack: HTML/JS, LLM.
+~- Built agentic AI prototype automating prior authorization packet assembly for home oxygen (DMEPOS) — extracts clinical evidence, runs payer-specific rules checks (Medicare, MA plans), generates submission-ready packets. Stack: HTML/JS, LLM.
 
 === Additional Information:
 ~- Technical: Python · SQL/BigQuery · Tableau · PowerBI · Mixpanel · Braze · Firebase · Microsoft Copilot · ChatGPT · Claude · Gemini · R
-~- Healthcare Data: FHIR · HL7 · DICOM · Clinical Informatics (Stanford MMI)
 ~- Languages: English (fluent) · Indonesian (native)
 ~- Certifications: Computational Thinking – Univ. of Pennsylvania (2019) · Data Science Math Skills – Duke University (2019) · Computer Science 101 – Stanford University (2016–2018)`
   },
