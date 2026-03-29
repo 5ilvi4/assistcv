@@ -1284,5 +1284,89 @@ I would love to bring this to MAIST.
 Thank you for reading.
 
 Silvia Adinda`
+  },
+  {
+    key:       "genbio-tpm",
+    label:     "GenBio AI — Technical Project Manager",
+    company:   "GenBio AI",
+    role:      "Technical Project Manager",
+    jdUrl:     "https://www.linkedin.com/jobs/view/4376815355",
+    dateAdded: "2026-03-28",
+    cv: `#! SILVIA ADINDA
+##! adinda@stanford.edu  •  650 305 6683  •  linkedin.com/in/silviatariganadinda  •  github.com/5ilvi4  •  Los Altos Hills, California
+
+Technical Program Manager with 8+ years coordinating AI/ML research and engineering programs in fast-moving environments. Track record of translating high-level vision into executable roadmaps, managing cross-functional workstreams across 20 countries, and shipping AI products at scale. Technically fluent across data pipelines, ML workflows, and system deployment. Currently studying computational approaches to human biology at Stanford School of Medicine.
+
+=== Education:
+>>> 2025–2026 ||| Master in Medical Informatics, Stanford University School of Medicine
+~- GPA 3.775/4.00 · Full Ride Scholarship, Ministry of Finance (LPDP)
+~- Coursework: Data Driven Medicine · Modeling Biomedical Systems · Digitally-Enabled Healthcare · Biodesign for Digital Health · Healthcare Operations Management · Bioethical Challenges of New Technology · Principles of Business Strategy
+
+>>>  ||| Bachelor's in Economics, Universitas Indonesia
+~- Full Ride Scholarship · Most Outstanding Student
+
+=== Experience:
+>>> Sep 2023–May 2025 ||| Senior Technical Project Manager, General Electric Healthcare, International Region
+~- Leading and managing IT Projects Innovation Roadmap and Strategies for international regions: Asia, Africa, Latin America, New Zealand, Australia, Europe, the UK, and the Middle East.
+~- Leading the end-to-end System Deployment: global business process alignment, system ideation, technical development, preparing user adoption, and launch of technology for Service and Commercial Business Group – 20 Countries Deployed, users onboarded.
+~- Projects: CRM, ServiceMax – Salesforce, iCenter, Service Board, System Migration, AI/ML Service Renewal Automation Process, Data Migration and Governance.
+~- Awards: The Five Heartbeats Award in the category of "Deliver the Future of Healthcare" 2025.
+
+>>> Jan–April 2023 ||| Digital Transformation Manager (AI/ML), Philip Morris International
+~- Led and automated Merchant Order Taking process by supporting 2 AI Products: deployment, user adoption, and product iteration.
+~- Chatbot Order Taking Automation: 10k onboarded merchants and 250bio revenue in 3 months.
+~- Call-bot Order Taking Automation: 2k onboarded merchants and 20bio revenue in 3 months.
+~- Organized and managed the framework and roadmap of Datalake, Data Governance, User Governance for finance and reporting: integrity, security, establishing policies and standards for data handling.
+
+>>> Jan 2022–2023 ||| AI/ML and Analytics — Senior Product Manager, Alodokter
+~- Led the roadmap of AI/ML: data governance, new business opportunities, technology ideation, development of new features and product initiatives — organizing 6 engineers and 2 data scientists.
+~- Led and maintained 6 AI/ML Products: Chatbot Automation (1 million users/month during Covid-19), Doctors' Recommender, Health Articles Recommender, Ads Topic Classifier, Spam Review Flagger, and Feeds Recommender (Collaborative Filtering + Hybrid LightFM).
+~- Worked with patient EMR data for the Chatbot Automation — including data pipeline ingestion, analysis, and model training for personalised responses.
+~- Other Projects: ETL Migration, Data Governance, A/B Testing and DevOps Migration using Kubernetes.
+
+>>> 2020–2021 ||| Project Manager — Log Stream, LinkAja – Tech Group
+~- Managed cross-functional Agile project for Data Pipeline/Log Stream deployment; reported to CTO.
+~- Delivered: Fraud Alert Monitoring, DevOps Log Monitoring, Marketing Automation, eKYC Process, and Finance Reporting.
+
+>>> 2020–2022 ||| Senior Data Analyst, LinkAja – Big Data, AI and Anti-Fraud Engineering
+~- Conducted end-to-end analysis for growth, retention, and revenue; deployed Data Governance via MixPanel and Braze.
+~- Led AI automation initiatives: eKYC Automation (tampered, deblurring, 4 Points Transformation) — automating 80% of process; User Segmentation (RFM).
+
+>>> 2019 ||| Business Intelligence Analyst, GOJEK – Data Science
+~- Analyzed and detected fraud patterns across users, drivers, and merchants.
+~- Led Fraud Detection automation system for Fraud Operation Team — preventing losses of ~$5 million USD.
+
+=== Projects:
+>>> 2025 ||| ColpoAI — AI Cervical Cancer Detection, Personal / University of Limpopo Collaboration
+~- Built clinical decision support tool for detecting pre-cancerous cervical lesions at colposcopy, supporting a nurse + GP remote workflow in low-resource settings.
+~- 4-class classification output (Cervical Cancer / HSIL / LSIL / Normal) with confidence scoring and explainability layer. Stack: HTML/JS, GenAI.
+~- Affiliated with formal research study at University of Limpopo; funded by SAfAIDS and ASCCP.
+
+>>> 2025 ||| EP/CATH Lab Planning Simulator, Personal Project
+~- Built hospital capacity planning simulation tool replaying 7,402 procedures across 260 simulated operating days to recommend optimal holding bay count, closing time, and scheduling policy.
+~- Stack: Python, Streamlit. Deployed as interactive web app with cost analysis, policy comparison, and heatmap visualisations.
+
+>>> 2025 ||| Prior Auth Auto-Assembler, Personal Project
+~- Built agentic AI prototype automating prior authorization packet assembly for home oxygen (DMEPOS) — extracts clinical evidence, runs payer-specific rules checks (Medicare, MA plans), generates submission-ready packets. Stack: HTML/JS, LLM.
+
+=== Additional Information:
+~- Technical: Python · SQL/BigQuery · Tableau · PowerBI · Mixpanel · Braze · Firebase · Microsoft Copilot · ChatGPT · Claude · Gemini · R · HL7 · FHIR · DICOM
+~- Languages: English (fluent) · Indonesian (native)
+~- Certifications: Computational Thinking – Univ. of Pennsylvania (2019) · Data Science Math Skills – Duke University (2019) · Computer Science 101 – Stanford University (2016–2018)`,
+    coverLetter: `Dear GenBio AI Team,
+
+I am applying for the Technical Project Manager role.
+
+I want to start with why this company specifically caught my attention. I am currently finishing a Master in Medical Informatics at Stanford School of Medicine, and one of my courses is Modeling Biomedical Systems — which is exactly the kind of work GenBio AI is doing at a much bigger scale with AIDO. The idea of building multiscale foundation models to simulate biology from molecules to cells to individuals is not abstract to me. It is the direction I think the most important work in medicine is heading, and I want to be part of the team building the infrastructure that makes it possible.
+
+On the program management side, I have spent the last several years doing the job this role describes. At GE Healthcare I was the connective tissue between product, engineering, and commercial teams across 20 countries simultaneously — translating high-level technology roadmaps into detailed execution plans, tracking daily progress, removing blockers, and reporting status to leadership. At Alodokter I coordinated an AI/ML team of engineers and data scientists building six products in production, handling everything from data pipeline decisions to model training timelines to A/B testing governance. At Philip Morris International I took two AI products from nothing to market in three months. I know what it takes to keep a fast-moving, technically complex program on track when the environment is ambiguous and the stakes are high.
+
+I am also technically fluent enough to communicate credibly with deep-tech researchers and engineers. I have worked hands-on with data pipelines, ML workflows, and system deployment across multiple stacks. At Stanford I am studying how computational models of biological systems are built and validated. I will not slow your researchers down.
+
+I would genuinely love to help GenBio AI scale its engineering and research operations as the AIDO roadmap grows.
+
+Thank you for your time.
+
+Silvia Adinda`
   }
 ];
