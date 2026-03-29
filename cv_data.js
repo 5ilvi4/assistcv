@@ -21,7 +21,7 @@ const CV_APPLICATIONS = [
     jdUrl:     "",
     dateAdded: "",
     cv: `# SILVIA ADINDA
-## https://id.linkedin.com/in/silviatariganadinda // github.com/5ilvi4 // 650 305 6683 // silviadindatarigan@gmail.com
+## https://id.linkedin.com/in/silviatariganadinda // github.com/5ilvi4 // Los Altos Hills, California // 650 305 6683 // silviadindatarigan@gmail.com
 
 ### EDUCATION & HONORS
 
@@ -142,7 +142,7 @@ const CV_APPLICATIONS = [
     jdUrl:     "",
     dateAdded: "2026-03-28",
     cv: `# SILVIA ADINDA
-## https://id.linkedin.com/in/silviatariganadinda // github.com/5ilvi4 // 650 305 6683 // silviadindatarigan@gmail.com
+## https://id.linkedin.com/in/silviatariganadinda // github.com/5ilvi4 // Los Altos Hills, California // 650 305 6683 // silviadindatarigan@gmail.com
 
 ### PROFILE
 
@@ -280,7 +280,7 @@ Bachelor's in Management · Full Scholarship · Most Outstanding Student 2015
     jdUrl:     "",
     dateAdded: "2026-03-28",
     cv: `#! SILVIA ADINDA
-##! adinda@stanford.edu  •  650 305 6683  •  linkedin.com/in/silviatariganadinda  •  github.com/5ilvi4
+##! adinda@stanford.edu  •  650 305 6683  •  linkedin.com/in/silviatariganadinda  •  github.com/5ilvi4  •  Los Altos Hills, California
 
 AI and technology program leader with 8+ years of experience across healthcare, fintech, and consumer technology. Track record of building and deploying AI/ML products, leading large-scale technology programs across 20 countries, and driving user adoption across thousands of users. Hands-on with Python, SQL/BigQuery, Tableau, PowerBI, Mixpanel, Braze, Firebase, and Microsoft Copilot.
 
@@ -382,7 +382,7 @@ I would welcome the opportunity to bring this combination of internal GE context
 Sincerely,
 Silvia Adinda`,
     cv: `#! SILVIA ADINDA
-##! adinda@stanford.edu  •  650 305 6683  •  linkedin.com/in/silviatariganadinda  •  github.com/5ilvi4
+##! adinda@stanford.edu  •  650 305 6683  •  linkedin.com/in/silviatariganadinda  •  github.com/5ilvi4  •  Los Altos Hills, California
 
 AI and technology program leader with 8+ years of experience across healthcare, fintech, and consumer technology. Track record of building and deploying AI/ML products, leading large-scale technology programs across 20 countries, and driving user adoption across thousands of users. Hands-on with Python, SQL/BigQuery, Tableau, PowerBI, Mixpanel, Braze, Firebase, and Microsoft Copilot.
 
@@ -476,7 +476,7 @@ I am currently completing a Master's in Medical Informatics at Stanford Universi
 Sincerely,
 Silvia Adinda`,
     cv: `# SILVIA ADINDA
-## https://id.linkedin.com/in/silviatariganadinda // github.com/5ilvi4 // 650 305 6683 // silviadindatarigan@gmail.com
+## https://id.linkedin.com/in/silviatariganadinda // github.com/5ilvi4 // Los Altos Hills, California // 650 305 6683 // silviadindatarigan@gmail.com
 
 ### EDUCATION & HONORS
 
@@ -579,7 +579,7 @@ I hold a Master's in Medical Informatics from Stanford University School of Medi
 Sincerely,
 Silvia Adinda`,
     cv: `# SILVIA ADINDA
-## https://id.linkedin.com/in/silviatariganadinda // github.com/5ilvi4 // 650 305 6683 // silviadindatarigan@gmail.com
+## https://id.linkedin.com/in/silviatariganadinda // github.com/5ilvi4 // Los Altos Hills, California // 650 305 6683 // silviadindatarigan@gmail.com
 
 ### EDUCATION & HONORS
 
@@ -684,7 +684,7 @@ I am completing a Master's in Medical Informatics at Stanford University School 
 Sincerely,
 Silvia Adinda`,
     cv: `# SILVIA ADINDA
-## https://id.linkedin.com/in/silviatariganadinda // github.com/5ilvi4 // 650 305 6683 // silviadindatarigan@gmail.com
+## https://id.linkedin.com/in/silviatariganadinda // github.com/5ilvi4 // Los Altos Hills, California // 650 305 6683 // silviadindatarigan@gmail.com
 
 ### EDUCATION & HONORS
 
@@ -795,7 +795,7 @@ I am graduating in 2026 and am excited to bring this combination of academic dep
 Sincerely,
 Silvia Adinda`,
     cv: `# SILVIA ADINDA
-## https://id.linkedin.com/in/silviatariganadinda // github.com/5ilvi4 // 650 305 6683 // silviadindatarigan@gmail.com
+## https://id.linkedin.com/in/silviatariganadinda // github.com/5ilvi4 // Los Altos Hills, California // 650 305 6683 // silviadindatarigan@gmail.com
 
 ### EDUCATION & HONORS
 
@@ -904,7 +904,7 @@ I am currently completing a Master's in Medical Informatics at Stanford (GPA 4.0
 Sincerely,
 Silvia Adinda`,
     cv: `# SILVIA ADINDA
-## https://id.linkedin.com/in/silviatariganadinda // github.com/5ilvi4 // 650 305 6683 // silviadindatarigan@gmail.com
+## https://id.linkedin.com/in/silviatariganadinda // github.com/5ilvi4 // Los Altos Hills, California // 650 305 6683 // silviadindatarigan@gmail.com
 
 ### EDUCATION & HONORS
 
@@ -1011,7 +1011,7 @@ I recognise that autonomous vehicle validation is a specialised domain and I tak
 Sincerely,
 Silvia Adinda`,
     cv: `# SILVIA ADINDA
-## https://id.linkedin.com/in/silviatariganadinda // github.com/5ilvi4 // 650 305 6683 // silviadindatarigan@gmail.com
+## https://id.linkedin.com/in/silviatariganadinda // github.com/5ilvi4 // Los Altos Hills, California // 650 305 6683 // silviadindatarigan@gmail.com
 
 ### EDUCATION & HONORS
 
@@ -1113,7 +1113,7 @@ I am completing a Master's in Medical Informatics at Stanford University School 
 Sincerely,
 Silvia Adinda`,
     cv: `# SILVIA ADINDA
-## https://id.linkedin.com/in/silviatariganadinda // github.com/5ilvi4 // 650 305 6683 // silviadindatarigan@gmail.com
+## https://id.linkedin.com/in/silviatariganadinda // github.com/5ilvi4 // Los Altos Hills, California // 650 305 6683 // silviadindatarigan@gmail.com
 
 ### EDUCATION & HONORS
 
