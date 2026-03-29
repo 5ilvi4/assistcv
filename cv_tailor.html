@@ -234,22 +234,11 @@
       #tracker-section    { display: none !important; }
       .cv-page-card {
         width: 100%; padding: 33px 77px; margin: 0;
-        box-shadow: none; font-size: 9pt; line-height: 1.4;
+        box-shadow: none; font-size: 12px; line-height: 1.4;
       }
-      .cv-page-card + .cv-page-card {
-        page-break-before: always; break-before: page;
-      }
-      .cv-page-card .name-box   { font-size: 22pt; border-width: 1.5pt; }
-      .cv-page-card .name-rule  { height: 0.75pt; margin-top: 2pt; margin-bottom: 4pt; }
-      .cv-page-card .contact    { font-size: 9pt; }
-      .cv-page-card .section    { font-size: 9pt; margin-top: 8pt; }
-      .cv-page-card .entry      { font-size: 9pt; border-bottom-width: 0.75pt; }
-      .cv-page-card .plain      { font-size: 9pt; }
-      .cv-page-card .bullet     { font-size: 9pt; padding-left: 54pt; text-indent: -18pt; }
-      .cv-page-card .sub-bullet { font-size: 9pt; padding-left: 90pt;  text-indent: -18pt; }
       #cover-letter-section.visible {
         display: block !important; margin-top: 0; padding: 33px 77px;
-        box-shadow: none; width: 100%; font-size: 9pt;
+        box-shadow: none; width: 100%; font-size: 12px;
         page-break-before: always; break-before: page;
       }
       /* Cover letter only mode */
@@ -257,7 +246,7 @@
       body.print-cl-only #cover-letter-section.visible {
         page-break-before: avoid !important; break-before: avoid !important;
       }
-      @page { size: A4; margin: 18mm 20mm; }
+      @page { size: A4; margin: 0; }
     }
 
     /* ── Tracker ─────────────────────────────────────────────────────────── */
@@ -467,17 +456,16 @@ function cvBodyToHTML(text) {
 }
 
 // ════════════════════════════════════════════════════════════════════════════
-// Paginate CV into separate A4 page cards
 // ════════════════════════════════════════════════════════════════════════════
-
-const A4_CONTENT_H = 1123 - 33 - 33; // A4px minus top+bottom padding = 1057
+// Wrap entry headers with their first bullet so they never orphan
+// ════════════════════════════════════════════════════════════════════════════
 
 function wrapEntriesIn(root) {
   root.querySelectorAll('.keep-entry').forEach(w => {
     while (w.firstChild) w.parentNode.insertBefore(w.firstChild, w);
     w.remove();
   });
-  // Wrap classic 3-col .entry + its first following bullet/plain
+  // Classic 3-col .entry + first bullet
   Array.from(root.querySelectorAll('.entry')).forEach(entry => {
     const wrapper = document.createElement('div');
     wrapper.className = 'keep-entry';
@@ -488,7 +476,7 @@ function wrapEntriesIn(root) {
       wrapper.appendChild(next);
     }
   });
-  // Wrap Stanford chronological .chron-row + its first following .chron-bullet
+  // Stanford chron .chron-row + first bullet
   Array.from(root.querySelectorAll('.chron-row')).forEach(row => {
     const wrapper = document.createElement('div');
     wrapper.className = 'keep-entry';
@@ -501,46 +489,18 @@ function wrapEntriesIn(root) {
   });
 }
 
+// ════════════════════════════════════════════════════════════════════════════
+// Render CV into a single card — browser handles page breaks natively
+// ════════════════════════════════════════════════════════════════════════════
+
 function buildPages(cvText) {
   const container = document.getElementById('cv-pages-container');
-
-  // Render into a temporary off-screen page card for measurement
-  const temp = document.createElement('div');
-  temp.className = 'cv-page-card';
-  temp.style.cssText += 'position:absolute;visibility:hidden;margin:0;';
-  document.body.appendChild(temp);
-  temp.innerHTML = cvBodyToHTML(cvText);
-  wrapEntriesIn(temp);
-
-  // Walk children and distribute into pages
-  const pages   = [[]];
-  const heights = [0];
-
-  Array.from(temp.children).forEach(child => {
-    const h = child.offsetHeight
-            + parseFloat(getComputedStyle(child).marginTop  || 0)
-            + parseFloat(getComputedStyle(child).marginBottom || 0);
-    const pi = pages.length - 1;
-
-    // If this block (keep-entry or standalone) won't fit, start a new page
-    if (heights[pi] + h > A4_CONTENT_H && heights[pi] > 0) {
-      pages.push([]);
-      heights.push(0);
-    }
-    pages[pages.length - 1].push(child.cloneNode(true));
-    heights[heights.length - 1] += h;
-  });
-
-  document.body.removeChild(temp);
-
-  // Build page card divs
   container.innerHTML = '';
-  pages.forEach(children => {
-    const card = document.createElement('div');
-    card.className = 'cv-page-card';
-    children.forEach(child => card.appendChild(child));
-    container.appendChild(card);
-  });
+  const card = document.createElement('div');
+  card.className = 'cv-page-card';
+  card.innerHTML = cvBodyToHTML(cvText);
+  wrapEntriesIn(card);
+  container.appendChild(card);
 }
 
 // ════════════════════════════════════════════════════════════════════════════
@@ -633,75 +593,11 @@ function showCV() {
 }
 
 function printCVOnly() {
-  const container = document.getElementById('cv-pages-container');
-  const cards = Array.from(container.querySelectorAll('.cv-page-card'));
-  if (!cards.length) return;
-
-  const cardsHTML = cards.map((c, i) =>
-    `<div class="card${i > 0 ? ' brk' : ''}">${c.innerHTML}</div>`
-  ).join('\n');
-
-  // Self-contained minimal CSS — exactly mirrors the screen CV styles
-  // @page margin:0 + card padding:33px 77px = JS paginator dimensions (794×1123px A4)
-  const printDoc = `<!DOCTYPE html>
-<html><head><meta charset="utf-8"><title>CV — Silvia Adinda</title>
-<style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  html, body { background: #fff; }
-  @page { size: A4; margin: 0; }
-
-  .card {
-    width: 794px;
-    padding: 33px 77px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px; line-height: 1.4; color: #000;
-    overflow: hidden;
-  }
-  .brk { page-break-before: always; break-before: page; }
-
-  /* ── Stanford chron name header ── */
-  .chron-name    { font-size: 22px; font-weight: bold; font-variant: small-caps; letter-spacing: .02em; text-align: left; margin-bottom: 1px; }
-  .chron-contact { font-size: 12px; text-align: left; margin: 0 0 4px 0; }
-  .chron-name-rule { height: 0.75px; background: #000; margin-bottom: 4px; }
-
-  /* ── Stanford chron layout ── */
-  .chron-section { font-weight: bold; font-size: 12px; font-variant: small-caps; letter-spacing: .03em; border-bottom: 0.75px solid #000; padding-bottom: 1px; margin: 10px 0 3px 0; }
-  .chron-row     { display: flex; font-size: 12px; margin: 4px 0 0 0; align-items: flex-start; }
-  .chron-date    { width: 122px; min-width: 122px; max-width: 122px; font-size: 12px; line-height: 1.4; padding-right: 6px; flex-shrink: 0; white-space: nowrap; overflow: hidden; }
-  .chron-body    { flex: 1; font-size: 12px; line-height: 1.4; }
-  .chron-title   { font-weight: bold; }
-  .chron-bullet  { padding-left: 134px; text-indent: -12px; font-size: 12px; line-height: 1.4; margin: 0; }
-
-  /* ── Classic 3-col layout ── */
-  .name-row  { display: flex; justify-content: flex-end; margin-bottom: 0; }
-  .name-box  { border: 1.5px solid #000; padding: 4px 10px 4px 8px; font-size: 29px; line-height: 1.2; width: 37%; text-align: right; }
-  .name-rule { height: 1px; background: #000; width: 37%; margin-left: auto; margin-top: 3px; margin-bottom: 6px; }
-  .contact   { text-align: center; font-size: 12px; margin: 3px 0 0 0; white-space: nowrap; overflow: hidden; }
-  .section   { font-weight: bold; font-size: 12px; margin: 9px 0 1px 0; }
-  .entry     { display: flex; font-weight: bold; font-size: 12px; border-bottom: 0.75px solid #000; padding: 2px 0 1px 0; margin-top: 3px; }
-  .entry-l   { width: 44%; text-align: left;   min-width: 0; white-space: nowrap; overflow: hidden; }
-  .entry-c   { width: 36%; text-align: center; min-width: 0; white-space: nowrap; overflow: hidden; }
-  .entry-r   { width: 20%; text-align: right;  min-width: 0; white-space: nowrap; overflow: hidden; }
-  .bullet    { padding-left: 73px; text-indent: -24px; font-size: 12px; line-height: 1.4; margin: 0; }
-  .sub-bullet{ padding-left: 121px; text-indent: -24px; font-size: 12px; line-height: 1.4; margin: 0; }
-  .plain     { font-size: 12px; margin: 1px 0; }
-
-  .keep-entry { break-inside: avoid; page-break-inside: avoid; }
-</style>
-</head><body>
-${cardsHTML}
-<script>
-  window.onload = function() {
-    window.print();
-    window.onafterprint = function() { window.close(); };
-  };
-<\/script>
-</body></html>`;
-
-  const w = window.open('', '_blank', 'width=900,height=700');
-  w.document.open();
-  w.document.write(printDoc);
-  w.document.close();
+  const cl = document.getElementById('cover-letter-section');
+  const wasVisible = cl.classList.contains('visible');
+  cl.classList.remove('visible');
+  window.print();
+  if (wasVisible) cl.classList.add('visible');
 }
 
 function printCLOnly() {
