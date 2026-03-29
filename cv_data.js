@@ -287,6 +287,7 @@ AI and technology program leader with 8+ years of experience across healthcare, 
 === Education:
 >>> 2025–2026 ||| Master in Medical Informatics, Stanford University School of Medicine
 ~- GPA 4.018/4.00 · Full Ride Scholarship, Ministry of Finance (LPDP)
+~- Coursework: Data Driven Medicine · Digitally-Enabled Healthcare · Biodesign for Digital Health · Modeling Biomedical Systems · Healthcare Operations Management · Bioethical Challenges of New Technology · Principles of Business Strategy
 
 >>>  ||| Bachelor's in Economics, Universitas Indonesia
 ~- Full Ride Scholarship · Most Outstanding Student
@@ -387,6 +388,7 @@ AI and technology program leader with 8+ years of experience across healthcare, 
 === Education:
 >>> 2025–2026 ||| Master in Medical Informatics, Stanford University School of Medicine
 ~- GPA 4.018/4.00 · Full Ride Scholarship, Ministry of Finance (LPDP)
+~- Coursework: Data Driven Medicine · Digitally-Enabled Healthcare · Biodesign for Digital Health · Modeling Biomedical Systems · Healthcare Operations Management · Bioethical Challenges of New Technology · Principles of Business Strategy
 
 >>>  ||| Bachelor's in Economics, Universitas Indonesia
 ~- Full Ride Scholarship · Most Outstanding Student
