@@ -317,6 +317,7 @@ AI and technology program leader with 8+ years of experience across healthcare, 
 >>> Jan 2022–2023 ||| AI/ML and Analytics — Senior Product Manager, Alodokter
 ~- Led the roadmap of AI/ML: data governance, new business opportunities, technology ideation, development of new features and product initiatives — organizing 6 engineers and 2 data scientists.
 ~- Led and maintained 6 AI/ML Products: Chatbot Automation (1 million users/month during Covid-19), Doctors' Recommender, Health Articles Recommender, Ads Topic Classifier, Spam Review Flagger, and Feeds Recommender (Collaborative Filtering + Hybrid LightFM).
+~- Worked with patient EMR data for the Chatbot Automation — including data pipeline ingestion, analysis, and model training for personalised responses.
 ~- Other Projects: ETL Migration, Data Governance, A/B Testing and DevOps Migration using Kubernetes.
 
 >>> Jun 2021–Jun 2022 ||| Adjunct Lecturer — Data Analytics, Binus (Bina Nusantara) University
@@ -403,6 +404,7 @@ AI and technology program leader with 8+ years of experience across healthcare, 
 >>> Jan 2022–2023 ||| AI/ML and Analytics — Senior Product Manager, Alodokter
 ~- Led the roadmap of AI/ML: data governance, new business opportunities, technology ideation, development of new features and product initiatives — organizing 6 engineers and 2 data scientists.
 ~- Led and maintained 6 AI/ML Products: Chatbot Automation (1 million users/month during Covid-19), Doctors' Recommender, Health Articles Recommender, Ads Topic Classifier, Spam Review Flagger, and Feeds Recommender (Collaborative Filtering + Hybrid LightFM).
+~- Worked with patient EMR data for the Chatbot Automation — including data pipeline ingestion, analysis, and model training for personalised responses.
 ~- Other Projects: ETL Migration, Data Governance, A/B Testing and DevOps Migration using Kubernetes.
 
 >>> 2020–2021 ||| Project Manager — Log Stream, LinkAja – Tech Group
