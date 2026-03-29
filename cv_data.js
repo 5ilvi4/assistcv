@@ -1269,17 +1269,19 @@ Technical Program Manager with 8+ years driving AI/ML programs from 0→1 across
 ~- Certifications: Computational Thinking – Univ. of Pennsylvania (2019) · Data Science Math Skills – Duke University (2019) · Computer Science 101 – Stanford University (2016–2018)`,
     coverLetter: `Dear Hiring Team,
 
-I am writing to apply for the Technical Program Manager – Generalist (AI/ML) role on the MAI Superintelligence Team.
+I am applying for the Technical Program Manager role on the MAI Superintelligence Team.
 
-What drew me to this role is the specificity of what MAIST is building: not a directionless AGI race, but Humanist Superintelligence — AI that is highly capable, controllable, and explicitly designed to serve humanity. That framing is not just language to me. I am currently completing a Master in Medical Informatics at Stanford School of Medicine, where I am studying how AI can be applied responsibly in high-stakes clinical settings. My personal projects include ColpoAI, a clinical decision support tool for cervical cancer detection in low-resource settings, and a Prior Authorization Auto-Assembler that uses agentic AI to reduce the administrative burden on patients and clinicians. These are exactly the kinds of domain-specific, human-centred applications that MAIST's mission describes.
+I want to be honest about why this role caught my attention: it is the framing. Most AI job descriptions talk about scale and speed. This one talks about building AI that is controllable, safety-aligned, and genuinely in service to humanity. That is not marketing language to me. I am finishing a Master in Medical Informatics at Stanford School of Medicine, and a big part of what I study is exactly how AI gets deployed in high-stakes settings where getting it wrong has real consequences for real people. The MAIST mission of Humanist Superintelligence is the version of this work I actually want to contribute to.
 
-On the program management side, I have spent the past several years running the kind of complex, multi-workstream technical programs this role requires. At GE Healthcare, I led the end-to-end technology deployment roadmap across 20 countries — coordinating business process alignment, technical development, and user adoption across engineering, commercial, and service teams simultaneously. Before that, at Alodokter, I managed the full AI/ML roadmap: six products in production, a team of engineers and data scientists, and hands-on work with the data pipelines and model training that powered our Chatbot Automation at one million users per month. I understand what it takes to move from data ingestion and pipeline work through to model training, evaluation, and serving — and to keep the program on track across each of those stages.
+On the program side, I have spent the last several years running technical programs that span research, engineering, and product in parallel. At GE Healthcare I owned the technology deployment roadmap across 20 countries, which meant coordinating business alignment, system development, and user adoption across multiple teams and time zones at the same time. At Alodokter I managed the full AI/ML product roadmap: six products in production, data pipelines handling patient EMR data, model training, and a chatbot serving one million users a month during Covid. I know what the data-to-training-to-serving pipeline looks like in practice, not just on paper.
 
-I thrive in exactly the environment the JD describes: 0→1, scrappy, fast-moving, high-stakes. At Philip Morris International, I took two AI products from zero to market in three months, onboarding ten thousand merchants and generating measurable revenue impact. I am comfortable owning timelines, surfacing risks early, communicating status to senior leadership, and finding paths through ambiguity — which is what this role asks for.
+I also genuinely enjoy the 0-to-1 phase. At Philip Morris International I took two AI products from nothing to market in three months, onboarding ten thousand merchants. I like finding the path through complexity when there is no playbook yet.
 
-I would be genuinely proud to contribute to MAIST's mission. The combination of frontier-scale AI capability and a principled commitment to keeping humans in control is the right way to build this technology, and I want to be part of the team doing it.
+Outside of work, I have been building medical AI projects because I find the problem interesting: ColpoAI for cervical cancer detection in low-resource clinics, and a Prior Authorization Auto-Assembler that uses agentic AI to cut down administrative burden for patients. These are small, but they reflect the kind of AI I believe in building.
 
-Thank you for your consideration.
+I would love to bring this to MAIST.
+
+Thank you for reading.
 
 Silvia Adinda`
   }
