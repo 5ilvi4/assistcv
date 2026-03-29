@@ -235,10 +235,9 @@
       .cv-page-card {
         width: 100%; padding: 33px 77px; margin: 0;
         box-shadow: none; font-size: 9pt; line-height: 1.4;
-        page-break-after: always; break-after: page;
       }
-      .cv-page-card:last-of-type {
-        page-break-after: avoid; break-after: avoid;
+      .cv-page-card + .cv-page-card {
+        page-break-before: always; break-before: page;
       }
       .cv-page-card .name-box   { font-size: 22pt; border-width: 1.5pt; }
       .cv-page-card .name-rule  { height: 0.75pt; margin-top: 2pt; margin-bottom: 4pt; }
