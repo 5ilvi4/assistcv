@@ -247,14 +247,14 @@
       .cv-page-card .plain      { font-size: 9pt; }
       .cv-page-card .bullet     { font-size: 9pt; padding-left: 54pt; text-indent: -18pt; }
       .cv-page-card .sub-bullet { font-size: 9pt; padding-left: 90pt;  text-indent: -18pt; }
-      #cover-letter-section {
+      #cover-letter-section.visible {
         display: block !important; margin-top: 0; padding: 33px 77px;
         box-shadow: none; width: 100%; font-size: 9pt;
         page-break-before: always; break-before: page;
       }
       /* Cover letter only mode */
       body.print-cl-only #cv-pages-container { display: none !important; }
-      body.print-cl-only #cover-letter-section {
+      body.print-cl-only #cover-letter-section.visible {
         page-break-before: avoid !important; break-before: avoid !important;
       }
       @page { size: A4; margin: 0; }
