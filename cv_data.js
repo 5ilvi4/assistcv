@@ -1445,20 +1445,23 @@ Senior Technical Program Manager with 8+ years delivering AI and cloud solutions
 ~- Certifications: Computational Thinking – Univ. of Pennsylvania (2019) · Data Science Math Skills – Duke University (2019) · Computer Science 101 – Stanford University (2016–2018)`,
     coverLetter: `Dear Hiring Team,
 
-I am applying for the Senior Technical Program Manager role on the Industry Solutions Engineering team.
+I am writing to express my interest in the Senior Technical Program Manager position within Microsoft's Industry Solutions Engineering team.
 
-What stands out about this role is the model: working side-by-side with customers and their engineers to jointly build solutions, not just advising from a distance. That is how I have worked throughout my career, and it is the part I find most energising.
+What drew me to this role is ISE's model of working directly alongside customers and their engineering teams to co-develop solutions. This mirrors how I have worked throughout my career, and I believe my experience translates directly to what this role requires.
 
-At Johnson and Johnson last year, I was brought in as an external AI expert to design and deploy a Microsoft Copilot-based knowledge management system directly integrated into their Microsoft Teams environment. I sat with the Global Marketing team to understand their actual workflows, built the knowledge architecture around their real content, validated AI responses against real user questions, and led adoption across the global team. That is almost exactly what the ISE job description describes: identifying the customer scenario, defining the end-to-end user story, and driving it through to completion.
+Most recently, I served as an external AI Subject Matter Expert at Johnson and Johnson, where I designed and deployed a Microsoft Copilot-based knowledge management system integrated into the team's Microsoft Teams environment. Working directly with J&J's Global Marketing team, I identified the relevant customer scenarios, defined the end-to-end user stories, built the knowledge architecture, validated AI responses against real user questions prior to launch, and led adoption across the global team. This engagement reflects precisely the work ISE describes: identifying customer needs, developing collaborative solutions, and driving them through to successful deployment.
 
-At GE Healthcare I owned the technology deployment roadmap across 20 countries, serving as the connective tissue between product, engineering, commercial, and regional teams simultaneously. I defined success criteria, tracked schedules, managed staging and implementation plans, and presented status to leadership. Before that at Alodokter I was the product owner for an AI/ML portfolio of six products in production, coordinating engineers and data scientists through the full build cycle from data pipeline to model training to launch.
+Prior to that, as Senior Technical Project Manager at GE Healthcare, I owned the technology innovation roadmap for international operations spanning 20 countries. In this role I served as the central coordination point between product, engineering, commercial, and regional stakeholders, defined success criteria, drove development of staging and implementation plans, and provided regular status reporting to senior leadership.
 
-I also write code. Not at an engineering level, but enough to read a codebase, write sample documentation, build prototypes, and have a real conversation with a software engineer about what is actually hard. My personal projects this year include a Python/Streamlit hospital simulation tool, an agentic AI prototype for prior authorization automation, and a GenAI-based clinical decision support tool affiliated with a university research study.
+Earlier, at Alodokter, I held the Product Owner role for an AI/ML portfolio of six products in production, coordinating a team of engineers and data scientists through the full development cycle from data pipeline architecture and model training through to launch and iteration.
 
-I would love to bring this background to ISE and help customers do more with the Microsoft platform.
+In addition to my program management background, I have hands-on experience writing and prototyping code. This year I have built a Python and Streamlit hospital capacity planning simulator, an agentic AI prototype for prior authorization automation, and a GenAI-based clinical decision support tool affiliated with a formal university research study. I am comfortable reading a codebase, contributing to documentation, and engaging substantively with engineering teams on technical decisions.
 
-Thank you for reading.
+I would welcome the opportunity to contribute to ISE and help strategic customers accelerate their use of the Microsoft platform.
 
+Thank you for your consideration.
+
+Sincerely,
 Silvia Adinda`
   }
 ];
