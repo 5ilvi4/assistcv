@@ -359,6 +359,91 @@ AI and technology program leader with 8+ years of experience across healthcare, 
 ~- Certifications: Computational Thinking – Univ. of Pennsylvania (2019) · Data Science Math Skills – Duke University (2019) · Computer Science 101 – Stanford University (2016–2018)`
   },
   {
+    key:       "gehc-datafabric",
+    label:     "GE Healthcare — Principal PM, Data Fabric",
+    company:   "GE Healthcare",
+    role:      "Principal Product Manager, Data Fabric",
+    jdUrl:     "https://careers.gehealthcare.com/global/en/job/R4027823/Principal-Product-Manager-Data-Fabric",
+    dateAdded: "2026-03-28",
+    coverLetter: `Dear Hiring Team,
+
+I am applying for the Principal Product Manager, Data Fabric role within GE HealthCare's Science and Technology Organization. This role sits at the exact intersection of my background: platform product strategy, data architecture, and cross-functional program leadership in healthcare at global scale.
+
+At GE HealthCare, I spent nearly two years as Senior Technical Project Manager driving the Innovation Roadmap across international regions — working directly with engineering, architecture, and business stakeholders to align, deliver, and iterate on technology programs including AI/ML Service Renewal Automation, CRM, and Data Migration and Governance. I understand how GE HealthCare builds and deploys at scale, and I know how to navigate the organization to get things done.
+
+Before GE, I led data platform and AI/ML product strategy across Alodokter, LinkAja, and Philip Morris International — defining multi-year roadmaps, establishing data governance frameworks, and translating platform capabilities into downstream product value. At Alodokter, I owned the full AI/ML product roadmap across six products and coordinated engineers, data scientists, and business stakeholders in a fast-moving, ambiguous environment. At LinkAja, I led Data Pipeline and Log Stream deployment end-to-end — building the data infrastructure that powered fraud detection, marketing automation, and finance reporting.
+
+I am currently completing a Master's in Medical Informatics at Stanford University School of Medicine (GPA 4.018/4.00, graduating 2026), which has deepened my understanding of healthcare data standards — FHIR, HL7, DICOM — and the interoperability challenges that make a well-designed data fabric so strategically critical for GE HealthCare's portfolio.
+
+I would welcome the opportunity to bring this combination of internal GE context, data platform expertise, and product strategy to the Data Fabric team.
+
+Sincerely,
+Silvia Adinda`,
+    cv: `#! SILVIA ADINDA
+##! adinda@stanford.edu  •  650 305 6683  •  linkedin.com/in/silviatariganadinda  •  github.com/5ilvi4
+
+Principal product and data strategy leader with 8+ years of experience defining platform roadmaps, building data products, and aligning engineering and business stakeholders across healthcare and technology. Proven track record delivering multi-year platform initiatives — from data pipeline infrastructure to AI/ML product suites — at cloud scale and across global organizations. Hands-on with Python, SQL/BigQuery, Tableau, PowerBI, and AI tooling.
+
+=== Education:
+>>> 2025–2026 ||| Master in Medical Informatics, Stanford University School of Medicine
+~- GPA 4.018/4.00 · Full Ride Scholarship, Ministry of Finance (LPDP) · Coursework: Healthcare Data Standards (FHIR, HL7, DICOM), Clinical Informatics, AI in Medicine
+
+>>>  ||| Bachelor's in Economics, Universitas Indonesia
+~- Full Ride Scholarship · Most Outstanding Student
+
+=== Experience:
+>>> Sep 2023–May 2025 ||| Senior Technical Project Manager, General Electric Healthcare, International Region
+~- Defined and drove the IT Innovation Roadmap and product strategy for international regions across 20 countries — aligning engineering, architecture, and commercial stakeholders on platform priorities and multi-year delivery plans.
+~- Led end-to-end platform deployment lifecycle: business process alignment, system ideation, technical development, user adoption, and launch across Service and Commercial Business Groups.
+~- Owned strategy and execution for data-centric platform initiatives: AI/ML Service Renewal Automation, Data Migration and Governance, CRM, ServiceMax–Salesforce, and System Migration.
+~- Awards: The Five Heartbeats Award — "Deliver the Future of Healthcare" 2025.
+
+>>> Jan–April 2023 ||| Digital Transformation Manager (AI/ML), Philip Morris International
+~- Defined data platform strategy and governed Datalake, Data Governance, and User Governance frameworks — establishing policies, standards, and automation for data integrity across finance and reporting.
+~- Led deployment and adoption of 2 AI automation products; drove platform reuse and downstream business value: 10k merchants onboarded, 250bio revenue in 3 months.
+
+>>> Jan 2022–2023 ||| AI/ML and Analytics — Senior Product Manager, Alodokter
+~- Owned the multi-year AI/ML product roadmap: defined platform strategy, prioritized capability investments, and aligned 6 engineers and 2 data scientists across concurrent data product initiatives.
+~- Drove build and launch of 6 AI/ML platform products — including Chatbot (1M users/month), Recommender Systems, and Collaborative Filtering (LightFM) — balancing flexibility, reuse, and enterprise consistency.
+~- Established data governance, ETL migration, and A/B testing frameworks enabling faster iteration and broader platform reuse.
+
+>>> 2020–2022 ||| Senior Data Analyst, LinkAja – Big Data, AI and Anti-Fraud Engineering
+~- Defined data product strategy for growth, retention, and revenue analytics; deployed Data Governance via MixPanel and Braze across marketing, product, and operations teams.
+~- Led AI-driven data automation: eKYC Automation (automating 80% of process) and User Segmentation (RFM) — enabling downstream product teams to build on reusable data capabilities.
+
+>>> 2020–2021 ||| Project Manager — Log Stream, LinkAja – Tech Group
+~- Led 0-to-1 platform delivery of Data Pipeline/Log Stream infrastructure — defined roadmap, managed cross-functional teams, and reported to CTO.
+~- Delivered scalable platform capabilities: Fraud Alert Monitoring, DevOps Log Monitoring, Marketing Automation, eKYC Process, and Finance Reporting.
+
+>>> May–Aug 2023 ||| Sabbatical Leave, Caregiving
+~- Caregiving sabbatical to attend to my father's well-being following a significant cardiac event.
+
+>>> 2025 ||| AI Consultant — Knowledge Management, Johnson & Johnson, Irvine, USA
+~- Designed and deployed AI-powered knowledge platform for J&J's Global Marketing team — architecture, content enrichment, AI chatbot (Microsoft Copilot/Teams), and user adoption.
+
+>>> 2019 ||| Business Intelligence Analyst, GOJEK – Data Science
+~- Built Fraud Detection automation system — analytically modeled behavior patterns and defined data metrics, preventing ~$5M USD in losses.
+
+>>> Aug 2014–Dec 2015 ||| Research Assistant, United Nations – ILO Jakarta Office
+~- Conducted research and prepared annual reports for key development partners.
+
+=== Projects:
+>>> 2025 ||| EP/CATH Lab Planning Simulator, Personal Project
+~- Built hospital capacity planning simulation tool — data-driven platform modelling 7,402 procedures across 260 simulated days, with policy comparison and cost analysis. Stack: Python, Streamlit.
+
+>>> 2025 ||| ColpoAI — AI Cervical Cancer Detection, Personal / University of Limpopo
+~- Clinical decision support platform: 4-class AI classification with confidence scoring and explainability layer. Affiliated with formal research at University of Limpopo; funded by SAfAIDS and ASCCP.
+
+>>> 2025 ||| Prior Auth Auto-Assembler, Personal Project
+~- Agentic AI platform automating prior authorization packet assembly — payer-specific rules engine (Medicare, MA plans), clinical evidence extraction, submission-ready output. Stack: HTML/JS, LLM.
+
+=== Additional Information:
+~- Technical: Python · SQL/BigQuery · Tableau · PowerBI · Mixpanel · Braze · Firebase · Microsoft Copilot · ChatGPT · Claude · Gemini · R
+~- Healthcare Data: FHIR · HL7 · DICOM · Clinical Informatics (Stanford MMI)
+~- Languages: English (fluent) · Indonesian (native)
+~- Certifications: Computational Thinking – Univ. of Pennsylvania (2019) · Data Science Math Skills – Duke University (2019) · Computer Science 101 – Stanford University (2016–2018)`
+  },
+  {
     key:       "x",
     label:     "X \u2013 Program Manager, Early Stage",
     company:   "X",
